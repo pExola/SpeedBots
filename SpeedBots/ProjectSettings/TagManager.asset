@@ -7,6 +7,9 @@ TagManager:
   - Inimigo
   - Pista
   - Parede
+  - Lama
+  - Gelo
+  - Fogo
   layers:
   - Default
   - TransparentFX

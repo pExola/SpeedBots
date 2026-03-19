@@ -2,22 +2,38 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class SpeedBotMovment : MonoBehaviour
 {
-    [Header("Atributos do Motor")]
-    public float velocidadeMaxima = 15f;
-    public float aceleracao = 30f;
+    public enum TipoBot { Crawler, Slider, Aerial }
+
+    [Header("Identidade do Chassi")]
+    public TipoBot tipoBot;
+
+    [Tooltip("Crawler = 0.9 | Aerial = 0.5 | Slider = 0.1")]
+    [Range(0f, 1f)] public float aderenciaBase = 0.5f;
+
+    [Tooltip("Crawler = 0.9 | Aerial = 0.5 | Slider = 0.1")]
+    [Range(0f, 1f)] public float durabilidadeBase = 0.5f;
+
+    [Header("Atributos Base do Motor")]
+    public float velocidadeMaximaBase = 15f;
+    public float aceleracaoBase = 30f;
     public float forcaPulo = 12f;
 
-    [Header("Parkour (Vector Style)")]
+    [Header("Parkour")]
     public float forcaWallJumpY = 14f;
     public float forcaWallJumpX = 4f;
     public float distanciaSensor = 0.1f;
-    public Vector2 tamanhoCaixaSensor = new Vector2(0.1f, 0.8f); // Caixa fina e alta para focar só na parede
+    public Vector2 tamanhoCaixaSensor = new Vector2(0.1f, 0.8f);
 
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
     private bool isGrounded;
     private bool isTouchingWall;
     private float lastMoveDirection = 1f;
+
+    // --- VARIÁVEIS DE ESTADO (RPG) ---
+    private string terrenoAtual = "Normal";
+    private float stunTimer = 0f;
+    private float debuffFogoTimer = 0f;
 
     void Awake()
     {
@@ -29,48 +45,124 @@ public class SpeedBotMovment : MonoBehaviour
     {
         if (Keyboard.current == null) return;
 
-        // 1. Atualiza a direção do olhar
         float moveInput = 0f;
         if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) moveInput = 1f;
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) moveInput = -1f;
 
         if (moveInput != 0) lastMoveDirection = moveInput;
 
-        // 2. Checa a parede com o novo método infalível
         VerificarParede();
 
-        // 3. Pulos
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (stunTimer <= 0 && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            if (isGrounded)
-            {
-                PuloNormal();
-            }
-            else if (isTouchingWall)
-            {
-                WallJump();
-            }
+            if (isGrounded) PuloNormal();
+            else if (isTouchingWall) WallJump();
         }
     }
 
     void FixedUpdate()
     {
-        if (Keyboard.current == null) return;
+        // 1. Controle de Tempo no Ar (Passiva do Aerial)
 
+        // 2. Controle de Stun (Perda de controle total, mas sem ser jogado para trás)
+        if (stunTimer > 0)
+        {
+            stunTimer -= Time.fixedDeltaTime;
+            // Fricção forte para parar o robô no lugar enquanto está atordoado
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.8f, rb.linearVelocity.y);
+            return;
+        }
+
+        // --- INÍCIO DO CÁLCULO DE RPG ---
+        float velMaxAtual = velocidadeMaximaBase;
+        float acelAtual = aceleracaoBase;
+        float gripAtual = aderenciaBase;
+        float friccao = 0.9f;
+
+        // 3. Sinergias de Terreno (A Pedra, Papel e Tesoura)
+        if (terrenoAtual == "Lama")
+        {
+            if (tipoBot == TipoBot.Crawler)
+            {
+                velMaxAtual *= 1.3f; // Buff forte
+                acelAtual *= 1.3f;
+                gripAtual = Mathf.Clamp01(gripAtual + 0.3f);
+            }
+            else if (tipoBot == TipoBot.Slider)
+            {
+                velMaxAtual *= 0.3f; // Nerf pesado
+                acelAtual *= 0.2f;
+                gripAtual = Mathf.Clamp01(gripAtual - 0.4f);
+            }
+            else if (tipoBot == TipoBot.Aerial)
+            {
+                velMaxAtual *= 0.7f; // Nerf leve
+                acelAtual *= 0.7f;
+            }
+        }
+        else if (terrenoAtual == "Gelo")
+        {
+            friccao = 0.99f; // Gelo sempre escorrega
+            if (tipoBot == TipoBot.Slider)
+            {
+                velMaxAtual *= 1.4f; // Buff forte
+                acelAtual *= 1.4f;
+                gripAtual = Mathf.Clamp01(gripAtual + 0.3f);
+            }
+            else if (tipoBot == TipoBot.Crawler)
+            {
+                velMaxAtual *= 0.3f; // Nerf pesado
+                acelAtual *= 0.2f;
+                gripAtual = Mathf.Clamp01(gripAtual - 0.4f);
+            }
+            else if (tipoBot == TipoBot.Aerial)
+            {
+                velMaxAtual *= 0.7f; // Nerf leve
+                acelAtual *= 0.7f;
+            }
+        }
+
+        // 4. Buff do Aerial (Voo prolongado)
+        if (tipoBot == TipoBot.Aerial)
+        {
+            // Ganha 15% a mais de Velocidade Final e 10% de Aceleração em qualquer terreno
+            velMaxAtual *= 1.15f;
+            acelAtual *= 1.10f;
+
+            // Leve compensação de aderência (ele "flutua" um pouco sobre o terreno ruim)
+            if (terrenoAtual == "Lama" || terrenoAtual == "Gelo") gripAtual += 0.1f;
+        }
+
+        // 5. Debuff do Fogo (Reduz status após passar pelo fogo)
+        if (debuffFogoTimer > 0)
+        {
+            debuffFogoTimer -= Time.fixedDeltaTime;
+            velMaxAtual *= 0.5f; // Corta na metade
+            acelAtual *= 0.5f;
+        }
+
+        // --- FIM DO CÁLCULO DE RPG ---
+
+        // Leitura de Input e Aplicação Física
         float moveInput = 0f;
         if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) moveInput = 1f;
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) moveInput = -1f;
 
-        // Aceleração
-        if (Mathf.Abs(rb.linearVelocity.x) < velocidadeMaxima && moveInput != 0)
+        if (Mathf.Abs(rb.linearVelocity.x) < velMaxAtual && moveInput != 0)
         {
-            rb.AddForce(new Vector2(moveInput * aceleracao, 0), ForceMode2D.Force);
+            rb.AddForce(new Vector2(moveInput * acelAtual, 0), ForceMode2D.Force);
         }
 
-        // Fricção
         if (moveInput == 0 && isGrounded)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.9f, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x * friccao, rb.linearVelocity.y);
+        }
+
+        // Clamp para não ultrapassar a velocidade calculada
+        if (Mathf.Abs(rb.linearVelocity.x) > velMaxAtual)
+        {
+            float velXSuave = Mathf.Lerp(rb.linearVelocity.x, velMaxAtual * Mathf.Sign(rb.linearVelocity.x), 0.1f);
+            rb.linearVelocity = new Vector2(velXSuave, rb.linearVelocity.y);
         }
     }
 
@@ -100,12 +192,19 @@ public class SpeedBotMovment : MonoBehaviour
 
     private void PuloNormal()
     {
+        // Se for Aerial, o pulo é 30% mais forte!
+        float impulsoFinal = (tipoBot == TipoBot.Aerial) ? forcaPulo * 1.3f : forcaPulo;
+
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
     }
 
     private void WallJump()
     {
+        // O WallJump do Aerial também joga ele mais alto e mais longe (20% de bônus)
+        float puloYFinal = (tipoBot == TipoBot.Aerial) ? forcaWallJumpY * 1.2f : forcaWallJumpY;
+        float puloXFinal = (tipoBot == TipoBot.Aerial) ? forcaWallJumpX * 1.2f : forcaWallJumpX;
+
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(new Vector2(lastMoveDirection * forcaWallJumpX, forcaWallJumpY), ForceMode2D.Impulse);
     }
@@ -119,6 +218,31 @@ public class SpeedBotMovment : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         isGrounded = false;
+    }
+
+    // Detecta quando o robô ENTRA em uma zona especial
+    // --- TRIGGERS DOS TERRENOS ---
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Lama")) terrenoAtual = "Lama";
+        if (collision.CompareTag("Gelo")) terrenoAtual = "Gelo";
+
+        if (collision.CompareTag("Fogo"))
+        {
+            // O Fogo agora apenas trava os controles (Stun) e deixa um debuff
+            // Durabilidade 1.0 (Crawler) toma só 0.1s de stun. Durabilidade 0.0 toma 1.2s.
+            stunTimer = Mathf.Lerp(1.2f, 0.1f, durabilidadeBase);
+            debuffFogoTimer = 3.0f; // O robô fica manco por 3 segundos
+            Debug.Log($"FOGO! Stun de {stunTimer}s aplicado.");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Lama") || collision.CompareTag("Gelo"))
+        {
+            terrenoAtual = "Normal";
+        }
     }
 
     private void OnDrawGizmos()

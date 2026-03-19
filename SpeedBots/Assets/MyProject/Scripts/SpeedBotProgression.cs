@@ -20,14 +20,14 @@ public class SpeedBotProgression : MonoBehaviour
     }
 
     // Pega os status atuais para a UI mostrar
-    public float GetVelocidadeAtual() { return movementScript.velocidadeMaxima; }
-    public float GetAceleracaoAtual() { return movementScript.aceleracao; }
+    public float GetVelocidadeAtual() { return movementScript.velocidadeMaximaBase; }
+    public float GetAceleracaoAtual() { return movementScript.aceleracaoBase; }
 
     public void AtualizarAtributosNoMotor()
     {
         // A base é o nível 1. A cada nível extra, ele soma os ganhos.
-        movementScript.velocidadeMaxima = 15f + ((nivel - 1) * ganhoVelocidadePorNivel);
-        movementScript.aceleracao = 30f + ((nivel - 1) * ganhoAceleracaoPorNivel);
+        movementScript.velocidadeMaximaBase = 15f + ((nivel - 1) * ganhoVelocidadePorNivel);
+        movementScript.aceleracaoBase = 30f + ((nivel - 1) * ganhoAceleracaoPorNivel);
     }
 
     public void AdicionarXP(float valor)
