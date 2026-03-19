@@ -2,9 +2,17 @@ using UnityEngine;
 
 public class SpeedBotIA : MonoBehaviour
 {
-    [Header("Atributos do Motor")]
-    public float velocidadeMaxima = 14f;
-    public float aceleracao = 25f;
+    public enum TipoBot { Crawler, Slider, Aerial }
+
+    [Header("Identidade do Chassi")]
+    public TipoBot tipoBot;
+
+    [Range(0f, 1f)] public float aderenciaBase = 0.5f;
+    [Range(0f, 1f)] public float durabilidadeBase = 0.5f;
+
+    [Header("Atributos Base do Motor")]
+    public float velocidadeMaximaBase = 14f;
+    public float aceleracaoBase = 25f;
     public float forcaPulo = 12f;
 
     [Header("Parkour (Vector Style)")]
@@ -16,14 +24,19 @@ public class SpeedBotIA : MonoBehaviour
     public Vector2 tamanhoCaixaSensor = new Vector2(0.1f, 0.8f);
 
     [Header("Sensores de Buraco (Precipício)")]
-    public float distanciaOlhoBuraco = 1.0f; // Quão longe ela "olha" para baixo
-    public float avancoOlhoBuraco = 0.8f; // O quanto esse olho fica à frente do robô
+    public float distanciaOlhoBuraco = 1.0f;
+    public float avancoOlhoBuraco = 0.8f;
 
     private Rigidbody2D rb;
     private CapsuleCollider2D col;
     private bool isGrounded;
     private bool isTouchingWall;
-    private float moveDirection = 1f; // A IA começa querendo ir para a direita
+    private float moveDirection = 1f;
+
+    // --- VARIÁVEIS DE ESTADO (RPG) ---
+    private string terrenoAtual = "Normal";
+    private float stunTimer = 0f;
+    private float debuffFogoTimer = 0f;
 
     void Awake()
     {
@@ -33,128 +46,218 @@ public class SpeedBotIA : MonoBehaviour
 
     void Update()
     {
+        // Se estiver atordoado pelo fogo, a IA não "pensa" (não pula nem faz wall-jump)
+        if (stunTimer > 0) return;
+
         VerificarAmbiente();
 
-        // Lógica de Pulo
         if (isGrounded)
         {
-            // Pula se houver um obstáculo na frente OU se o chão à frente acabar (buraco)
-            if (isTouchingWall || DetectarBuraco())
+            if (isTouchingWall || DetectarBuraco() || DevePularDoTerreno())
             {
                 PuloNormal();
             }
         }
         else if (isTouchingWall)
         {
-            // Se estiver no ar e encostar numa parede, tenta o Wall-Jump
             WallJump();
         }
     }
 
     void FixedUpdate()
     {
-        // Se a IA estiver grudada numa parede no ar (Wall-Jump ativo), ela inverte a direção temporariamente
-        // para desgrudar da parede e ir para a outra (como no corredor da sua imagem)
+        // 1. Controle de Direção da IA
         if (!isGrounded && isTouchingWall && rb.linearVelocity.y > 0)
         {
-            // Mantém a direção atual (que foi invertida no WallJump)
+            // Mantém a direção invertida no corredor de WallJump
         }
         else if (isGrounded)
         {
-            // Volta a forçar a ida para a direita sempre que pisar no chão firme
-            moveDirection = 1f;
+            moveDirection = 1f; // Força a ida para a direita sempre que pisa no chão firme
         }
 
-        // Aplica aceleração na direção que a IA quer ir
-        if (Mathf.Abs(rb.linearVelocity.x) < velocidadeMaxima)
+        // 2. Controle de Stun
+        if (stunTimer > 0)
         {
-            rb.AddForce(new Vector2(moveDirection * aceleracao, 0), ForceMode2D.Force);
+            stunTimer -= Time.fixedDeltaTime;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.8f, rb.linearVelocity.y);
+            return;
         }
-    }
 
-    private void VerificarAmbiente()
-    {
-        Vector2 centro = col.bounds.center;
-        Vector2 destinoCaixa = centro + (new Vector2(moveDirection, 0) * (col.bounds.extents.x + distanciaSensorFrente));
+        // --- CÁLCULO DE RPG (Sinergias) ---
+        float velMaxAtual = velocidadeMaximaBase;
+        float acelAtual = aceleracaoBase;
+        float gripAtual = aderenciaBase;
 
-        Collider2D[] hits = Physics2D.OverlapBoxAll(destinoCaixa, tamanhoCaixaSensor, 0f);
-        isTouchingWall = false;
-
-        foreach (Collider2D hit in hits)
+        if (terrenoAtual == "Lama")
         {
-            if (hit.CompareTag("Parede"))
+            if (tipoBot == TipoBot.Crawler)
             {
-                isTouchingWall = true;
-                break;
+                velMaxAtual *= 1.3f; acelAtual *= 1.3f;
+                gripAtual = Mathf.Clamp01(gripAtual + 0.3f);
+            }
+            else if (tipoBot == TipoBot.Slider)
+            {
+                velMaxAtual *= 0.3f; acelAtual *= 0.2f;
+                gripAtual = Mathf.Clamp01(gripAtual - 0.4f);
+            }
+            else if (tipoBot == TipoBot.Aerial)
+            {
+                velMaxAtual *= 0.7f; acelAtual *= 0.7f;
             }
         }
-    }
-
-    private bool DetectarBuraco()
-    {
-        // 1. A origem do raio agora é no CENTRO do robô (barriga), não mais no pé.
-        float centroX = col.bounds.center.x;
-        float centroY = col.bounds.center.y;
-
-        Vector2 origem = new Vector2(centroX + (avancoOlhoBuraco * moveDirection), centroY);
-
-        // 2. A distância do raio é a metade da altura do robô (do centro até o pé) + uma margem de segurança
-        // O valor 0.8f é a tolerância. Se a descida for MUITO íngreme, vocês podem aumentar para 1.0f ou mais.
-        float distanciaRaio = col.bounds.extents.y + 0.8f;
-
-        RaycastHit2D hit = Physics2D.Raycast(origem, Vector2.down, distanciaRaio);
-
-        if (hit.collider == null || !hit.collider.CompareTag("Pista"))
+        else if (terrenoAtual == "Gelo")
         {
-            return true;
+            if (tipoBot == TipoBot.Slider)
+            {
+                velMaxAtual *= 1.4f; acelAtual *= 1.4f;
+                gripAtual = Mathf.Clamp01(gripAtual + 0.3f);
+            }
+            else if (tipoBot == TipoBot.Crawler)
+            {
+                velMaxAtual *= 0.3f; acelAtual *= 0.2f;
+                gripAtual = Mathf.Clamp01(gripAtual - 0.4f);
+            }
+            else if (tipoBot == TipoBot.Aerial)
+            {
+                velMaxAtual *= 0.7f; acelAtual *= 0.7f;
+            }
         }
-        return false;
+
+        // Passiva do Aerial
+        if (tipoBot == TipoBot.Aerial)
+        {
+            velMaxAtual *= 1.15f;
+            acelAtual *= 1.10f;
+            if (terrenoAtual == "Lama" || terrenoAtual == "Gelo") gripAtual += 0.1f;
+        }
+
+        // Debuff do Fogo
+        if (debuffFogoTimer > 0)
+        {
+            debuffFogoTimer -= Time.fixedDeltaTime;
+            velMaxAtual *= 0.5f;
+            acelAtual *= 0.5f;
+        }
+
+        // --- APLICAÇÃO FÍSICA ---
+        if (Mathf.Abs(rb.linearVelocity.x) < velMaxAtual)
+        {
+            rb.AddForce(new Vector2(moveDirection * acelAtual, 0), ForceMode2D.Force);
+        }
+
+        // Clamp de Velocidade
+        if (Mathf.Abs(rb.linearVelocity.x) > velMaxAtual)
+        {
+            float velXSuave = Mathf.Lerp(rb.linearVelocity.x, velMaxAtual * Mathf.Sign(rb.linearVelocity.x), 0.1f);
+            rb.linearVelocity = new Vector2(velXSuave, rb.linearVelocity.y);
+        }
     }
 
+    // --- TRIGGERS DOS TERRENOS ---
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Lama")) terrenoAtual = "Lama";
+        if (collision.CompareTag("Gelo")) terrenoAtual = "Gelo";
+
+        if (collision.CompareTag("Fogo"))
+        {
+            stunTimer = Mathf.Lerp(1.2f, 0.1f, durabilidadeBase);
+            debuffFogoTimer = 3.0f;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Lama") || collision.CompareTag("Gelo")) terrenoAtual = "Normal";
+    }
+
+    // --- MÉTODOS DE AÇÃO ---
     private void PuloNormal()
     {
+        float impulsoFinal = (tipoBot == TipoBot.Aerial) ? forcaPulo * 1.3f : forcaPulo;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-        rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+        rb.AddForce(Vector2.up * impulsoFinal, ForceMode2D.Impulse);
+    }
+
+    private bool DevePularDoTerreno()
+    {
+        // Fogo queima todo mundo, então a IA sempre vai tentar pular para sair dele
+        if (terrenoAtual == "Fogo") return true;
+
+        // Se for Slider e pisou na Lama, pula para tentar fugir! (Mas o debuff já aplicou na aterrissagem)
+        if (tipoBot == TipoBot.Slider && terrenoAtual == "Lama") return true;
+
+        // Se for Crawler e pisou no Gelo, pula!
+        if (tipoBot == TipoBot.Crawler && terrenoAtual == "Gelo") return true;
+
+        // Se for Aerial, ele odeia tocar o chão em áreas ruins, então tenta pular sempre que tocar em Lama ou Gelo
+        if (tipoBot == TipoBot.Aerial && (terrenoAtual == "Lama" || terrenoAtual == "Gelo")) return true;
+
+        // Se for Pista normal (ou um terreno que a IA gosta), não pula.
+        return false;
     }
 
     private void WallJump()
     {
-        rb.linearVelocity = Vector2.zero;
-
-        // A IA inverte a própria vontade de andar (para quicar de uma parede para a outra no corredor)
         moveDirection = moveDirection * -1;
+        float puloYFinal = (tipoBot == TipoBot.Aerial) ? forcaWallJumpY * 1.2f : forcaWallJumpY;
+        float puloXFinal = (tipoBot == TipoBot.Aerial) ? forcaWallJumpX * 1.2f : forcaWallJumpX;
 
-        rb.AddForce(new Vector2(moveDirection * forcaWallJumpX, forcaWallJumpY), ForceMode2D.Impulse);
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(new Vector2(moveDirection * puloXFinal, puloYFinal), ForceMode2D.Impulse);
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    // --- SENSORES E COLISÕES (MANTIDOS) ---
+    private void VerificarAmbiente()
     {
-        if (collision.contacts[0].normal.y > 0.5f) isGrounded = true;
+        Vector2 centro = col.bounds.center;
+        Vector2 destinoCaixa = centro + (new Vector2(moveDirection, 0) * (col.bounds.extents.x + distanciaSensorFrente));
+        Collider2D[] hits = Physics2D.OverlapBoxAll(destinoCaixa, tamanhoCaixaSensor, 0f);
+        isTouchingWall = false;
+        foreach (Collider2D hit in hits) { if (hit.CompareTag("Parede")) { isTouchingWall = true; break; } }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private bool DetectarBuraco()
     {
-        isGrounded = false;
+        float centroX = col.bounds.center.x;
+        float centroY = col.bounds.center.y;
+        Vector2 origem = new Vector2(centroX + (avancoOlhoBuraco * moveDirection), centroY);
+        float distanciaRaio = col.bounds.extents.y + 0.8f;
+
+        RaycastHit2D hit = Physics2D.Raycast(origem, Vector2.down, distanciaRaio);
+
+        // Se não bater em NADA, é literalmente um buraco mortal. Pode pular!
+        if (hit.collider == null) return true;
+
+        // Se bateu em algo, confere se é o cenário do jogo. Se não for nenhuma dessas 4 tags 
+        // (ex: bateu num inimigo ou enfeite), pula por segurança.
+        string tag = hit.collider.tag;
+        if (tag != "Pista" && tag != "Lama" && tag != "Gelo" && tag != "Fogo")
+        {
+            return true;
+        }
+
+        return false;
     }
+
+    private void OnCollisionStay2D(Collision2D collision) { if (collision.contacts[0].normal.y > 0.5f) isGrounded = true; }
+    private void OnCollisionExit2D(Collision2D collision) { isGrounded = false; }
 
     private void OnDrawGizmos()
     {
         if (col == null) col = GetComponent<CapsuleCollider2D>();
         if (col == null) return;
 
-        // Desenha a caixa sensora de parede (Azul/Verde)
         Vector2 centro = col.bounds.center;
         Vector2 destinoCaixa = centro + (new Vector2(moveDirection, 0) * (col.bounds.extents.x + distanciaSensorFrente));
         Gizmos.color = isTouchingWall ? Color.green : Color.blue;
         Gizmos.DrawWireCube(destinoCaixa, tamanhoCaixaSensor);
 
-        // Desenha o sensor de buraco CORRIGIDO (Amarelo)
         float centroX = col.bounds.center.x;
         float centroY = col.bounds.center.y;
         Vector2 origemBuraco = new Vector2(centroX + (avancoOlhoBuraco * moveDirection), centroY);
-
-        float distanciaRaio = col.bounds.extents.y + 0.8f; // Mesma matemática do método acima
-
+        float distanciaRaio = col.bounds.extents.y + 0.8f;
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(origemBuraco, origemBuraco + (Vector2.down * distanciaRaio));
     }

@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 729457916}
   m_Layer: 0
   m_Name: Fogo
-  m_TagString: Gelo
+  m_TagString: Fogo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987056b60a3f61d4c9e5bd621cb0411e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedBotMovment
-  tipoBot: 2
+  tipoBot: 1
   aderenciaBase: 0.3
   durabilidadeBase: 0.5
   velocidadeMaximaBase: 15
@@ -3125,8 +3125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7b38ce8a373a640849f19c42d61d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedBotIA
-  velocidadeMaxima: 14
-  aceleracao: 25
+  tipoBot: 2
+  aderenciaBase: 0.5
+  durabilidadeBase: 0.5
+  velocidadeMaximaBase: 14
+  aceleracaoBase: 25
   forcaPulo: 12
   forcaWallJumpY: 14
   forcaWallJumpX: 4
