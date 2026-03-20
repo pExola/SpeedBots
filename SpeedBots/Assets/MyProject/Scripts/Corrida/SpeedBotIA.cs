@@ -37,6 +37,8 @@ public class SpeedBotIA : MonoBehaviour
     private string terrenoAtual = "Normal";
     private float stunTimer = 0f;
     private float debuffFogoTimer = 0f;
+    private float multiplicadorNitro = 1f;
+    private float nitroTimer = 0f;
 
     void Awake()
     {
@@ -140,6 +142,18 @@ public class SpeedBotIA : MonoBehaviour
             acelAtual *= 0.5f;
         }
 
+        // 6. Efeito do Nitrogênio
+        if (nitroTimer > 0)
+        {
+            nitroTimer -= Time.fixedDeltaTime;
+            velMaxAtual *= multiplicadorNitro;
+            acelAtual *= multiplicadorNitro;
+        }
+        else
+        {
+            multiplicadorNitro = 1f;
+        }
+
         // --- APLICAÇÃO FÍSICA ---
         if (Mathf.Abs(rb.linearVelocity.x) < velMaxAtual)
         {
@@ -239,6 +253,33 @@ public class SpeedBotIA : MonoBehaviour
         }
 
         return false;
+    }
+
+    // --- MÉTODOS PÚBLICOS DE COMBATE ---
+    public void AtivarNitro(float forca, float duracao)
+    {
+        multiplicadorNitro = forca;
+        nitroTimer = duracao;
+    }
+
+    public void TomarStunDeItem(float tempoBase)
+    {
+        // A durabilidadeBase do seu RPG reduz o tempo da armadilha!
+        stunTimer = Mathf.Lerp(tempoBase, tempoBase * 0.2f, durabilidadeBase);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.3f, rb.linearVelocity.y); // Freia 70% na hora
+    }
+
+    public void SofrerPuxao(float forcaPuxao, float direcaoX)
+    {
+        rb.linearVelocity = Vector2.zero; // Quebra o momentum atual
+        rb.AddForce(new Vector2(direcaoX * forcaPuxao, 4f), ForceMode2D.Impulse); // Puxa brutalmente e levanta um pouco
+    }
+
+    // Retorna a direção para o Gancho saber para onde atirar
+    public float GetDirecaoOlhar()
+    {
+        // No Player, troque 'moveDirection' por 'lastMoveDirection'
+        return moveDirection;
     }
 
     private void OnCollisionStay2D(Collision2D collision) { if (collision.contacts[0].normal.y > 0.5f) isGrounded = true; }

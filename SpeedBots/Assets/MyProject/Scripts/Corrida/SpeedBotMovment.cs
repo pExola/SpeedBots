@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 public class SpeedBotMovment : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class SpeedBotMovment : MonoBehaviour
     private string terrenoAtual = "Normal";
     private float stunTimer = 0f;
     private float debuffFogoTimer = 0f;
+    private float multiplicadorNitro = 1f;
+    private float nitroTimer = 0f;
 
     void Awake()
     {
@@ -141,6 +144,18 @@ public class SpeedBotMovment : MonoBehaviour
             acelAtual *= 0.5f;
         }
 
+        // 6. Efeito do Nitrogênio
+        if (nitroTimer > 0)
+        {
+            nitroTimer -= Time.fixedDeltaTime;
+            velMaxAtual *= multiplicadorNitro;
+            acelAtual *= multiplicadorNitro;
+        }
+        else
+        {
+            multiplicadorNitro = 1f;
+        }
+
         // --- FIM DO CÁLCULO DE RPG ---
 
         // Leitura de Input e Aplicação Física
@@ -192,21 +207,18 @@ public class SpeedBotMovment : MonoBehaviour
 
     private void PuloNormal()
     {
-        // Se for Aerial, o pulo é 30% mais forte!
         float impulsoFinal = (tipoBot == TipoBot.Aerial) ? forcaPulo * 1.3f : forcaPulo;
-
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-        rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+        rb.AddForce(Vector2.up * impulsoFinal, ForceMode2D.Impulse);
     }
 
     private void WallJump()
     {
-        // O WallJump do Aerial também joga ele mais alto e mais longe (20% de bônus)
         float puloYFinal = (tipoBot == TipoBot.Aerial) ? forcaWallJumpY * 1.2f : forcaWallJumpY;
         float puloXFinal = (tipoBot == TipoBot.Aerial) ? forcaWallJumpX * 1.2f : forcaWallJumpX;
 
         rb.linearVelocity = Vector2.zero;
-        rb.AddForce(new Vector2(lastMoveDirection * forcaWallJumpX, forcaWallJumpY), ForceMode2D.Impulse);
+        rb.AddForce(new Vector2(lastMoveDirection * puloXFinal, puloYFinal), ForceMode2D.Impulse); 
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -235,6 +247,33 @@ public class SpeedBotMovment : MonoBehaviour
             debuffFogoTimer = 3.0f; // O robô fica manco por 3 segundos
             Debug.Log($"FOGO! Stun de {stunTimer}s aplicado.");
         }
+    }
+
+    // --- MÉTODOS PÚBLICOS DE COMBATE ---
+    public void AtivarNitro(float forca, float duracao)
+    {
+        multiplicadorNitro = forca;
+        nitroTimer = duracao;
+    }
+
+    public void TomarStunDeItem(float tempoBase)
+    {
+        // A durabilidadeBase do seu RPG reduz o tempo da armadilha!
+        stunTimer = Mathf.Lerp(tempoBase, tempoBase * 0.2f, durabilidadeBase);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.3f, rb.linearVelocity.y); // Freia 70% na hora
+    }
+
+    public void SofrerPuxao(float forcaPuxao, float direcaoX)
+    {
+        rb.linearVelocity = Vector2.zero; // Quebra o momentum atual
+        rb.AddForce(new Vector2(direcaoX * forcaPuxao, 4f), ForceMode2D.Impulse); // Puxa brutalmente e levanta um pouco
+    }
+
+    // Retorna a direção para o Gancho saber para onde atirar
+    public float GetDirecaoOlhar()
+    {
+        // No Player, troque 'moveDirection' por 'lastMoveDirection'
+        return lastMoveDirection;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
