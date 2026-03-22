@@ -39,6 +39,7 @@ public class SpeedBotIA : MonoBehaviour
     private float debuffFogoTimer = 0f;
     private float multiplicadorNitro = 1f;
     private float nitroTimer = 0f;
+    private float debuffGanchoTimer = 0f;
 
     void Awake()
     {
@@ -152,6 +153,14 @@ public class SpeedBotIA : MonoBehaviour
         else
         {
             multiplicadorNitro = 1f;
+        }
+
+        // Debuff do Gancho (Reduz drasticamente a velocidade e aceleração)
+        if (debuffGanchoTimer > 0)
+        {
+            debuffGanchoTimer -= Time.fixedDeltaTime;
+            velMaxAtual *= 0.4f; // Fica só com 40% da velocidade
+            acelAtual *= 0.4f;
         }
 
         // --- APLICAÇÃO FÍSICA ---
@@ -269,10 +278,13 @@ public class SpeedBotIA : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.3f, rb.linearVelocity.y); // Freia 70% na hora
     }
 
-    public void SofrerPuxao(float forcaPuxao, float direcaoX)
+    public void SofrerPuxao(float forcaPuxao, float direcaoX, float tempoDebuff)
     {
-        rb.linearVelocity = Vector2.zero; // Quebra o momentum atual
-        rb.AddForce(new Vector2(direcaoX * forcaPuxao, 4f), ForceMode2D.Impulse); // Puxa brutalmente e levanta um pouco
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(new Vector2(direcaoX * forcaPuxao, 4f), ForceMode2D.Impulse);
+
+        // Aplica o tempo de lentidão no motor!
+        debuffGanchoTimer = tempoDebuff;
     }
 
     // Retorna a direção para o Gancho saber para onde atirar

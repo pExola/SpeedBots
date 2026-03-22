@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class SpeedBotProgression : MonoBehaviour
 {
-    [Header("Progresso")]
+    [Header("Progresso do RPG")]
     public int nivel = 1;
+    public int nivelMaximo = 20;
     public float currentXP = 0;
     public float xpToNextLevel = 100;
 
-    [Header("Ganhos por Nível")]
-    public float ganhoVelocidadePorNivel = 2f;
-    public float ganhoAceleracaoPorNivel = 5f;
+    [Header("Física (Oculto do Jogador)")]
+    public float velocidadeInicial = 10f;
+    public float aceleracaoInicial = 12f;
+
+    // Limites absolutos calculados para o Nível 20 (Faz a UI bater 100%)
+    private float velMaximaPossivel = 29f;
+    private float acelMaximaPossivel = 38.5f;
 
     private SpeedBotMovment movementScript;
 
@@ -19,36 +24,64 @@ public class SpeedBotProgression : MonoBehaviour
         AtualizarAtributosNoMotor();
     }
 
-    // Pega os status atuais para a UI mostrar
-    public float GetVelocidadeAtual() { return movementScript.velocidadeMaximaBase; }
-    public float GetAceleracaoAtual() { return movementScript.aceleracaoBase; }
-
-    public void AtualizarAtributosNoMotor()
+    // --- MÉTODOS PARA A UI (100% Visual) ---
+    public int GetStatusVelocidade()
     {
-        // A base é o nível 1. A cada nível extra, ele soma os ganhos.
-        movementScript.velocidadeMaximaBase = 15f + ((nivel - 1) * ganhoVelocidadePorNivel);
-        movementScript.aceleracaoBase = 30f + ((nivel - 1) * ganhoAceleracaoPorNivel);
+        return Mathf.RoundToInt((movementScript.velocidadeMaximaBase / velMaximaPossivel) * 100f);
     }
 
+    public int GetStatusAceleracao()
+    {
+        return Mathf.RoundToInt((movementScript.aceleracaoBase / acelMaximaPossivel) * 100f);
+    }
+
+    // --- APLICAÇÃO REAL NA FÍSICA (As 3 Fases de Nivelamento) ---
+    public void AtualizarAtributosNoMotor()
+    {
+        float velAtual = velocidadeInicial;
+        float acelAtual = aceleracaoInicial;
+
+        // Fase 1 (Até o Nível 5): Ganha +2.0
+        // São no máximo 4 'level ups' possíveis nesta fase
+        int niveisFase1 = Mathf.Clamp(nivel - 1, 0, 4);
+        velAtual += niveisFase1 * 2f;
+        acelAtual += niveisFase1 * 2f;
+
+        // Fase 2 (Nível 6 ao 12): Ganha +1.0 Vel / +1.5 Acel
+        // São no máximo 7 'level ups' possíveis nesta fase
+        int niveisFase2 = Mathf.Clamp(nivel - 5, 0, 7);
+        velAtual += niveisFase2 * 1f;
+        acelAtual += niveisFase2 * 1.5f;
+
+        // Fase 3 (Nível 13 ao 20): Ganha +0.5 Vel / +1.0 Acel
+        // São no máximo 8 'level ups' possíveis nesta fase
+        int niveisFase3 = Mathf.Clamp(nivel - 12, 0, 8);
+        velAtual += niveisFase3 * 0.5f;
+        acelAtual += niveisFase3 * 1f;
+
+        // Aplica os valores finais na física do motor
+        movementScript.velocidadeMaximaBase = velAtual;
+        movementScript.aceleracaoBase = acelAtual;
+    }
+
+    // --- SISTEMA DE XP ---
     public void AdicionarXP(float valor)
     {
-        currentXP += valor;
-        Debug.Log($"Ganhou {valor} XP! Total: {currentXP}/{xpToNextLevel}");
+        if (nivel >= nivelMaximo) return;
 
-        if (currentXP >= xpToNextLevel)
-        {
-            SubirDeNivel();
-        }
+        currentXP += valor;
+        if (currentXP >= xpToNextLevel) SubirDeNivel();
     }
 
     private void SubirDeNivel()
     {
         nivel++;
-        currentXP -= xpToNextLevel; // Guarda o XP que sobrou
-        xpToNextLevel = xpToNextLevel * 1.5f; // O próximo nível exige mais XP
+        currentXP -= xpToNextLevel;
+        xpToNextLevel *= 1.5f;
+
+        if (nivel > nivelMaximo) nivel = nivelMaximo;
 
         AtualizarAtributosNoMotor();
-        Debug.Log($"LEVEL UP! Nível {nivel} alcançado!");
     }
 
 }

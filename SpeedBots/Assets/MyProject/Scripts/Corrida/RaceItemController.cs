@@ -26,7 +26,6 @@ public class RaceItemController : MonoBehaviour
     {
         if (ehJogador)
         {
-            // O jogador usa o item no SHIFT
             if (Keyboard.current != null && Keyboard.current.shiftKey.wasPressedThisFrame)
             {
                 UsarItem();
@@ -34,11 +33,31 @@ public class RaceItemController : MonoBehaviour
         }
         else
         {
-            // Lógica simples da IA: se pegar um item, usa ele depois de 1 a 3 segundos
             if (itemGuardado != TipoItem.Nenhum)
             {
-                tempoParaIAUsarItem -= Time.deltaTime;
-                if (tempoParaIAUsarItem <= 0) UsarItem();
+                // INTELIGÊNCIA ARTIFICIAL: Se a arma for o Gancho, ela age como um franco-atirador
+                if (itemGuardado == TipoItem.Gancho)
+                {
+                    float direcao = motorIA.GetDirecaoOlhar();
+                    CapsuleCollider2D col = GetComponent<CapsuleCollider2D>();
+                    float offset = (col != null) ? col.bounds.extents.x + 0.5f : 1.0f;
+                    Vector2 origem = new Vector2(transform.position.x + (direcao * offset), transform.position.y);
+
+                    // A IA fica "olhando" para frente o tempo todo
+                    RaycastHit2D hit = Physics2D.Raycast(origem, new Vector2(direcao, 0), 15f);
+
+                    // Se o raio bater em você (Player), ela puxa o gatilho na hora!
+                    if (hit.collider != null && hit.collider.CompareTag("Player"))
+                    {
+                        UsarItem();
+                    }
+                }
+                else
+                {
+                    // Se for Nitro ou Armadilha, ela usa a contagem regressiva normal
+                    tempoParaIAUsarItem -= Time.deltaTime;
+                    if (tempoParaIAUsarItem <= 0) UsarItem();
+                }
             }
         }
     }
@@ -81,43 +100,30 @@ public class RaceItemController : MonoBehaviour
 
     private void AtirarGancho(float direcao)
     {
-        // 1. Descobre o tamanho do robô para atirar o gancho pelo "ombro" dele, e não de dentro da barriga
         CapsuleCollider2D col = GetComponent<CapsuleCollider2D>();
         float offset = (col != null) ? col.bounds.extents.x + 0.5f : 1.0f;
 
         Vector2 origem = new Vector2(transform.position.x + (direcao * offset), transform.position.y);
         float alcance = 15f;
 
-        // 2. Lança o raio invisível
         RaycastHit2D hit = Physics2D.Raycast(origem, new Vector2(direcao, 0), alcance);
-
-        // 3. MÁGICA VISUAL: Desenha uma linha vermelha na aba SCENE por 2 segundos para vocês VEREM o tiro
         Debug.DrawRay(origem, new Vector2(direcao * alcance, 0), Color.magenta, 2f);
 
         if (hit.collider != null)
         {
-            Debug.Log($"[GANCHO] O tiro pegou em: {hit.collider.name} (Tag: {hit.collider.tag})");
-
             SpeedBotMovment vitimaPlayer = hit.collider.GetComponent<SpeedBotMovment>();
             SpeedBotIA vitimaIA = hit.collider.GetComponent<SpeedBotIA>();
 
+            // Adicionamos o 1.5f (os segundos do debuff) na chamada do Puxão
             if (vitimaPlayer != null && !ehJogador)
             {
-                Debug.Log("[GANCHO] Sucesso! A IA puxou o Player!");
-                vitimaPlayer.SofrerPuxao(20f, -direcao);
+                vitimaPlayer.SofrerPuxao(20f, -direcao, 1.5f);
             }
             else if (vitimaIA != null && ehJogador)
             {
-                Debug.Log("[GANCHO] Sucesso! O Player puxou a IA!");
-                vitimaIA.SofrerPuxao(20f, -direcao);
-
-                // Dá um pequeno bônus de velocidade para o Player que acertou o tiro
+                vitimaIA.SofrerPuxao(20f, -direcao, 1.5f);
                 if (motorPlayer != null) motorPlayer.AtivarNitro(1.3f, 1f);
             }
-        }
-        else
-        {
-            Debug.Log("[GANCHO] O gancho foi atirado, mas não acertou nada (bateu no vento).");
         }
     }
 }

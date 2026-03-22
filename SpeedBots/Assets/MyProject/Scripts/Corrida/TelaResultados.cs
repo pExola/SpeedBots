@@ -15,8 +15,8 @@ public class TelaResultados : MonoBehaviour
             textoResultados.text = "<color=green>VITÓRIA!</color>\n\n" +
                                    $"+100 XP\n" +
                                    $"Nível Atual: {playerStats.nivel}\n" +
-                                   $"Velocidade: {playerStats.GetVelocidadeAtual()}\n" +
-                                   $"Aceleração: {playerStats.GetAceleracaoAtual()}";
+                                   $"Velocidade: {playerStats.GetStatusVelocidade()}/100\n" +
+                                   $"Aceleração: {playerStats.GetStatusAceleracao()}/100";
         }
         else
         {

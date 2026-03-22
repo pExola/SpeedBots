@@ -11,8 +11,8 @@ public class HUDManager : MonoBehaviour
         if (playerStats != null)
         {
             statsText.text = $"Nível: {playerStats.nivel}\n" +
-                             $"Velocidade: {playerStats.GetVelocidadeAtual()}\n" +
-                             $"Aceleração: {playerStats.GetAceleracaoAtual()}";
+                             $"Velocidade: {playerStats.GetStatusVelocidade()}/100\n" +
+                             $"Aceleração: {playerStats.GetStatusAceleracao()}/100";
         }
     }
 }
