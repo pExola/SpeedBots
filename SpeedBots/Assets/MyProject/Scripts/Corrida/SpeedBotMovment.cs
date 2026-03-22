@@ -8,18 +8,20 @@ public class SpeedBotMovment : MonoBehaviour
     [Header("Identidade do Chassi")]
     public TipoBot tipoBot;
 
-    [Tooltip("Crawler = 0.9 | Aerial = 0.5 | Slider = 0.1")]
-    [Range(0f, 1f)] public float aderenciaBase = 0.5f;
+    [Tooltip("Crawler = 0.2 | Aerial = 0.5 | Slider = 0.9")]
+    [Range(0f, 1f)] public float arrancadaBase = 0.5f;
 
-    [Tooltip("Crawler = 0.9 | Aerial = 0.5 | Slider = 0.1")]
+    [Tooltip("Crawler = 0.9 | Aerial = 0.5 | Slider = 0.2")]
     [Range(0f, 1f)] public float durabilidadeBase = 0.5f;
 
-    [Header("Atributos Base do Motor")]
-    public float velocidadeMaximaBase = 15f;
-    public float aceleracaoBase = 30f;
-    public float forcaPulo = 12f;
+    [Header("Atributos do Motor (Controlados pela Progressão)")]
+    // Estes valores agora começam invisíveis no Inspector para não confundir, 
+    // pois o SpeedBotProgression que vai preenchê-los.
+    [HideInInspector] public float velocidadeMaximaBase = 15f;
+    [HideInInspector] public float aceleracaoBase = 30f;
 
     [Header("Parkour")]
+    public float forcaPulo = 12f;
     public float forcaWallJumpY = 14f;
     public float forcaWallJumpX = 4f;
     public float distanciaSensor = 0.1f;
@@ -31,13 +33,17 @@ public class SpeedBotMovment : MonoBehaviour
     private bool isTouchingWall;
     private float lastMoveDirection = 1f;
 
-    // --- VARIÁVEIS DE ESTADO (RPG) ---
+    // --- VARIÁVEIS DE ESTADO ---
     private string terrenoAtual = "Normal";
     private float stunTimer = 0f;
     private float debuffFogoTimer = 0f;
+    private float debuffGanchoTimer = 0f;
     private float multiplicadorNitro = 1f;
     private float nitroTimer = 0f;
-    private float debuffGanchoTimer = 0f;
+
+    // --- NOVO: Controle de Arrancada ---
+    private float tempoAcelerando = 0f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -65,111 +71,127 @@ public class SpeedBotMovment : MonoBehaviour
 
     void FixedUpdate()
     {
-        // 1. Controle de Tempo no Ar (Passiva do Aerial)
-
-        // 2. Controle de Stun (Perda de controle total, mas sem ser jogado para trás)
         if (stunTimer > 0)
         {
             stunTimer -= Time.fixedDeltaTime;
-            // Fricção forte para parar o robô no lugar enquanto está atordoado
             rb.linearVelocity = new Vector2(rb.linearVelocity.x * 0.8f, rb.linearVelocity.y);
+            tempoAcelerando = 0f; // Zera a arrancada se tomar stun
             return;
+        }
+
+        float moveInput = 0f;
+        if (Keyboard.current != null)
+        {
+            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) moveInput = 1f;
+            if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) moveInput = -1f;
         }
 
         // --- INÍCIO DO CÁLCULO DE RPG ---
         float velMaxAtual = velocidadeMaximaBase;
         float acelAtual = aceleracaoBase;
-        float gripAtual = aderenciaBase;
         float friccao = 0.9f;
 
-        // 3. Sinergias de Terreno (A Pedra, Papel e Tesoura)
+        if (moveInput != 0 && isGrounded)
+        {
+            tempoAcelerando += Time.fixedDeltaTime;
+            if (tempoAcelerando <= 2.0f)
+            {
+                // MÁGICA DO GAME FEEL:
+                // Arrancada 0.0 (Slider Nível 1) = Aceleração x1.2 e Velocidade x1.0
+                // Arrancada 1.0 (Slider Nível 20) = Aceleração x3.0 e Velocidade x1.3 (Ele ultrapassa o limite físico!)
+                float bonusAcel = Mathf.Lerp(1.2f, 3.0f, arrancadaBase);
+                float bonusVel = Mathf.Lerp(1.0f, 1.3f, arrancadaBase);
+
+                acelAtual *= bonusAcel;
+                velMaxAtual *= bonusVel;
+            }
+        }
+        else if (moveInput == 0)
+        {
+            tempoAcelerando = 0f; // Soltou o botão, reseta a arrancada
+        }
+
+        // 2. Sinergias de Terreno e a NOVA Durabilidade Extrema
         if (terrenoAtual == "Lama")
         {
             if (tipoBot == TipoBot.Crawler)
             {
-                velMaxAtual *= 1.3f; // Buff forte
-                acelAtual *= 1.3f;
-                gripAtual = Mathf.Clamp01(gripAtual + 0.3f);
+                velMaxAtual *= 1.3f; acelAtual *= 1.3f;
             }
-            else if (tipoBot == TipoBot.Slider)
+            else if (tipoBot == TipoBot.Slider || tipoBot == TipoBot.Aerial)
             {
-                velMaxAtual *= 0.3f; // Nerf pesado
-                acelAtual *= 0.2f;
-                gripAtual = Mathf.Clamp01(gripAtual - 0.4f);
-            }
-            else if (tipoBot == TipoBot.Aerial)
-            {
-                velMaxAtual *= 0.7f; // Nerf leve
-                acelAtual *= 0.7f;
+                // Durabilidade 0.0 = Cai para 20% da velocidade (quase atola)
+                // Durabilidade 1.0 = Segura 85% da velocidade (passa rasgando)
+                float retencaoStatus = Mathf.Lerp(0.2f, 0.85f, durabilidadeBase);
+                velMaxAtual *= retencaoStatus;
+                acelAtual *= (retencaoStatus - 0.1f);
             }
         }
         else if (terrenoAtual == "Gelo")
         {
-            friccao = 0.99f; // Gelo sempre escorrega
+            friccao = 0.99f;
             if (tipoBot == TipoBot.Slider)
             {
-                velMaxAtual *= 1.4f; // Buff forte
-                acelAtual *= 1.4f;
-                gripAtual = Mathf.Clamp01(gripAtual + 0.3f);
+                velMaxAtual *= 1.4f; acelAtual *= 1.4f;
             }
-            else if (tipoBot == TipoBot.Crawler)
+            else if (tipoBot == TipoBot.Crawler || tipoBot == TipoBot.Aerial)
             {
-                velMaxAtual *= 0.3f; // Nerf pesado
-                acelAtual *= 0.2f;
-                gripAtual = Mathf.Clamp01(gripAtual - 0.4f);
-            }
-            else if (tipoBot == TipoBot.Aerial)
-            {
-                velMaxAtual *= 0.7f; // Nerf leve
-                acelAtual *= 0.7f;
+                float retencaoStatus = Mathf.Lerp(0.2f, 0.85f, durabilidadeBase);
+                velMaxAtual *= retencaoStatus;
+                acelAtual *= (retencaoStatus - 0.1f);
             }
         }
 
-        // 4. Buff do Aerial (Voo prolongado)
+        // ... (Debuffs de Fogo, Gancho e Nitro continuam iguais aqui no meio) ...
+
+        // --- APLICAÇÃO FÍSICA E RAMPAS ---
+
+        // DURABILIDADE NAS RAMPAS (Subidas pesadas):
+        if (rb.linearVelocity.y > 0.5f && isGrounded)
+        {
+            // Durabilidade 0.0 = Perde 70% da força do motor na subida
+            // Durabilidade 1.0 = Ignora a subida (100% de força)
+            float penalidadeRampa = Mathf.Lerp(0.3f, 1.0f, durabilidadeBase);
+            acelAtual *= penalidadeRampa;
+        }
+
+        // Passiva do Aerial
         if (tipoBot == TipoBot.Aerial)
         {
-            // Ganha 15% a mais de Velocidade Final e 10% de Aceleração em qualquer terreno
             velMaxAtual *= 1.15f;
             acelAtual *= 1.10f;
-
-            // Leve compensação de aderência (ele "flutua" um pouco sobre o terreno ruim)
-            if (terrenoAtual == "Lama" || terrenoAtual == "Gelo") gripAtual += 0.1f;
         }
 
-        // 5. Debuff do Fogo (Reduz status após passar pelo fogo)
+        // 3. Debuffs de Combate e Nitro
         if (debuffFogoTimer > 0)
         {
             debuffFogoTimer -= Time.fixedDeltaTime;
-            velMaxAtual *= 0.5f; // Corta na metade
-            acelAtual *= 0.5f;
+            velMaxAtual *= 0.5f; acelAtual *= 0.5f;
         }
 
-        // 6. Efeito do Nitrogênio
+        if (debuffGanchoTimer > 0)
+        {
+            debuffGanchoTimer -= Time.fixedDeltaTime;
+            velMaxAtual *= 0.4f; acelAtual *= 0.4f;
+        }
+
         if (nitroTimer > 0)
         {
             nitroTimer -= Time.fixedDeltaTime;
             velMaxAtual *= multiplicadorNitro;
             acelAtual *= multiplicadorNitro;
         }
-        else
+        else { multiplicadorNitro = 1f; }
+
+        // --- APLICAÇÃO FÍSICA ---
+        // A NOVA DURABILIDADE EM RAMPAS (Subidas):
+        // Se a velocidade Y for positiva (subindo), aplicamos uma pequena resistência à aceleração,
+        // mas robôs com alta durabilidade (como o Crawler) ignoram isso.
+        if (rb.linearVelocity.y > 0.5f && isGrounded)
         {
-            multiplicadorNitro = 1f;
+            float penalidadeRampa = Mathf.Lerp(0.7f, 1.0f, durabilidadeBase);
+            acelAtual *= penalidadeRampa;
         }
-
-        // Debuff do Gancho (Reduz drasticamente a velocidade e aceleração)
-        if (debuffGanchoTimer > 0)
-        {
-            debuffGanchoTimer -= Time.fixedDeltaTime;
-            velMaxAtual *= 0.4f; // Fica só com 40% da velocidade
-            acelAtual *= 0.4f;
-        }
-
-        // --- FIM DO CÁLCULO DE RPG ---
-
-        // Leitura de Input e Aplicação Física
-        float moveInput = 0f;
-        if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed) moveInput = 1f;
-        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed) moveInput = -1f;
 
         if (Mathf.Abs(rb.linearVelocity.x) < velMaxAtual && moveInput != 0)
         {
@@ -181,7 +203,6 @@ public class SpeedBotMovment : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x * friccao, rb.linearVelocity.y);
         }
 
-        // Clamp para não ultrapassar a velocidade calculada
         if (Mathf.Abs(rb.linearVelocity.x) > velMaxAtual)
         {
             float velXSuave = Mathf.Lerp(rb.linearVelocity.x, velMaxAtual * Mathf.Sign(rb.linearVelocity.x), 0.1f);

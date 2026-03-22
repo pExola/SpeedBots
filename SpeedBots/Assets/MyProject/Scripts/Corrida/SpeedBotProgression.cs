@@ -18,9 +18,22 @@ public class SpeedBotProgression : MonoBehaviour
 
     private SpeedBotMovment movementScript;
 
+    private float arrancadaInicial;
+    private float durabilidadeInicial;
+    private float puloInicial;
+    private float wallJumpYInicial;
+    private float wallJumpXInicial;
     void Awake()
     {
         movementScript = GetComponent<SpeedBotMovment>();
+
+        // Salva quem o robô é no Nível 1 com os novos nomes
+        arrancadaInicial = movementScript.arrancadaBase;
+        durabilidadeInicial = movementScript.durabilidadeBase;
+        puloInicial = movementScript.forcaPulo;
+        wallJumpYInicial = movementScript.forcaWallJumpY;
+        wallJumpXInicial = movementScript.forcaWallJumpX;
+
         AtualizarAtributosNoMotor();
     }
 
@@ -38,30 +51,38 @@ public class SpeedBotProgression : MonoBehaviour
     // --- APLICAÇÃO REAL NA FÍSICA (As 3 Fases de Nivelamento) ---
     public void AtualizarAtributosNoMotor()
     {
-        float velAtual = velocidadeInicial;
-        float acelAtual = aceleracaoInicial;
+        // 1. CALCULADORA DAS 3 FASES
+        // Descobre exatamente quantos "Level Ups" o robô teve em cada fase
+        int niveisFase1 = Mathf.Clamp(nivel - 1, 0, 4);   // Níveis 2 ao 5
+        int niveisFase2 = Mathf.Clamp(nivel - 5, 0, 7);   // Níveis 6 ao 12
+        int niveisFase3 = Mathf.Clamp(nivel - 12, 0, 8);  // Níveis 13 ao 20
 
-        // Fase 1 (Até o Nível 5): Ganha +2.0
-        // São no máximo 4 'level ups' possíveis nesta fase
-        int niveisFase1 = Mathf.Clamp(nivel - 1, 0, 4);
-        velAtual += niveisFase1 * 2f;
-        acelAtual += niveisFase1 * 2f;
+        // 2. APLICAÇÃO NO MOTOR PRINCIPAL (A matemática que você definiu)
+        movementScript.velocidadeMaximaBase = velocidadeInicial
+                                            + (niveisFase1 * 2f)
+                                            + (niveisFase2 * 1f)
+                                            + (niveisFase3 * 0.5f);
 
-        // Fase 2 (Nível 6 ao 12): Ganha +1.0 Vel / +1.5 Acel
-        // São no máximo 7 'level ups' possíveis nesta fase
-        int niveisFase2 = Mathf.Clamp(nivel - 5, 0, 7);
-        velAtual += niveisFase2 * 1f;
-        acelAtual += niveisFase2 * 1.5f;
+        movementScript.aceleracaoBase = aceleracaoInicial
+                                      + (niveisFase1 * 2f)
+                                      + (niveisFase2 * 1.5f)
+                                      + (niveisFase3 * 1f);
 
-        // Fase 3 (Nível 13 ao 20): Ganha +0.5 Vel / +1.0 Acel
-        // São no máximo 8 'level ups' possíveis nesta fase
-        int niveisFase3 = Mathf.Clamp(nivel - 12, 0, 8);
-        velAtual += niveisFase3 * 0.5f;
-        acelAtual += niveisFase3 * 1f;
+        // 3. APLICAÇÃO NA ARRANCADA E DURABILIDADE (Acompanhando as 3 Fases proporcionalmente)
+        // Transformamos os números em percentuais (+2 vira +0.02f)
+        float ganhoArrancada = (niveisFase1 * 0.02f) + (niveisFase2 * 0.015f) + (niveisFase3 * 0.01f);
+        float ganhoDurabilidade = (niveisFase1 * 0.02f) + (niveisFase2 * 0.01f) + (niveisFase3 * 0.005f);
 
-        // Aplica os valores finais na física do motor
-        movementScript.velocidadeMaximaBase = velAtual;
-        movementScript.aceleracaoBase = acelAtual;
+        // Somamos o ganho com a Base Única de cada classe (Lida no Awake)
+        // O Clamp01 garante que o status nunca ultrapasse 1.0 (100% de eficiência)
+        movementScript.arrancadaBase = Mathf.Clamp01(arrancadaInicial + ganhoArrancada);
+        movementScript.durabilidadeBase = Mathf.Clamp01(durabilidadeInicial + ganhoDurabilidade);
+
+        // 4. PARKOUR (Ganhos bem pequenos apenas para compensar a inércia da alta velocidade)
+        float ganhoPulo = (niveisFase1 * 0.2f) + (niveisFase2 * 0.1f) + (niveisFase3 * 0.05f);
+        movementScript.forcaPulo = puloInicial + ganhoPulo;
+        movementScript.forcaWallJumpY = wallJumpYInicial + ganhoPulo;
+        movementScript.forcaWallJumpX = wallJumpXInicial + (ganhoPulo / 2f); // X cresce menos para não voar longe
     }
 
     // --- SISTEMA DE XP ---
