@@ -1236,8 +1236,8 @@ GameObject:
   - component: {fileID: 729457917}
   - component: {fileID: 729457916}
   m_Layer: 0
-  m_Name: Fogo
-  m_TagString: Fogo
+  m_Name: Terreno
+  m_TagString: Lama
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2008,9 +2008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987056b60a3f61d4c9e5bd621cb0411e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedBotMovment
-  tipoBot: 0
-  arrancadaBase: 0.2
-  durabilidadeBase: 0.8
+  tipoBot: 1
+  arrancadaBase: 0.8
+  durabilidadeBase: 0.2
   velocidadeMaximaBase: 8
   aceleracaoBase: 7
   forcaPulo: 12
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e9cadcd1a0e3894b8ee91d6acb8573c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedBotProgression
-  nivel: 5
+  nivel: 20
   nivelMaximo: 20
   currentXP: 0
   xpToNextLevel: 100
@@ -3121,6 +3121,7 @@ GameObject:
   - component: {fileID: 1969856032}
   - component: {fileID: 1969856036}
   - component: {fileID: 1969856037}
+  - component: {fileID: 1969856038}
   m_Layer: 0
   m_Name: IA_SpeedBot
   m_TagString: Inimigo
@@ -3279,8 +3280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpeedBotIA
   tipoBot: 0
-  aderenciaBase: 0.5
-  durabilidadeBase: 0.5
+  arrancadaBase: 0.2
+  durabilidadeBase: 0.8
   velocidadeMaximaBase: 12
   aceleracaoBase: 14
   forcaPulo: 12
@@ -3305,6 +3306,21 @@ MonoBehaviour:
   itemGuardado: 0
   prefabArmadilha: {fileID: 4456486553603200966, guid: 1f1cf493ffb520b4c8bf293af7163686, type: 3}
   ehJogador: 0
+--- !u!114 &1969856038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969856031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c3febf42851574ab00adbd94312d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedBotProgressionIA
+  nivel: 8
+  velocidadeInicial: 10
+  aceleracaoInicial: 12
 --- !u!1 &2123138290
 GameObject:
   m_ObjectHideFlags: 0
