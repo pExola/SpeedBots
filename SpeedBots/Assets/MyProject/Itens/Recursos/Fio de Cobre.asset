@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a2e713878aaa7240956e629bc4ae301, type: 3}
+  m_Name: Fio de Cobre
+  m_EditorClassIdentifier: Assembly-CSharp::PecaSpeedBot
+  nomeDaPeca: Fio de cobre
+  tipoPeca: 3
+  icone: {fileID: 7482667652216324306, guid: bc2861ddab582d8419ca7f510ecab4ca, type: 3}
+  descricao: "Fio padr\xE3o"
+  classe: 0
+  arrancadaBase: 0
+  durabilidadeBase: 0
+  velocidadeMaxima: 0
+  aceleracao: 0
+  habilidadeEspecial: 0

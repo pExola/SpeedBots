@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public enum TipoPeca { Chassi, Motor, Modulo }
+public enum TipoPeca { Chassi, Motor, Modulo, Recurso }
 public enum ClasseChassi { Nenhum, Crawler, Slider, Aerial }
-public enum TipoHabilidade { Nenhuma, Nitro, Gancho, Armadilha } // Baseado nos seus itens de corrida
+public enum TipoHabilidade { Nenhuma, Nitro, Gancho, Armadilha } 
 
-// Isso cria um botão no menu da Unity para você fabricar novas peças facilmente
+// Isso cria um botão no menu da Unity para fabricar novas peças facilmente
 [CreateAssetMenu(fileName = "NovaPeca", menuName = "SpeedBot/Peça de Inventário")]
 public class PecaSpeedBot : ScriptableObject
 {

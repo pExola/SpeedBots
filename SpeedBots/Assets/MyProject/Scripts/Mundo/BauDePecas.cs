@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class BauDePecas : MonoBehaviour, IInteractable
 {
-    [Header("O que tem dentro?")]
-    public PecaSpeedBot pecaEscondida; // Arraste a ficha da peça aqui no Inspector
+    [Header("O que tem dentro? (Pode colocar várias!)")]
+    // O segredo está nestes colchetes []. Eles transformam o slot num array!
+    public PecaSpeedBot[] pecasEscondidas;
 
     private bool jaAberto = false;
 
@@ -12,15 +13,21 @@ public class BauDePecas : MonoBehaviour, IInteractable
         if (jaAberto)
         {
             Debug.Log("[BAÚ] Este baú já está vazio.");
-            // Opcional: Aqui você pode chamar o DialogueManager para dizer "Apenas poeira aqui."
             return;
         }
 
-        if (pecaEscondida != null)
+        // Passa por cada peça da lista e coloca na mochila
+        int itensPegos = 0;
+        foreach (PecaSpeedBot peca in pecasEscondidas)
         {
-            InventarioManager.Instance.AdicionarPeca(pecaEscondida);
-            jaAberto = true;
-            // Opcional: Mudar o sprite do baú para um baú aberto aqui
+            if (peca != null)
+            {
+                InventarioManager.Instance.AdicionarPeca(peca);
+                itensPegos++;
+            }
         }
+
+        jaAberto = true;
+        Debug.Log($"[BAÚ] Baú aberto! Você pegou {itensPegos} itens.");
     }
 }

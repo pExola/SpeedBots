@@ -35,20 +35,31 @@ public class InventarioManager : MonoBehaviour
 
     public void EquiparPeca(PecaSpeedBot peca)
     {
+        // Se a peça não está na mochila, cancela
         if (!pecasGuardadas.Contains(peca)) return;
 
+        // 1. Tira a peça nova da mochila
+        pecasGuardadas.Remove(peca);
+
+        // 2. Equipa a nova e devolve a antiga para a mochila
         switch (peca.tipoPeca)
         {
             case TipoPeca.Chassi:
-                chassiEquipado = peca;
+                if (chassiEquipado != null) pecasGuardadas.Add(chassiEquipado); // Devolve a velha
+                chassiEquipado = peca; // Equipa a nova
                 break;
+
             case TipoPeca.Motor:
+                if (motorEquipado != null) pecasGuardadas.Add(motorEquipado);
                 motorEquipado = peca;
                 break;
+
             case TipoPeca.Modulo:
+                if (moduloEquipado != null) pecasGuardadas.Add(moduloEquipado);
                 moduloEquipado = peca;
                 break;
         }
-        Debug.Log($"<color=yellow>[OFICINA]</color> {peca.nomeDaPeca} foi equipado no SpeedBot!");
+
+        Debug.Log($"<color=yellow>[OFICINA]</color> {peca.nomeDaPeca} foi equipado e a peça antiga voltou pra mochila!");
     }
 }

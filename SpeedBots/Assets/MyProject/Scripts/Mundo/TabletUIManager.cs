@@ -1,7 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using System.Collections.Generic;
 
 public class TabletUIManager : MonoBehaviour
 {
@@ -56,31 +57,63 @@ public class TabletUIManager : MonoBehaviour
 
     private void ConstruirGridDeItens()
     {
-        // 1. Destrói os botões antigos para não duplicar
+        // 1. Destrói os botões antigos
         foreach (Transform filho in gridDeItens)
         {
             Destroy(filho.gameObject);
         }
 
-        // 2. Busca a mochila do jogador (Milestone 2)
         List<PecaSpeedBot> mochila = InventarioManager.Instance.pecasGuardadas;
 
-        // 3. Cria um botão para cada item
+        // 2. MÁGICA DE INVENTÁRIO: Agrupa e conta itens repetidos
+        Dictionary<PecaSpeedBot, int> contagemPecas = new Dictionary<PecaSpeedBot, int>();
         foreach (PecaSpeedBot peca in mochila)
         {
+            if (contagemPecas.ContainsKey(peca)) contagemPecas[peca]++;
+            else contagemPecas[peca] = 1;
+        }
+
+        // 3. Cria um botão único para cada TIPO de peça que existe no Dicionário
+        foreach (var kvp in contagemPecas)
+        {
+            PecaSpeedBot peca = kvp.Key;
+            int quantidade = kvp.Value;
+
             GameObject novoSlot = Instantiate(prefabSlotItem, gridDeItens);
 
-            // Procura a Imagem dentro do Prefab para colocar o ícone da peça
+            // Coloca o Ícone
             Image iconeSlot = novoSlot.transform.Find("Image").GetComponent<Image>();
             if (iconeSlot != null && peca.icone != null)
             {
                 iconeSlot.sprite = peca.icone;
             }
 
-            // O SEGREDO: Configura o botão para mostrar os detalhes quando clicado
+            // Coloca a Quantidade (Procura o objeto "Qtd" no Prefab)
+            Transform objQtd = novoSlot.transform.Find("Qtd");
+            if (objQtd != null)
+            {
+                TextMeshProUGUI textoQtd = objQtd.GetComponent<TextMeshProUGUI>();
+                if (textoQtd != null)
+                {
+                    // Se tiver só 1, deixa o texto invisível para ficar mais limpo. Se tiver mais, mostra o número.
+                    textoQtd.text = quantidade > 1 ? quantidade.ToString() : "";
+                }
+            }
+
             Button botaoSlot = novoSlot.GetComponent<Button>();
             botaoSlot.onClick.AddListener(() => MostrarDetalhesDoItem(peca));
         }
+
+        StartCoroutine(ArrumarGridDelay());
+    }
+
+    private IEnumerator ArrumarGridDelay()
+    {
+        // Espera o fim do frame atual para a Unity terminar de criar os botões
+        yield return new WaitForEndOfFrame();
+
+        // Força a atualização do layout
+        LayoutRebuilder.ForceRebuildLayoutImmediate(gridDeItens.GetComponent<RectTransform>());
     }
 
     // Método chamado quando você clica em um item no Grid
