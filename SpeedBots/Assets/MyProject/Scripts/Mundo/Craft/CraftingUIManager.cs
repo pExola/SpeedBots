@@ -12,11 +12,11 @@ public class CraftingUIManager : MonoBehaviour
     public List<ReceitaCraft> bancoDeReceitas;
 
     [Header("Área Esquerda (Lista de Peças)")]
+    public TextMeshProUGUI tituloCategoriaEsquerda; // NOVA GAVETA: O Título da Categoria
     public Transform gridListaReceitas;
     public GameObject prefabBotaoReceita;
 
     [Header("Área Direita (Painel Inteiro)")]
-    // NOVA GAVETA: O objeto pai que engloba tudo da direita
     public GameObject painelDetalhesDireita;
 
     [Header("Área Direita (Detalhes)")]
@@ -31,6 +31,10 @@ public class CraftingUIManager : MonoBehaviour
 
     private ReceitaCraft receitaSelecionada;
 
+    // Guarda o estado atual para podermos atualizar a tela automaticamente depois de fabricar
+    private TipoPeca filtroAtual;
+    private string tituloAtual;
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -42,18 +46,25 @@ public class CraftingUIManager : MonoBehaviour
     public void AbrirBancada()
     {
         painelCrafting.SetActive(true);
-        LimparDetalhes(); // Começa com a direita invisível
-        FiltrarReceitas(TipoPeca.Chassi);
+        LimparDetalhes();
+        BotaoFiltroChassi(); // Abre no Chassi por padrão
     }
 
     public void FecharBancada() { painelCrafting.SetActive(false); }
 
-    public void BotaoFiltroChassi() { FiltrarReceitas(TipoPeca.Chassi); }
-    public void BotaoFiltroMotor() { FiltrarReceitas(TipoPeca.Motor); }
-    public void BotaoFiltroModulo() { FiltrarReceitas(TipoPeca.Modulo); }
+    // --- OS BOTÕES DO TOPO AGORA PASSAM O TÍTULO ---
+    public void BotaoFiltroChassi() { FiltrarReceitas(TipoPeca.Chassi, "Chassis"); }
+    public void BotaoFiltroMotor() { FiltrarReceitas(TipoPeca.Motor, "Motores"); }
+    public void BotaoFiltroModulo() { FiltrarReceitas(TipoPeca.Modulo, "Módulos"); }
 
-    private void FiltrarReceitas(TipoPeca tipoFiltro)
+    private void FiltrarReceitas(TipoPeca tipoFiltro, string tituloFiltro)
     {
+        filtroAtual = tipoFiltro;
+        tituloAtual = tituloFiltro;
+
+        // Atualiza o texto do título acima da lista
+        if (tituloCategoriaEsquerda != null) tituloCategoriaEsquerda.text = tituloFiltro;
+
         foreach (Transform filho in gridListaReceitas) Destroy(filho.gameObject);
         if (bancoDeReceitas == null) return;
 
@@ -70,34 +81,58 @@ public class CraftingUIManager : MonoBehaviour
                 Transform objTexto = novoBotao.transform.Find("Text_Nome");
                 Transform objIcone = novoBotao.transform.Find("Image_Icone");
 
-                if (objTexto != null) objTexto.GetComponent<TextMeshProUGUI>().text = receita.pecaResultado.nomeDaPeca;
+                // Baseado na sua imagem anterior, o Qtd fica dentro da Image_Icone!
+                Transform objQtd = novoBotao.transform.Find("Image_Icone/Qtd");
 
-                // Proteção para não ficar um quadrado branco se faltar ícone
-                if (objIcone != null && receita.pecaResultado.icone != null)
+                if (objTexto != null) objTexto.GetComponent<TextMeshProUGUI>().text = receita.pecaResultado.nomeDaPeca;
+                if (objIcone != null && receita.pecaResultado.icone != null) objIcone.GetComponent<Image>().sprite = receita.pecaResultado.icone;
+
+                // MÁGICA DA QUANTIDADE: Calcula quantos você pode fazer e atualiza o número no botão
+                if (objQtd != null)
                 {
-                    objIcone.GetComponent<Image>().sprite = receita.pecaResultado.icone;
+                    int maxCraftavel = CalcularQuantidadeCraftavel(receita);
+                    TextMeshProUGUI textoQtd = objQtd.GetComponent<TextMeshProUGUI>();
+
+                    textoQtd.text = maxCraftavel.ToString();
+
+                    // Fica vermelhinho/cinza se você não puder fazer nenhum
+                    textoQtd.color = maxCraftavel > 0 ? Color.white : new Color(1f, 0.5f, 0.5f);
                 }
 
                 ReceitaCraft receitaAtual = receita;
                 novoBotao.GetComponent<Button>().onClick.AddListener(() => SelecionarReceita(receitaAtual));
-
-                if (!selecionouPrimeiro)
-                {
-                    // Comentamos isso para ele NÃO selecionar automaticamente o primeiro
-                    // SelecionarReceita(receitaAtual);
-                    selecionouPrimeiro = true;
-                }
             }
         }
 
-        LimparDetalhes(); // Força a direita a ficar invisível até o jogador clicar em algo
+        LimparDetalhes(); // Esconde a direita até o jogador clicar
+    }
+
+    // --- A CALCULADORA DE MATERIAIS ---
+    private int CalcularQuantidadeCraftavel(ReceitaCraft receita)
+    {
+        if (receita.ingredientes.Count == 0) return 0;
+
+        int maxCraftavel = 999; // Começa alto e vai abaixando conforme acha o limite
+
+        foreach (Ingrediente ing in receita.ingredientes)
+        {
+            int tenho = ContarNoInventario(ing.recursoNecessario);
+
+            // Divisão inteira: Ex: Tenho 5, Preciso de 2. 5/2 = Posso fazer 2.
+            int possoFazerDesteIngrediente = tenho / ing.quantidadeNecessaria;
+
+            if (possoFazerDesteIngrediente < maxCraftavel)
+            {
+                maxCraftavel = possoFazerDesteIngrediente;
+            }
+        }
+
+        return maxCraftavel;
     }
 
     private void SelecionarReceita(ReceitaCraft receita)
     {
         receitaSelecionada = receita;
-
-        // 1. ATIVA O PAINEL DA DIREITA
         if (painelDetalhesDireita != null) painelDetalhesDireita.SetActive(true);
 
         if (receita.pecaResultado.icone != null) iconeDetalhe.sprite = receita.pecaResultado.icone;
@@ -110,12 +145,7 @@ public class CraftingUIManager : MonoBehaviour
 
         foreach (Ingrediente ing in receita.ingredientes)
         {
-            // PROTEÇÃO: Se esquecer de preencher o ingrediente na receita
-            if (ing == null || ing.recursoNecessario == null)
-            {
-                podeFabricar = false;
-                continue;
-            }
+            if (ing == null || ing.recursoNecessario == null) continue;
 
             GameObject novoSlot = Instantiate(prefabSlotIngrediente, gridIngredientesDinamico);
             int tenhoNaMochila = ContarNoInventario(ing.recursoNecessario);
@@ -124,13 +154,6 @@ public class CraftingUIManager : MonoBehaviour
             Transform objNome = novoSlot.transform.Find("Text_Nome");
             Transform objDesc = novoSlot.transform.Find("Text_Descricao");
             Transform objQtd = novoSlot.transform.Find("Text_Qtd");
-
-            // PROTEÇÃO: Avisa se o Prefab dos Ingredientes estiver com nome errado
-            if (objIcone == null || objNome == null || objDesc == null || objQtd == null)
-            {
-                Debug.LogError($"<color=red>[CRAFT]</color> O prefab {prefabSlotIngrediente.name} não tem os filhos exatos: Image_Icone, Text_Nome, Text_Descricao, Text_Qtd");
-                continue;
-            }
 
             if (ing.recursoNecessario.icone != null) objIcone.GetComponent<Image>().sprite = ing.recursoNecessario.icone;
             objNome.GetComponent<TextMeshProUGUI>().text = ing.recursoNecessario.nomeDaPeca;
@@ -142,25 +165,18 @@ public class CraftingUIManager : MonoBehaviour
             if (tenhoNaMochila < ing.quantidadeNecessaria)
             {
                 textoQtd.color = Color.red;
-                podeFabricar = false; // Falta material, desliga o botão!
+                podeFabricar = false;
             }
-            else
-            {
-                textoQtd.color = Color.black;
-            }
+            else { textoQtd.color = Color.black; }
         }
 
-        // Ativa ou desativa o botão baseado nos materiais
         botaoFabricar.interactable = podeFabricar;
     }
 
     private int ContarNoInventario(PecaSpeedBot pecaBuscada)
     {
         int total = 0;
-        foreach (PecaSpeedBot p in InventarioManager.Instance.pecasGuardadas)
-        {
-            if (p == pecaBuscada) total++;
-        }
+        foreach (PecaSpeedBot p in InventarioManager.Instance.pecasGuardadas) { if (p == pecaBuscada) total++; }
         return total;
     }
 
@@ -168,7 +184,12 @@ public class CraftingUIManager : MonoBehaviour
     {
         if (receitaSelecionada == null) return;
 
-        foreach (Ingrediente ing in receitaSelecionada.ingredientes)
+        // 1. SALVAMENTO DE EMERGÊNCIA: Guarda a receita atual numa variável local 
+        // antes que o comando FiltrarReceitas apague ela!
+        ReceitaCraft receitaSalva = receitaSelecionada;
+
+        // 2. Consome os materiais
+        foreach (Ingrediente ing in receitaSalva.ingredientes)
         {
             for (int i = 0; i < ing.quantidadeNecessaria; i++)
             {
@@ -176,14 +197,18 @@ public class CraftingUIManager : MonoBehaviour
             }
         }
 
-        InventarioManager.Instance.AdicionarPeca(receitaSelecionada.pecaResultado);
-        Debug.Log($"<color=green>[CRAFT]</color> {receitaSelecionada.pecaResultado.nomeDaPeca} fabricado!");
-        SelecionarReceita(receitaSelecionada);
+        // 3. Entrega a peça nova
+        InventarioManager.Instance.AdicionarPeca(receitaSalva.pecaResultado);
+
+        // 4. Recarrega a lista da esquerda (Isso vai zerar a 'receitaSelecionada' global)
+        FiltrarReceitas(filtroAtual, tituloAtual);
+
+        // 5. Usa a nossa cópia salva para recarregar a tela da direita sem dar erro!
+        SelecionarReceita(receitaSalva);
     }
 
     private void LimparDetalhes()
     {
-        // ESCONDE O PAINEL INTEIRO DA DIREITA
         if (painelDetalhesDireita != null) painelDetalhesDireita.SetActive(false);
         receitaSelecionada = null;
     }
