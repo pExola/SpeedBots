@@ -267,9 +267,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8346899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: effa012ce52129e4397d578a67ea25d3, type: 3}
+  m_Script: {fileID: 11500000, guid: d13f9447905dad142b09b4d9450adffa, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PortaOficina
+  m_EditorClassIdentifier: Assembly-CSharp::PortaAberta
 --- !u!1 &21091851
 GameObject:
   m_ObjectHideFlags: 0
@@ -15758,7 +15758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &679492055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18794,9 +18794,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: Dialogo_SpeedBot
+  arquivoDoDialogo: Dialogo_PosCorrida
+  arquivoPosCorrida: 
   noInicial: Inicio
-  cenaAoEncerrar: Race 1
+  cenaAoEncerrar: 
 --- !u!70 &1845960231
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

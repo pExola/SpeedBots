@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-// 1. A menor estrutura: Guarda quem está falando e o que ele disse naquela hora
 [System.Serializable]
 public class LinhaDeFala
 {
@@ -10,7 +9,6 @@ public class LinhaDeFala
     public string texto;
 }
 
-// 2. A "Caixinha" do Nó do Twine agora guarda uma LISTA de falas, e não mais um texto gigante
 [System.Serializable]
 public class NoTwine
 {
@@ -21,19 +19,36 @@ public class NoTwine
 
 public class LeitorTwine : MonoBehaviour
 {
-    public static LeitorTwine Instance { get; private set; }
+    // --- INSTÂNCIA BLINDADA ---
+    private static LeitorTwine _instance;
+    public static LeitorTwine Instance
+    {
+        get
+        {
+            if (_instance == null) _instance = FindFirstObjectByType<LeitorTwine>();
+            return _instance;
+        }
+    }
+
     public Dictionary<string, NoTwine> historia = new Dictionary<string, NoTwine>();
 
     void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        if (_instance != null && _instance != this)
+        {
+            Destroy(_instance.gameObject);
+        }
+        _instance = this;
     }
 
     public void CarregarTwee(string nomeArquivo)
     {
         TextAsset arquivo = Resources.Load<TextAsset>(nomeArquivo);
-        if (arquivo == null) return;
+        if (arquivo == null)
+        {
+            Debug.LogError($"[TWINE] Arquivo {nomeArquivo} não encontrado em Resources!");
+            return;
+        }
 
         historia.Clear();
         string[] blocos = arquivo.text.Split(new string[] { ":: " }, System.StringSplitOptions.RemoveEmptyEntries);
@@ -51,7 +66,7 @@ public class LeitorTwine : MonoBehaviour
 
             string corpoTexto = bloco.Substring(fimDaPrimeiraLinha).Trim();
 
-            // Mapeia links de opções
+            // Mapeia links de opções [[Texto->Destino]]
             MatchCollection links = Regex.Matches(corpoTexto, @"\[\[(.*?)\]\]");
             foreach (Match match in links)
             {
@@ -67,13 +82,11 @@ public class LeitorTwine : MonoBehaviour
                 }
             }
 
-            // Traduz as cores do Harlowe
+            // Limpa cores e formatações do Harlowe
             string textoColorido = Regex.Replace(corpoTexto, @"\(text-colour:(.*?)\)\[(.*?)\]", "<color=$1>$2</color>");
             string textoLimpo = Regex.Replace(textoColorido, @"\[\[(.*?)\]\]", "").Trim();
 
-            // =========================================================
-            // O FATIADOR DE DIÁLOGOS UNIVERSAL
-            // =========================================================
+            // Fatiador de Diálogos
             string[] linhasDoTexto = textoLimpo.Split(new[] { '\r', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
 
             foreach (string linha in linhasDoTexto)
@@ -83,23 +96,19 @@ public class LeitorTwine : MonoBehaviour
 
                 LinhaDeFala novaFala = new LinhaDeFala();
 
-                // Se achar os ':' no começo (Ex: "Sam:", "Tom:")
                 if (indexDoisPontos > 0 && indexDoisPontos < 20)
                 {
                     novaFala.nome = linhaTrim.Substring(0, indexDoisPontos).Trim();
-                    novaFala.texto = linhaTrim.Substring(indexDoisPontos + 1).Trim(); // Pega tudo DEPOIS dos ":"
+                    novaFala.texto = linhaTrim.Substring(indexDoisPontos + 1).Trim();
                 }
                 else
                 {
-                    // Regra de Ouro: Se não tem dois pontos, é Narração pura.
                     novaFala.nome = "Narrador";
                     novaFala.texto = linhaTrim;
                 }
 
-                // Adiciona a linha imediatamente na fila do nó
                 novoNo.falas.Add(novaFala);
             }
-            // =========================================================
 
             historia.Add(novoNo.titulo, novoNo);
         }
