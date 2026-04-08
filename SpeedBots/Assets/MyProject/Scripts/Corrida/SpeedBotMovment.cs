@@ -44,10 +44,13 @@ public class SpeedBotMovment : MonoBehaviour
     // --- NOVO: Controle de Arrancada ---
     private float tempoAcelerando = 0f;
 
+    private Animator anim;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CapsuleCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -67,6 +70,9 @@ public class SpeedBotMovment : MonoBehaviour
             if (isGrounded) PuloNormal();
             else if (isTouchingWall) WallJump();
         }
+
+        AtualizarAnimacoes();
+
     }
 
     void FixedUpdate()
@@ -232,6 +238,20 @@ public class SpeedBotMovment : MonoBehaviour
                 break;
             }
         }
+    }
+
+    private void AtualizarAnimacoes()
+    {
+        if (anim == null || rb == null) return;
+
+        // 1. Velocidade Horizontal (usando o linearVelocity atualizado)
+        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+
+        // 2. Velocidade Vertical
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+
+        // 3. Envia a SUA variável isGrounded direto para o parâmetro do Animator
+        anim.SetBool("isGrounded", isGrounded);
     }
 
     private void PuloNormal()

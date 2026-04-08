@@ -7,20 +7,24 @@ public class PlayerOverworld : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
-    // Guarda a direção para saber com quem o player está tentando falar
     [HideInInspector] public Vector2 lastFacingDirection = Vector2.down;
+
+    // --- NOVA VARIÁVEL DO ANIMATOR ---
+    private Animator anim;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); // Conecta o código ao componente
     }
 
     void Update()
     {
-        // Se estiver conversando, trava o movimento
+        // Se estiver conversando, trava o movimento e a animação
         if (DialogueManager.Instance != null && DialogueManager.Instance.isTalking)
         {
             moveInput = Vector2.zero;
+            if (anim != null) anim.SetFloat("Speed", 0f);
             return;
         }
 
@@ -35,14 +39,25 @@ public class PlayerOverworld : MonoBehaviour
 
         if (moveInput != Vector2.zero)
         {
-            // O get axis raw ajuda a manter o direcional limpo para pixel art
             lastFacingDirection = moveInput.normalized;
+
+            // --- A MÁGICA: Envia a direção para a Blend Tree ---
+            if (anim != null)
+            {
+                anim.SetFloat("Horizontal", lastFacingDirection.x);
+                anim.SetFloat("Vertical", lastFacingDirection.y);
+            }
+        }
+
+        // --- Envia a velocidade para saber se está parado ou andando ---
+        if (anim != null)
+        {
+            anim.SetFloat("Speed", moveInput.sqrMagnitude);
         }
     }
 
     void FixedUpdate()
     {
-        // MovePosition evita bugar nas quinas dos Tilemap Colliders
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
     }
 }

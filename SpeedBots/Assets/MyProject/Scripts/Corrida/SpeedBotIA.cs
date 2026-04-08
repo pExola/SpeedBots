@@ -41,12 +41,13 @@ public class SpeedBotIA : MonoBehaviour
     private float multiplicadorNitro = 1f;
     private float nitroTimer = 0f;
     private float debuffGanchoTimer = 0f;
-    private float tempoAcelerando = 0f; 
-
+    private float tempoAcelerando = 0f;
+    private Animator anim;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CapsuleCollider2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -66,6 +67,8 @@ public class SpeedBotIA : MonoBehaviour
         {
             WallJump();
         }
+
+        AtualizarAnimacoes();
     }
 
     void FixedUpdate()
@@ -196,6 +199,19 @@ public class SpeedBotIA : MonoBehaviour
         rb.AddForce(Vector2.up * impulsoFinal, ForceMode2D.Impulse);
     }
 
+    private void AtualizarAnimacoes()
+    {
+        if (anim == null || rb == null) return;
+
+        // 1. Velocidade Horizontal (Lê o rb da IA)
+        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
+
+        // 2. Velocidade Vertical (Lê o rb da IA)
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
+
+        // 3. Sensor de Chão (Coloque aqui a variável booleana que a sua IA usa para saber se está no chão)
+        anim.SetBool("isGrounded", isGrounded); // Troque "isGrounded" pelo nome da variável real da sua IA
+    }
     private bool DevePularDoTerreno()
     {
         if (terrenoAtual == "Fogo") return true;
