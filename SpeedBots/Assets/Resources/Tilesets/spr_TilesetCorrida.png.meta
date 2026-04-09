@@ -1,0 +1,2509 @@
+fileFormatVersion: 2
+guid: 3a8a0c1e0e8eb2b4499d1fb283fca2fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8921106591900231650
+    second: spr_TilesetCorrida_0
+  - first:
+      213: -2600377753761211913
+    second: spr_TilesetCorrida_1
+  - first:
+      213: 378112260290086967
+    second: spr_TilesetCorrida_2
+  - first:
+      213: -7708736758559491979
+    second: spr_TilesetCorrida_3
+  - first:
+      213: -4707109414697768744
+    second: spr_TilesetCorrida_4
+  - first:
+      213: 1454980908689118454
+    second: spr_TilesetCorrida_5
+  - first:
+      213: -3002728976721848761
+    second: spr_TilesetCorrida_6
+  - first:
+      213: 8863525210470147074
+    second: spr_TilesetCorrida_7
+  - first:
+      213: -4943557843651359833
+    second: spr_TilesetCorrida_8
+  - first:
+      213: -2508894123125731336
+    second: spr_TilesetCorrida_9
+  - first:
+      213: 2291665232734816490
+    second: spr_TilesetCorrida_10
+  - first:
+      213: -7648998110831457140
+    second: spr_TilesetCorrida_11
+  - first:
+      213: 8837136367350208180
+    second: spr_TilesetCorrida_12
+  - first:
+      213: 7197044489902813401
+    second: spr_TilesetCorrida_13
+  - first:
+      213: 4417147358732928382
+    second: spr_TilesetCorrida_14
+  - first:
+      213: -1808599641989649272
+    second: spr_TilesetCorrida_15
+  - first:
+      213: 3881472565681673759
+    second: spr_TilesetCorrida_16
+  - first:
+      213: -282425383109711755
+    second: spr_TilesetCorrida_17
+  - first:
+      213: 4997321579721969807
+    second: spr_TilesetCorrida_18
+  - first:
+      213: 7941436266365604160
+    second: spr_TilesetCorrida_19
+  - first:
+      213: 237312556959236413
+    second: spr_TilesetCorrida_20
+  - first:
+      213: -8699264018705880259
+    second: spr_TilesetCorrida_21
+  - first:
+      213: -488143719876049806
+    second: spr_TilesetCorrida_22
+  - first:
+      213: -6122485280704117582
+    second: spr_TilesetCorrida_23
+  - first:
+      213: -806089097576125876
+    second: spr_TilesetCorrida_24
+  - first:
+      213: 1237826816354124960
+    second: spr_TilesetCorrida_25
+  - first:
+      213: -6318980007557308513
+    second: spr_TilesetCorrida_26
+  - first:
+      213: 1509513898850322988
+    second: spr_TilesetCorrida_27
+  - first:
+      213: 3309631344151577113
+    second: spr_TilesetCorrida_28
+  - first:
+      213: 5030709750839844037
+    second: spr_TilesetCorrida_29
+  - first:
+      213: -2690997246787348942
+    second: spr_TilesetCorrida_30
+  - first:
+      213: -6381828397922056677
+    second: spr_TilesetCorrida_31
+  - first:
+      213: 447686479786622634
+    second: spr_TilesetCorrida_32
+  - first:
+      213: 1651579689626575313
+    second: spr_TilesetCorrida_33
+  - first:
+      213: 345494727670912300
+    second: spr_TilesetCorrida_34
+  - first:
+      213: -6313865911793058257
+    second: spr_TilesetCorrida_35
+  - first:
+      213: 6352933548328530245
+    second: spr_TilesetCorrida_36
+  - first:
+      213: 7423010006261734112
+    second: spr_TilesetCorrida_37
+  - first:
+      213: -3426860130184723815
+    second: spr_TilesetCorrida_38
+  - first:
+      213: 1386408920886262975
+    second: spr_TilesetCorrida_39
+  - first:
+      213: -2719998309764215950
+    second: spr_TilesetCorrida_40
+  - first:
+      213: 7738497693973961014
+    second: spr_TilesetCorrida_41
+  - first:
+      213: 5080345244593843240
+    second: spr_TilesetCorrida_42
+  - first:
+      213: -287248329251042486
+    second: spr_TilesetCorrida_43
+  - first:
+      213: 735274919152904200
+    second: spr_TilesetCorrida_44
+  - first:
+      213: 7824652345019865910
+    second: spr_TilesetCorrida_45
+  - first:
+      213: -8312874907305705004
+    second: spr_TilesetCorrida_46
+  - first:
+      213: -6172522188984272585
+    second: spr_TilesetCorrida_47
+  - first:
+      213: -6719493028062611621
+    second: spr_TilesetCorrida_48
+  - first:
+      213: 4552691054797639565
+    second: spr_TilesetCorrida_49
+  - first:
+      213: -7679005926484079551
+    second: spr_TilesetCorrida_50
+  - first:
+      213: 8401699815593494631
+    second: spr_TilesetCorrida_51
+  - first:
+      213: -5154436439244870120
+    second: spr_TilesetCorrida_52
+  - first:
+      213: 5020020330555279071
+    second: spr_TilesetCorrida_53
+  - first:
+      213: -2841788541328169534
+    second: spr_TilesetCorrida_54
+  - first:
+      213: 5742927174065393887
+    second: spr_TilesetCorrida_55
+  - first:
+      213: 6195902747217169540
+    second: spr_TilesetCorrida_56
+  - first:
+      213: -7282652974376427719
+    second: spr_TilesetCorrida_57
+  - first:
+      213: 1732933558696240800
+    second: spr_TilesetCorrida_58
+  - first:
+      213: -4378900163022207260
+    second: spr_TilesetCorrida_59
+  - first:
+      213: -2841155466899661309
+    second: spr_TilesetCorrida_60
+  - first:
+      213: -3726721442747956134
+    second: spr_TilesetCorrida_61
+  - first:
+      213: -112792777930996165
+    second: spr_TilesetCorrida_62
+  - first:
+      213: 6817531273329224567
+    second: spr_TilesetCorrida_63
+  - first:
+      213: 7484597041927530641
+    second: spr_TilesetCorrida_64
+  - first:
+      213: 8215298326094444257
+    second: spr_TilesetCorrida_65
+  - first:
+      213: -5696214152460286000
+    second: spr_TilesetCorrida_66
+  - first:
+      213: -3724186738407032738
+    second: spr_TilesetCorrida_67
+  - first:
+      213: -3487017199491452721
+    second: spr_TilesetCorrida_68
+  - first:
+      213: 3067735024441485552
+    second: spr_TilesetCorrida_69
+  - first:
+      213: -7607207938361256264
+    second: spr_TilesetCorrida_70
+  - first:
+      213: 8424779051107221162
+    second: spr_TilesetCorrida_71
+  - first:
+      213: -3468792428045814519
+    second: spr_TilesetCorrida_72
+  - first:
+      213: -6521755939653932735
+    second: spr_TilesetCorrida_73
+  - first:
+      213: 3030974568080811284
+    second: spr_TilesetCorrida_74
+  - first:
+      213: 3800322768771574430
+    second: spr_TilesetCorrida_75
+  - first:
+      213: -9131616884701570528
+    second: spr_TilesetCorrida_76
+  - first:
+      213: -3354994540202046511
+    second: spr_TilesetCorrida_77
+  - first:
+      213: 2058558335494016176
+    second: spr_TilesetCorrida_78
+  - first:
+      213: 1305028392172596540
+    second: spr_TilesetCorrida_79
+  - first:
+      213: -4601437526733123163
+    second: spr_TilesetCorrida_80
+  - first:
+      213: 5546632618514020364
+    second: spr_TilesetCorrida_81
+  - first:
+      213: -3403624383944982759
+    second: spr_TilesetCorrida_82
+  - first:
+      213: 8286700742413848372
+    second: spr_TilesetCorrida_83
+  - first:
+      213: 1191360132418521359
+    second: spr_TilesetCorrida_84
+  - first:
+      213: -2321981128759212451
+    second: spr_TilesetCorrida_85
+  - first:
+      213: -5174064566795835578
+    second: spr_TilesetCorrida_86
+  - first:
+      213: 2911110248101209478
+    second: spr_TilesetCorrida_87
+  - first:
+      213: 6467122098402542511
+    second: spr_TilesetCorrida_88
+  - first:
+      213: -9051239015602867198
+    second: spr_TilesetCorrida_89
+  - first:
+      213: 9053750667809944485
+    second: spr_TilesetCorrida_90
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18146a12dcd13480800000000000000
+      internalID: -8921106591900231650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f91c39d53a99ebd0800000000000000
+      internalID: -2600377753761211913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7388fcfe8135f3500800000000000000
+      internalID: 378112260290086967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578b01fb2c0150590800000000000000
+      internalID: -7708736758559491979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8ea0a3decfcaeb0800000000000000
+      internalID: -4707109414697768744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4d3697d61213410800000000000000
+      internalID: 1454980908689118454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746d8b1a7e92456d0800000000000000
+      internalID: -3002728976721848761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204eacbc731910b70800000000000000
+      internalID: 8863525210470147074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab80925554f46bb0800000000000000
+      internalID: -4943557843651359833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff8604761e9e2dd0800000000000000
+      internalID: -2508894123125731336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8854d2361adcf10800000000000000
+      internalID: 2291665232734816490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 118
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cc14c8ebc49d590800000000000000
+      internalID: -7648998110831457140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_12
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6589774b0d3aa70800000000000000
+      internalID: 8837136367350208180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_13
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0f65df4d901e360800000000000000
+      internalID: 7197044489902813401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_14
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75c4d5ae1cdc4d30800000000000000
+      internalID: 4417147358732928382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cee4e353096e6e0800000000000000
+      internalID: -1808599641989649272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1651eacbb2cdd530800000000000000
+      internalID: 3881472565681673759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_17
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 118
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57821344c9f941cf0800000000000000
+      internalID: -282425383109711755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80d8b3ff7d0a5540800000000000000
+      internalID: 4997321579721969807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_19
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 118
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041502f6536a53e60800000000000000
+      internalID: 7941436266365604160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_20
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d318b42638a1b4300800000000000000
+      internalID: 237312556959236413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_21
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 118
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3be2b53771064780800000000000000
+      internalID: -8699264018705880259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_22
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27443718fd3c939f0800000000000000
+      internalID: -488143719876049806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_23
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 101
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4c2155310980ba0800000000000000
+      internalID: -6122485280704117582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_24
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 118
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ae8a19c3230d4f0800000000000000
+      internalID: -806089097576125876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 118
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a48d326ee4ad2110800000000000000
+      internalID: 1237826816354124960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_26
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 101
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f50ca99297e48a0800000000000000
+      internalID: -6318980007557308513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a0d7ca4eed2f410800000000000000
+      internalID: 1509513898850322988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91247ad1c2c2eed20800000000000000
+      internalID: 3309631344151577113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc17e25ddba0d540800000000000000
+      internalID: 5030709750839844037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2369fa5f248a7aad0800000000000000
+      internalID: -2690997246787348942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b160b5c62e03f67a0800000000000000
+      internalID: -6381828397922056677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae3d6e3b70863600800000000000000
+      internalID: 447686479786622634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1217e2af69be610800000000000000
+      internalID: 1651579689626575313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_34
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c255892df917bc400800000000000000
+      internalID: 345494727670912300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_35
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e7020d764a068a0800000000000000
+      internalID: -6313865911793058257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_36
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541b8c527672a2850800000000000000
+      internalID: 6352933548328530245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_37
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea966b9544d30760800000000000000
+      internalID: 7423010006261734112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_38
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 75
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992046d2ed85170d0800000000000000
+      internalID: -3426860130184723815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_39
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbcbbda61938d3310800000000000000
+      internalID: 1386408920886262975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_40
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b47dcc2ff904ad0800000000000000
+      internalID: -2719998309764215950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_41
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6395f7007aaa46b60800000000000000
+      internalID: 7738497693973961014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_42
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c6c584513018640800000000000000
+      internalID: 5080345244593843240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_43
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bcaac9a2d730cf0800000000000000
+      internalID: -287248329251042486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_44
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 75
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808ec50b4a8343a00800000000000000
+      internalID: 735274919152904200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_45
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b16dbd9dfb69c60800000000000000
+      internalID: 7824652345019865910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_46
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 67
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d109c7b05cb2ac80800000000000000
+      internalID: -8312874907305705004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_47
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7393065c5cbc65aa0800000000000000
+      internalID: -6172522188984272585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_48
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 67
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b573d9f31b09fb2a0800000000000000
+      internalID: -6719493028062611621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_49
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fcf45a4686e2f30800000000000000
+      internalID: 4552691054797639565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_50
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 67
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c0cc38bc0be6590800000000000000
+      internalID: -7679005926484079551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_51
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 84
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7684ae9d775d89470800000000000000
+      internalID: 8401699815593494631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_52
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 67
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81eea7d2e53c778b0800000000000000
+      internalID: -5154436439244870120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd68cf7b4e1baa540800000000000000
+      internalID: 5020020330555279071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5eb5bc060ff88d0800000000000000
+      internalID: -2841788541328169534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd01b1566d9f2bf40800000000000000
+      internalID: 5742927174065393887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_56
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c0fb6a8b44cf550800000000000000
+      internalID: 6195902747217169540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_57
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 67
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fd9d774b1deea90800000000000000
+      internalID: -7282652974376427719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_58
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a66171e3ed9c0810800000000000000
+      internalID: 1732933558696240800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_59
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6492c80850b33c0800000000000000
+      internalID: -4378900163022207260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_60
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e59cbe7203298d0800000000000000
+      internalID: -2841155466899661309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_61
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a544d24c796084cc0800000000000000
+      internalID: -3726721442747956134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_62
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36813ae0974f6ef0800000000000000
+      internalID: -112792777930996165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_63
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ba7ef729cbc9e50800000000000000
+      internalID: 6817531273329224567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_64
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198a703ca51aed760800000000000000
+      internalID: 7484597041927530641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_65
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e678b21d4a920270800000000000000
+      internalID: 8215298326094444257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_66
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d74d0e786bf2f0b0800000000000000
+      internalID: -5696214152460286000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_67
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58370c94e7015cc0800000000000000
+      internalID: -3724186738407032738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc072a20550ab9fc0800000000000000
+      internalID: -3487017199491452721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8ebdc40c8c29a20800000000000000
+      internalID: 3067735024441485552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6127d4fa4cd6690800000000000000
+      internalID: -7607207938361256264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaef56c19e3dae470800000000000000
+      internalID: 8424779051107221162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_72
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905b3c64aaf5cdfc0800000000000000
+      internalID: -3468792428045814519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_73
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 16
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1492221d6811e75a0800000000000000
+      internalID: -6521755939653932735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_74
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41523b59f4f201a20800000000000000
+      internalID: 3030974568080811284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_75
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 24
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a65785c657db430800000000000000
+      internalID: 3800322768771574430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_76
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a576223daf54180800000000000000
+      internalID: -9131616884701570528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_77
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 16
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbc1efbd3aa071d0800000000000000
+      internalID: -3354994540202046511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_78
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc4a8046e7719c10800000000000000
+      internalID: 2058558335494016176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_79
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d2f3988646c1210800000000000000
+      internalID: 1305028392172596540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_80
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a19beae2f86420c0800000000000000
+      internalID: -4601437526733123163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_81
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c087f1eaaf899fc40800000000000000
+      internalID: 5546632618514020364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_82
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ff91ee7a5e3c0d0800000000000000
+      internalID: -3403624383944982759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_83
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f0b8f9b66400370800000000000000
+      internalID: 8286700742413848372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_84
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 16
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f094e547abf888010800000000000000
+      internalID: 1191360132418521359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_85
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56852d377aa6cfd0800000000000000
+      internalID: -2321981128759212451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_86
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 16
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647e23b90b70238b0800000000000000
+      internalID: -5174064566795835578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_87
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 33
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6856210d857566820800000000000000
+      internalID: 2911110248101209478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_88
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 16
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3cc52c845dfb950800000000000000
+      internalID: 6467122098402542511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_89
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204b5d1221a836280800000000000000
+      internalID: -9051239015602867198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorrida_90
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a374c7734265ad70800000000000000
+      internalID: 9053750667809944485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spr_TilesetCorrida_0: -8921106591900231650
+      spr_TilesetCorrida_1: -2600377753761211913
+      spr_TilesetCorrida_10: 2291665232734816490
+      spr_TilesetCorrida_11: -7648998110831457140
+      spr_TilesetCorrida_12: 8837136367350208180
+      spr_TilesetCorrida_13: 7197044489902813401
+      spr_TilesetCorrida_14: 4417147358732928382
+      spr_TilesetCorrida_15: -1808599641989649272
+      spr_TilesetCorrida_16: 3881472565681673759
+      spr_TilesetCorrida_17: -282425383109711755
+      spr_TilesetCorrida_18: 4997321579721969807
+      spr_TilesetCorrida_19: 7941436266365604160
+      spr_TilesetCorrida_2: 378112260290086967
+      spr_TilesetCorrida_20: 237312556959236413
+      spr_TilesetCorrida_21: -8699264018705880259
+      spr_TilesetCorrida_22: -488143719876049806
+      spr_TilesetCorrida_23: -6122485280704117582
+      spr_TilesetCorrida_24: -806089097576125876
+      spr_TilesetCorrida_25: 1237826816354124960
+      spr_TilesetCorrida_26: -6318980007557308513
+      spr_TilesetCorrida_27: 1509513898850322988
+      spr_TilesetCorrida_28: 3309631344151577113
+      spr_TilesetCorrida_29: 5030709750839844037
+      spr_TilesetCorrida_3: -7708736758559491979
+      spr_TilesetCorrida_30: -2690997246787348942
+      spr_TilesetCorrida_31: -6381828397922056677
+      spr_TilesetCorrida_32: 447686479786622634
+      spr_TilesetCorrida_33: 1651579689626575313
+      spr_TilesetCorrida_34: 345494727670912300
+      spr_TilesetCorrida_35: -6313865911793058257
+      spr_TilesetCorrida_36: 6352933548328530245
+      spr_TilesetCorrida_37: 7423010006261734112
+      spr_TilesetCorrida_38: -3426860130184723815
+      spr_TilesetCorrida_39: 1386408920886262975
+      spr_TilesetCorrida_4: -4707109414697768744
+      spr_TilesetCorrida_40: -2719998309764215950
+      spr_TilesetCorrida_41: 7738497693973961014
+      spr_TilesetCorrida_42: 5080345244593843240
+      spr_TilesetCorrida_43: -287248329251042486
+      spr_TilesetCorrida_44: 735274919152904200
+      spr_TilesetCorrida_45: 7824652345019865910
+      spr_TilesetCorrida_46: -8312874907305705004
+      spr_TilesetCorrida_47: -6172522188984272585
+      spr_TilesetCorrida_48: -6719493028062611621
+      spr_TilesetCorrida_49: 4552691054797639565
+      spr_TilesetCorrida_5: 1454980908689118454
+      spr_TilesetCorrida_50: -7679005926484079551
+      spr_TilesetCorrida_51: 8401699815593494631
+      spr_TilesetCorrida_52: -5154436439244870120
+      spr_TilesetCorrida_53: 5020020330555279071
+      spr_TilesetCorrida_54: -2841788541328169534
+      spr_TilesetCorrida_55: 5742927174065393887
+      spr_TilesetCorrida_56: 6195902747217169540
+      spr_TilesetCorrida_57: -7282652974376427719
+      spr_TilesetCorrida_58: 1732933558696240800
+      spr_TilesetCorrida_59: -4378900163022207260
+      spr_TilesetCorrida_6: -3002728976721848761
+      spr_TilesetCorrida_60: -2841155466899661309
+      spr_TilesetCorrida_61: -3726721442747956134
+      spr_TilesetCorrida_62: -112792777930996165
+      spr_TilesetCorrida_63: 6817531273329224567
+      spr_TilesetCorrida_64: 7484597041927530641
+      spr_TilesetCorrida_65: 8215298326094444257
+      spr_TilesetCorrida_66: -5696214152460286000
+      spr_TilesetCorrida_67: -3724186738407032738
+      spr_TilesetCorrida_68: -3487017199491452721
+      spr_TilesetCorrida_69: 3067735024441485552
+      spr_TilesetCorrida_7: 8863525210470147074
+      spr_TilesetCorrida_70: -7607207938361256264
+      spr_TilesetCorrida_71: 8424779051107221162
+      spr_TilesetCorrida_72: -3468792428045814519
+      spr_TilesetCorrida_73: -6521755939653932735
+      spr_TilesetCorrida_74: 3030974568080811284
+      spr_TilesetCorrida_75: 3800322768771574430
+      spr_TilesetCorrida_76: -9131616884701570528
+      spr_TilesetCorrida_77: -3354994540202046511
+      spr_TilesetCorrida_78: 2058558335494016176
+      spr_TilesetCorrida_79: 1305028392172596540
+      spr_TilesetCorrida_8: -4943557843651359833
+      spr_TilesetCorrida_80: -4601437526733123163
+      spr_TilesetCorrida_81: 5546632618514020364
+      spr_TilesetCorrida_82: -3403624383944982759
+      spr_TilesetCorrida_83: 8286700742413848372
+      spr_TilesetCorrida_84: 1191360132418521359
+      spr_TilesetCorrida_85: -2321981128759212451
+      spr_TilesetCorrida_86: -5174064566795835578
+      spr_TilesetCorrida_87: 2911110248101209478
+      spr_TilesetCorrida_88: 6467122098402542511
+      spr_TilesetCorrida_89: -9051239015602867198
+      spr_TilesetCorrida_9: -2508894123125731336
+      spr_TilesetCorrida_90: 9053750667809944485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
