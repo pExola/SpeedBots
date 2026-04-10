@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: 3313d08fb70b9f34fa42f6d9aadeeaf7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2396663339956042079
+    second: spr_TilesetCorridaNovo_0
+  - first:
+      213: -5180191463721587527
+    second: spr_TilesetCorridaNovo_1
+  - first:
+      213: -1951660831975571276
+    second: spr_TilesetCorridaNovo_2
+  - first:
+      213: -5353912062719993510
+    second: spr_TilesetCorridaNovo_3
+  - first:
+      213: 2997382325472276020
+    second: spr_TilesetCorridaNovo_4
+  - first:
+      213: 4151263309092991317
+    second: spr_TilesetCorridaNovo_5
+  - first:
+      213: -1866038362647893713
+    second: spr_TilesetCorridaNovo_6
+  - first:
+      213: -2971739441629457337
+    second: spr_TilesetCorridaNovo_7
+  - first:
+      213: 4498959487029666479
+    second: spr_TilesetCorridaNovo_8
+  - first:
+      213: 6633848566671677640
+    second: spr_TilesetCorridaNovo_9
+  - first:
+      213: 3910832928158580296
+    second: spr_TilesetCorridaNovo_10
+  - first:
+      213: -4618809825020005788
+    second: spr_TilesetCorridaNovo_11
+  - first:
+      213: -6027295225139076106
+    second: spr_TilesetCorridaNovo_12
+  - first:
+      213: 7043696377354387423
+    second: spr_TilesetCorridaNovo_13
+  - first:
+      213: 1556083418756905002
+    second: spr_TilesetCorridaNovo_14
+  - first:
+      213: 8917986073412013457
+    second: spr_TilesetCorridaNovo_15
+  - first:
+      213: -3905121932015670331
+    second: spr_TilesetCorridaNovo_16
+  - first:
+      213: 6804588964390172511
+    second: spr_TilesetCorridaNovo_17
+  - first:
+      213: -266420410492139311
+    second: spr_TilesetCorridaNovo_18
+  - first:
+      213: -2287654460476667081
+    second: spr_TilesetCorridaNovo_19
+  - first:
+      213: -6780651261185942896
+    second: spr_TilesetCorridaNovo_20
+  - first:
+      213: -4035478015654766873
+    second: spr_TilesetCorridaNovo_21
+  - first:
+      213: 4068716484827800125
+    second: spr_TilesetCorridaNovo_22
+  - first:
+      213: -3771986442708876256
+    second: spr_TilesetCorridaNovo_23
+  - first:
+      213: -8783870502295908032
+    second: spr_TilesetCorridaNovo_24
+  - first:
+      213: 102993951770569728
+    second: spr_TilesetCorridaNovo_25
+  - first:
+      213: -4228004283153605551
+    second: spr_TilesetCorridaNovo_26
+  - first:
+      213: -2860943006386122442
+    second: spr_TilesetCorridaNovo_27
+  - first:
+      213: 6523943645813585697
+    second: spr_TilesetCorridaNovo_28
+  - first:
+      213: 1006906167689590000
+    second: spr_TilesetCorridaNovo_29
+  - first:
+      213: -2464288548773997212
+    second: spr_TilesetCorridaNovo_30
+  - first:
+      213: 9080826269063419682
+    second: spr_TilesetCorridaNovo_31
+  - first:
+      213: -3633136350673775530
+    second: spr_TilesetCorridaNovo_32
+  - first:
+      213: -546667943690096202
+    second: spr_TilesetCorridaNovo_33
+  - first:
+      213: -7506629460647626791
+    second: spr_TilesetCorridaNovo_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_TilesetCorridaNovo_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c6c451478ed6100800000000000000
+      internalID: 102993951770569728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorridaNovo_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 131
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2279f822163950e70800000000000000
+      internalID: 9080826269063419682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetCorridaNovo_34
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7bd91074813d790800000000000000
+      internalID: -7506629460647626791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0ea082b8ca4d83241bdffae1b1e66f7b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spr_TilesetCorridaNovo_0: -2396663339956042079
+      spr_TilesetCorridaNovo_1: -5180191463721587527
+      spr_TilesetCorridaNovo_10: 3910832928158580296
+      spr_TilesetCorridaNovo_11: -4618809825020005788
+      spr_TilesetCorridaNovo_12: -6027295225139076106
+      spr_TilesetCorridaNovo_13: 7043696377354387423
+      spr_TilesetCorridaNovo_14: 1556083418756905002
+      spr_TilesetCorridaNovo_15: 8917986073412013457
+      spr_TilesetCorridaNovo_16: -3905121932015670331
+      spr_TilesetCorridaNovo_17: 6804588964390172511
+      spr_TilesetCorridaNovo_18: -266420410492139311
+      spr_TilesetCorridaNovo_19: -2287654460476667081
+      spr_TilesetCorridaNovo_2: -1951660831975571276
+      spr_TilesetCorridaNovo_20: -6780651261185942896
+      spr_TilesetCorridaNovo_21: -4035478015654766873
+      spr_TilesetCorridaNovo_22: 4068716484827800125
+      spr_TilesetCorridaNovo_23: -3771986442708876256
+      spr_TilesetCorridaNovo_24: -8783870502295908032
+      spr_TilesetCorridaNovo_25: 102993951770569728
+      spr_TilesetCorridaNovo_26: -4228004283153605551
+      spr_TilesetCorridaNovo_27: -2860943006386122442
+      spr_TilesetCorridaNovo_28: 6523943645813585697
+      spr_TilesetCorridaNovo_29: 1006906167689590000
+      spr_TilesetCorridaNovo_3: -5353912062719993510
+      spr_TilesetCorridaNovo_30: -2464288548773997212
+      spr_TilesetCorridaNovo_31: 9080826269063419682
+      spr_TilesetCorridaNovo_32: -3633136350673775530
+      spr_TilesetCorridaNovo_33: -546667943690096202
+      spr_TilesetCorridaNovo_34: -7506629460647626791
+      spr_TilesetCorridaNovo_4: 2997382325472276020
+      spr_TilesetCorridaNovo_5: 4151263309092991317
+      spr_TilesetCorridaNovo_6: -1866038362647893713
+      spr_TilesetCorridaNovo_7: -2971739441629457337
+      spr_TilesetCorridaNovo_8: 4498959487029666479
+      spr_TilesetCorridaNovo_9: 6633848566671677640
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
