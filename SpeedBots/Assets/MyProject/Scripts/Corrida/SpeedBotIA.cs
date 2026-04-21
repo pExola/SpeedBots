@@ -43,6 +43,7 @@ public class SpeedBotIA : MonoBehaviour // Cria a classe que atua como o cérebro
     private float debuffGanchoTimer = 0f; // Cronômetro de lentidão ao ser puxada pelo gancho.
     private float tempoAcelerando = 0f; // Tempo usado para calcular o efeito "estilingue" da arrancada.
     private Animator anim; // Guarda o controlador de animações.
+    private float direcaoPistaAtual = 1f; // A corrida começa indo para a direita por padrão.
 
     void Awake() // Executa ao nascer na fase.
     {
@@ -76,7 +77,7 @@ public class SpeedBotIA : MonoBehaviour // Cria a classe que atua como o cérebro
     void FixedUpdate() // A Física e Sinergias (Roda no tempo da física da Unity)
     {
         if (!isGrounded && isTouchingWall && rb.linearVelocity.y > 0) { } // Ajuste fino de inércia em pulos na parede.
-        else if (isGrounded) { moveDirection = 1f; } // Garante que a IA sempre force a corrida para a direita no chão plano.
+        else if (isGrounded) { moveDirection = direcaoPistaAtual; } // Garante que a IA sempre siga o fluxo da pista ditado pelo level design
 
         if (stunTimer > 0) // Se estiver atordoada...
         {
@@ -196,6 +197,15 @@ public class SpeedBotIA : MonoBehaviour // Cria a classe que atua como o cérebro
             stunTimer = Mathf.Lerp(1.2f, 0.1f, durabilidadeBase); // Quanto maior a armadura, menos tempo a IA passa atordoada no fogo.
             debuffFogoTimer = 3.0f; // Fica queimada por 3s.
         }
+
+        DiretorDePista diretor = collision.GetComponent<DiretorDePista>();
+        if (diretor != null)
+        {
+            // A IA memoriza que o fluxo da pista mudou. O FixedUpdate vai cuidar de virar o boneco!
+            direcaoPistaAtual = diretor.novaDirecao;
+            Debug.Log($"[IA] Mudando fluxo da corrida para: {direcaoPistaAtual}");
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision) // Limpa o terreno ao sair da zona
@@ -216,6 +226,15 @@ public class SpeedBotIA : MonoBehaviour // Cria a classe que atua como o cérebro
         anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x)); // Anima pernas correndo dependendo da inércia em X.
         anim.SetFloat("yVelocity", rb.linearVelocity.y); // Anima pose de pulo/queda dependendo da inércia em Y.
         anim.SetBool("isGrounded", isGrounded); // Diz ao animador se os pés estão tocando a terra.
+
+        if (moveDirection > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (moveDirection < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
     }
 
     private bool DevePularDoTerreno() // Inteligência extra: A IA tenta fugir de buracos ou terrenos ruins pra ela.

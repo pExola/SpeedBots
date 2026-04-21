@@ -259,6 +259,21 @@ public class SpeedBotMovment : MonoBehaviour // É o controle principal do Jogado
 
         // 3. Envia o sensor de Chão direto para o Animator saber se o robô tá pisando firme.
         anim.SetBool("isGrounded", isGrounded);
+
+        // --- NOVA LÓGICA DE ESPELHAMENTO (VIRAR PARA A ESQUERDA/DIREITA) ---
+        // Se a intenção for ir para a direita, a escala X é 1 (normal).
+        if (lastMoveDirection > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            // NOTA 2.5D: Se os seus modelos forem 3D e amassar a escala bugar a iluminação, 
+            // use a rotação em vez do localScale: transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        // Se a intenção for ir para a esquerda, a escala X vira -1 (espelhado).
+        else if (lastMoveDirection < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            // NOTA 2.5D: Alternativa com rotação: transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
     }
 
     private void PuloNormal() // Ação de Parkour: Pulo do chão.

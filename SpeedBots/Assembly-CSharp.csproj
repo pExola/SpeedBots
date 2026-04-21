@@ -79,6 +79,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\MyProject\Scripts\Corrida\SpeedBotIA.cs" />
     <Compile Include="Assets\MyProject\Scripts\Mundo\InventarioManager.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Corrida\DiretorDePista.cs" />
     <Compile Include="Assets\MyProject\Scripts\Corrida\TelaResultados.cs" />
     <Compile Include="Assets\MyProject\Scripts\Corrida\FinishLine.cs" />
     <Compile Include="Assets\MyProject\Scripts\Mundo\IInteractable.cs" />
