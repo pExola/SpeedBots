@@ -20,7 +20,7 @@ public class FinishLine : MonoBehaviour // Cria a classe que atua como o "juiz d
             TelaResultados tela = Object.FindFirstObjectByType<TelaResultados>(); // Procura na cena do jogo pelo script que controla a tela final.
             if (tela != null) // Se a tela existir e for encontrada...
             {
-                tela.MostrarResultados(true); // ...manda a TelaResultados exibir a mensagem de Vitória (passando o valor 'true').
+                tela.MostrarResultados(true, 100); // ...manda a TelaResultados exibir a mensagem de Vitória (passando o valor 'true').
             }
         }
         else if (collision.CompareTag("Inimigo")) // Caso não seja o jogador, verifica se quem cruzou a linha tem a tag "Inimigo" (a Inteligência Artificial).
@@ -31,7 +31,7 @@ public class FinishLine : MonoBehaviour // Cria a classe que atua como o "juiz d
             TelaResultados tela = Object.FindFirstObjectByType<TelaResultados>(); // Procura novamente pela tela final na cena.
             if (tela != null) // Se a tela for encontrada...
             {
-                tela.MostrarResultados(false); // ...manda a TelaResultados exibir a mensagem de Derrota (passando o valor 'false').
+                tela.MostrarResultados(false, 100); // ...manda a TelaResultados exibir a mensagem de Derrota (passando o valor 'false').
             }
         }
     }

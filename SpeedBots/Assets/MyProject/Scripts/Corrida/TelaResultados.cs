@@ -1,51 +1,86 @@
-using UnityEngine; // Importa as ferramentas principais da engine da Unity.
-using TMPro; // Importa a biblioteca TextMeshPro para desenhar textos nítidos na interface do jogo.
-using UnityEngine.SceneManagement; // Importa o gerenciador de cenas para podermos mudar da corrida para o mapa principal.
+using UnityEngine; // Importa as ferramentas principais da Unity.
+using TMPro; // Importa a biblioteca para formatar os textos com alta qualidade na UI.
+using UnityEngine.SceneManagement; // Importa o gerenciador de cenas para podermos voltar ao Overworld.
 
-public class TelaResultados : MonoBehaviour // É o gerente de fluxo (Game Flow) do pós-corrida.
+public class TelaResultados : MonoBehaviour // O seu script original, agora no estilo Sonic!
 {
-    [Header("UI e Status")] // Organiza as variáveis na tela do Inspector da Unity.
-    public GameObject painelResultados; // A gaveta que guarda a tela (Canvas UI) de resultados para podermos ativá-la.
-    public TextMeshProUGUI textoResultados; // O local onde o texto de "Vitória" ou "Derrota" será escrito.
-    public SpeedBotProgression playerStats; // Acessa o cérebro de RPG do jogador para ler a evolução de nível/status.
+    // Singleton rápido para a Linha de Chegada conseguir achar e chamar essa tela facilmente
+    public static TelaResultados Instance { get; private set; }
+
+    [Header("UI e Status")]
+    public GameObject painelResultados; // O container invisível que segura os textos 
+
+    // O texto único foi dividido em três para podermos organizar na tela como no jogo do Sonic
+    public TextMeshProUGUI textoTitulo; // Para o "SAM VENCEU!!!" bem grande
+    public TextMeshProUGUI textoTempo;  // Para mostrar o tempo de corrida
+    public TextMeshProUGUI textoXP; // Para mostrar o XP
 
     [Header("Transição")]
-    [Tooltip("Digite o nome exato da sua cena do mapa principal")] // Dica que aparece ao passar o mouse na Unity.
-    public string nomeCenaOverworld = "Overworld"; // O nome do arquivo da fase principal que será carregada depois.
+    [Tooltip("Digite o nome exato da sua cena do mapa principal")]
+    public string nomeCenaOverworld = "Overworld"; // Salva para onde o jogador vai ao clicar em Continuar.
 
-    public void MostrarResultados(bool vitoria) // Função chamada pelo Juiz da linha de chegada, recebe true (Vitória) ou false (Derrota).
+    // --- VARIÁVEIS DO CRONÔMETRO ---
+    private float tempoAtualDaCorrida = 0f;
+    private bool cronometroRodando = false;
+
+    void Awake()
     {
-        painelResultados.SetActive(true); // Ativa o Canvas UI na tela (que antes estava invisível).
+        // Configura o Singleton: garante que essa tela seja única e acessível
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
 
-        if (vitoria) // Se a sentença for Vitória...
-        {
-            // Exibe o feedback estético verde na tela e as recompensas.
-            // Usa o cifrão ($"{}") para injetar valores diretos do código no texto. Puxa o status atualizado do SpeedBotProgression.
-            textoResultados.text = "<color=green>VITÓRIA!</color>\n\n" +
-                                   $"+100 XP\n" +
-                                   $"Nível Atual: {playerStats.nivel}\n" +
-                                   $"Velocidade: {playerStats.GetStatusVelocidade()}/100\n" +
-                                   $"Aceleração: {playerStats.GetStatusAceleracao()}/100";
-        }
-        else // Se a sentença for Derrota...
-        {
-            // Exibe o feedback estético vermelho padrão de falha.
-            textoResultados.text = "<color=red>DERROTA!</color>\nTente Novamente.";
-        }
-
-        // "Congela o tempo" do motor da Unity. 
-        // Isso impede que a física calcule colisões ou que a IA continue correndo enquanto você lê a tela.
-        Time.timeScale = 0;
+        // Garante que o painel comece desligado para não aparecer no meio da corrida
+        if (painelResultados != null) painelResultados.SetActive(false);
     }
 
-    // --- FUNÇÃO PARA O BOTÃO CONTINUAR ---
-    public void VoltarParaOverworld() // Ação disparada quando o jogador clica no botão "Continuar" da interface.
+    void Start()
     {
-        // Devolve o tempo ao normal (1) ANTES de carregar a cena. 
-        // É essencial, senão o jogador chegaria no Overworld e estaria tudo congelado.
-        Time.timeScale = 1;
+        // Assim que a pista carrega, o cronômetro zera e começa a rodar!
+        tempoAtualDaCorrida = 0f;
+        cronometroRodando = true;
+    }
 
-        // Usa o SceneManager da Unity para deletar a pista de corrida da memória e carregar o mapa principal.
+    void Update()
+    {
+        // Se a corrida não acabou, continua somando os segundos
+        if (cronometroRodando)
+        {
+            tempoAtualDaCorrida += Time.deltaTime;
+        }
+    }
+
+    // A função principal foi atualizada para receber também o tempo final e o XP ganho da linha de chegada
+    public void MostrarResultados(bool vitoria, int xpGanho)
+    {
+        cronometroRodando = false;
+        painelResultados.SetActive(true); // Liga os textos na tela
+
+        if (vitoria) // Se cruzou a linha de chegada a tempo...
+        {
+            // 1. Configura o Título
+            textoTitulo.text = "SAM VENCEU!!!";
+            textoTitulo.color = Color.yellow; // Pinta o título de amarelo vitória
+
+        }
+        else // Se o tempo acabou ou o robô foi destruído...
+        {
+            textoTitulo.text = "SAM PERDEU...";
+            textoTitulo.color = new Color(0.7f, 0.7f, 0.7f); // Pinta de cinza 
+        }
+
+        // 3. Usa o tempo que o próprio script calculou para formatar na tela
+        int minutos = Mathf.FloorToInt(tempoAtualDaCorrida / 60f);
+        int segundos = Mathf.FloorToInt(tempoAtualDaCorrida % 60f);
+        textoTempo.text = $"TEMPO      {minutos}:{segundos:00}";
+
+        // 3. XP limpo e direto, exatamente como você pediu
+        textoXP.text = $"XP         {xpGanho}";
+    }
+
+    // Função para o Botão Continuar
+    public void VoltarParaOverworld()
+    {
+        // Como nós não pausamos mais o Time.timeScale lá em cima, você pode apenas carregar a cena direto!
         SceneManager.LoadScene(nomeCenaOverworld);
     }
 }
