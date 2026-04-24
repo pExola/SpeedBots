@@ -1,86 +1,159 @@
-using UnityEngine; // Importa as ferramentas principais da Unity.
-using TMPro; // Importa a biblioteca para formatar os textos com alta qualidade na UI.
-using UnityEngine.SceneManagement; // Importa o gerenciador de cenas para podermos voltar ao Overworld.
+using System.Collections; // Importa a biblioteca para usarmos Corrotinas
+using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
-public class TelaResultados : MonoBehaviour // O seu script original, agora no estilo Sonic!
+public class TelaResultados : MonoBehaviour
 {
-    // Singleton rápido para a Linha de Chegada conseguir achar e chamar essa tela facilmente
     public static TelaResultados Instance { get; private set; }
 
-    [Header("UI e Status")]
-    public GameObject painelResultados; // O container invisível que segura os textos 
-
-    // O texto único foi dividido em três para podermos organizar na tela como no jogo do Sonic
-    public TextMeshProUGUI textoTitulo; // Para o "SAM VENCEU!!!" bem grande
-    public TextMeshProUGUI textoTempo;  // Para mostrar o tempo de corrida
-    public TextMeshProUGUI textoXP; // Para mostrar o XP
+    [Header("UI Simples (Estilo Sonic)")]
+    public GameObject painelResultados;
+    public TextMeshProUGUI textoTitulo;
+    public TextMeshProUGUI textoTempo;
+    public TextMeshProUGUI textoXP;
+    public GameObject botaoContinuar;
 
     [Header("Transição")]
-    [Tooltip("Digite o nome exato da sua cena do mapa principal")]
-    public string nomeCenaOverworld = "Overworld"; // Salva para onde o jogador vai ao clicar em Continuar.
+    public string nomeCenaOverworld = "Overworld";
 
-    // --- VARIÁVEIS DO CRONÔMETRO ---
     private float tempoAtualDaCorrida = 0f;
     private bool cronometroRodando = false;
 
     void Awake()
     {
-        // Configura o Singleton: garante que essa tela seja única e acessível
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        // Garante que o painel comece desligado para não aparecer no meio da corrida
         if (painelResultados != null) painelResultados.SetActive(false);
     }
 
     void Start()
     {
-        // Assim que a pista carrega, o cronômetro zera e começa a rodar!
         tempoAtualDaCorrida = 0f;
         cronometroRodando = true;
     }
 
     void Update()
     {
-        // Se a corrida não acabou, continua somando os segundos
         if (cronometroRodando)
         {
             tempoAtualDaCorrida += Time.deltaTime;
         }
     }
 
-    // A função principal foi atualizada para receber também o tempo final e o XP ganho da linha de chegada
     public void MostrarResultados(bool vitoria, int xpGanho)
     {
-        cronometroRodando = false;
-        painelResultados.SetActive(true); // Liga os textos na tela
+        cronometroRodando = false; // Trava o cronômetro
 
-        if (vitoria) // Se cruzou a linha de chegada a tempo...
+        // A MÁGICA DA CÂMERA: Estaciona a câmera desligando o script dela
+        if (Camera.main != null)
         {
-            // 1. Configura o Título
-            textoTitulo.text = "SAM VENCEU!!!";
-            textoTitulo.color = Color.yellow; // Pinta o título de amarelo vitória
-
+            var cameraScript = Camera.main.GetComponent("CameraDinamica") as MonoBehaviour;
+            if (cameraScript != null) cameraScript.enabled = false;
         }
-        else // Se o tempo acabou ou o robô foi destruído...
+
+        // Inicia a sequência de animação progressiva da UI
+        StartCoroutine(SequenciaDeResultados(vitoria, xpGanho));
+    }
+
+    private IEnumerator SequenciaDeResultados(bool vitoria, int xpGanho)
+    {
+        // Passo 1: Esconde tudo para a tela nascer limpa
+        painelResultados.SetActive(true);
+        textoTitulo.gameObject.SetActive(false);
+        textoTempo.gameObject.SetActive(false);
+        textoXP.gameObject.SetActive(false);
+        if (botaoContinuar != null) botaoContinuar.SetActive(false);
+
+        yield return new WaitForSeconds(0.5f); // Respiro inicial
+
+        // Passo 2: Revela o Título
+        textoTitulo.gameObject.SetActive(true);
+        if (vitoria)
+        {
+            textoTitulo.text = "SAM VENCEU!!!";
+            textoTitulo.color = Color.yellow;
+        }
+        else
         {
             textoTitulo.text = "SAM PERDEU...";
-            textoTitulo.color = new Color(0.7f, 0.7f, 0.7f); // Pinta de cinza 
+            textoTitulo.color = new Color(0.7f, 0.7f, 0.7f);
         }
 
-        // 3. Usa o tempo que o próprio script calculou para formatar na tela
-        int minutos = Mathf.FloorToInt(tempoAtualDaCorrida / 60f);
-        int segundos = Mathf.FloorToInt(tempoAtualDaCorrida % 60f);
-        textoTempo.text = $"TEMPO      {minutos}:{segundos:00}";
+        yield return new WaitForSeconds(1.0f); // Pausa para ler o título
 
-        // 3. XP limpo e direto, exatamente como você pediu
-        textoXP.text = $"XP         {xpGanho}";
+        // Passo 3: Revela o Tempo zerado e INICIA A CONTAGEM
+        textoTempo.gameObject.SetActive(true);
+        // O "yield return StartCoroutine" obriga o código a esperar a contagem terminar antes de ir para a próxima linha!
+        // O número "1.0f" ali é a duração do efeito (vai levar 1 segundo contando do zero até o tempo real).
+        yield return StartCoroutine(AnimarNumeroTempo(tempoAtualDaCorrida, 1.0f));
+
+        yield return new WaitForSeconds(0.5f); // Pequena pausa entre o tempo terminar e o XP começar
+
+        // Passo 4: Revela o XP zerado e INICIA A CONTAGEM
+        textoXP.gameObject.SetActive(true);
+        yield return StartCoroutine(AnimarNumeroXP(xpGanho, 1.0f)); // Conta o XP do 0 até o total durante 1 segundo
+
+        yield return new WaitForSeconds(0.5f); // Pausa final
+
+        // Passo 5: Acende o botão de continuar
+        if (botaoContinuar != null) botaoContinuar.SetActive(true);
     }
 
-    // Função para o Botão Continuar
+    // --- AS NOVAS CORROTINAS DE GAME FEEL (CONTAGEM) ---
+
+    private IEnumerator AnimarNumeroTempo(float tempoFinalCravado, float duracaoAnimacao)
+    {
+        float tempoRolando = 0f; // Nosso próprio relógio interno para a animação
+
+        // Enquanto o tempo da animação não acabar...
+        while (tempoRolando < duracaoAnimacao)
+        {
+            tempoRolando += Time.deltaTime; // Soma os frames
+
+            // Mathf.Lerp calcula o valor intermediário exato. Ex: aos 0.5s de animação, ele vai estar na metade do tempoFinal.
+            float valorCalculadoNesteFrame = Mathf.Lerp(0, tempoFinalCravado, tempoRolando / duracaoAnimacao);
+
+            // Formata o número falso que está crescendo e joga na tela
+            int min = Mathf.FloorToInt(valorCalculadoNesteFrame / 60f);
+            int seg = Mathf.FloorToInt(valorCalculadoNesteFrame % 60f);
+            textoTempo.text = $"TEMPO      {min}:{seg:00}";
+
+            // Dica de Game Feel: Se quiser colocar som, coloque um AudioManager.Play("Tique") aqui!
+
+            yield return null; // Pausa a corrotina e espera o próximo frame do jogo para atualizar o número de novo
+        }
+
+        // TRAVA DE SEGURANÇA: Garante que no último frame o número exibido seja exatamente o tempo real cravado, sem erros de arredondamento.
+        int minFinais = Mathf.FloorToInt(tempoFinalCravado / 60f);
+        int segFinais = Mathf.FloorToInt(tempoFinalCravado % 60f);
+        textoTempo.text = $"TEMPO      {minFinais}:{segFinais:00}";
+    }
+
+    private IEnumerator AnimarNumeroXP(int xpFinal, float duracaoAnimacao)
+    {
+        float tempoRolando = 0f;
+
+        while (tempoRolando < duracaoAnimacao)
+        {
+            tempoRolando += Time.deltaTime;
+
+            // O RoundToInt garante que a tela nunca mostre "XP 45.3", arredondando sempre para números inteiros bonitos.
+            int xpCalculadoNesteFrame = Mathf.RoundToInt(Mathf.Lerp(0, xpFinal, tempoRolando / duracaoAnimacao));
+
+            textoXP.text = $"XP         {xpCalculadoNesteFrame}";
+
+            yield return null; // Espera o próximo frame
+        }
+
+        // TRAVA DE SEGURANÇA: Crava o XP final exato na tela.
+        textoXP.text = $"XP         {xpFinal}";
+    }
+
     public void VoltarParaOverworld()
     {
-        // Como nós não pausamos mais o Time.timeScale lá em cima, você pode apenas carregar a cena direto!
         SceneManager.LoadScene(nomeCenaOverworld);
     }
+
 }
