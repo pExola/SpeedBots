@@ -57,7 +57,8 @@ public class SpeedBotMovment : MonoBehaviour // É o controle principal do Jogado
     void Update() // Roda a cada frame para ler o teclado imediatamente.
     {
         if (Keyboard.current == null) return; // Trava de segurança caso não tenha teclado.
-
+                                              
+       
         float moveInput = 0f; // Variável temporária para saber para onde o jogador quer ir.
 
         // Lê DIRETAMENTE o novo Input System da Unity:
@@ -81,6 +82,11 @@ public class SpeedBotMovment : MonoBehaviour // É o controle principal do Jogado
 
     void FixedUpdate() // Roda no tempo fixo da engine. É aqui que o "Game Feel" físico acontece.
     {
+        if (TelaResultados.Instance != null && !TelaResultados.Instance.corridaLiberada) // Se a corrida não começou, ignora todos os apertos de botão e força o robô a ficar parado!
+        {
+            return; // O return corta a função aqui, impedindo ele de processar a aceleração
+        }
+
         if (stunTimer > 0) // Se o robô tomou um Stun (Fogo/Armadilha)...
         {
             stunTimer -= Time.fixedDeltaTime; // Abate o tempo do stun.

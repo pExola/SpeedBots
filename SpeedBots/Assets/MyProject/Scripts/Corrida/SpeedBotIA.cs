@@ -76,6 +76,13 @@ public class SpeedBotIA : MonoBehaviour // Cria a classe que atua como o cérebro
 
     void FixedUpdate() // A Física e Sinergias (Roda no tempo da física da Unity)
     {
+        if (TelaResultados.Instance != null && !TelaResultados.Instance.corridaLiberada)
+        {
+            // Trava a IA no lugar, mantendo a gravidade funcionando caso ela nasça caindo, mas zerando a corrida
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
         if (!isGrounded && isTouchingWall && rb.linearVelocity.y > 0) { } // Ajuste fino de inércia em pulos na parede.
         else if (isGrounded) { moveDirection = direcaoPistaAtual; } // Garante que a IA sempre siga o fluxo da pista ditado pelo level design
 

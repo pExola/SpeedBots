@@ -7,12 +7,17 @@ public class TelaResultados : MonoBehaviour
 {
     public static TelaResultados Instance { get; private set; }
 
-    [Header("UI Simples (Estilo Sonic)")]
+    [Header("UI Simples")]
     public GameObject painelResultados;
     public TextMeshProUGUI textoTitulo;
     public TextMeshProUGUI textoTempo;
     public TextMeshProUGUI textoXP;
     public GameObject botaoContinuar;
+
+    [Header("Largada")]
+    public TextMeshProUGUI textoLargada;
+    // O "semáforo". Os robôs vão ler isso para saber se podem acelerar
+    public bool corridaLiberada = false;
 
     [Header("Transição")]
     public string nomeCenaOverworld = "Overworld";
@@ -30,8 +35,12 @@ public class TelaResultados : MonoBehaviour
 
     void Start()
     {
+        // Em vez de começar o cronômetro direto, nós chamamos a corrotina da largada!
         tempoAtualDaCorrida = 0f;
-        cronometroRodando = true;
+        cronometroRodando = false;
+        corridaLiberada = false;
+
+        StartCoroutine(RotinaDeLargada());
     }
 
     void Update()
@@ -55,6 +64,31 @@ public class TelaResultados : MonoBehaviour
 
         // Inicia a sequência de animação progressiva da UI
         StartCoroutine(SequenciaDeResultados(vitoria, xpGanho));
+    }
+
+    private IEnumerator RotinaDeLargada()
+    {
+        textoLargada.gameObject.SetActive(true);
+
+        textoLargada.text = "3";
+        yield return new WaitForSeconds(1f);
+
+        textoLargada.text = "2";
+        yield return new WaitForSeconds(1f);
+
+        textoLargada.text = "1";
+        yield return new WaitForSeconds(1f);
+
+        // O momento do disparo!
+        textoLargada.text = "VAI!!!";
+        textoLargada.color = Color.green; // Pinta de verde para dar o "Game Feel"
+
+        // Acende o semáforo verde para os robôs e liga o relógio da fase!
+        corridaLiberada = true;
+        cronometroRodando = true;
+
+        yield return new WaitForSeconds(1f); // Deixa o "VAI" na tela por 1 segundinho
+        textoLargada.gameObject.SetActive(false); // Apaga o texto para limpar a visão da pista
     }
 
     private IEnumerator SequenciaDeResultados(bool vitoria, int xpGanho)
