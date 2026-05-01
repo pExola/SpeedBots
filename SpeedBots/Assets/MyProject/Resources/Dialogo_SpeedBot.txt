@@ -1,0 +1,105 @@
+:: StoryTitle
+Prototipo SpeedBot
+
+
+:: StoryData
+{
+  "ifid": "514BB244-90FE-4A7C-976A-85E71EC1BC3F",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Inicio",
+  "zoom": 1
+}
+
+
+:: ConfrontoDireto {"position":"800,500","size":"100,100"}
+Sam: Os fãs ficam do outro lado da grade. Como você passou pela segurança da Autrons? 
+
+Tom: Um bom malandro não revela seus truques. Prazer, (text-colour:red)[Tom Oneil]. Um malandro reconhece o outro.
+
+Sam: O que quer dizer com isso? Eu sou (text-colour:red)[Sam], à propósito.
+
+Tom: Sei quem você é e os truques sujos que usa para vencer, ou vai me dizer que o SpeedBot da (text-colour:yellow)[Juno] "quebrou do nada" na última curva?
+
+[[Dizer que ele está imaginando coisas->NegacionismoInicial]]
+
+[[Perguntar como ele sabe da curva->SementedaDuvida]]
+
+
+
+:: Inicio {"position":"1000,300","size":"100,100"}
+O silêncio do Paddock da (text-colour:yellow)[Autrons] é quase tão frio quanto o metal do seu (text-colour:yellow)[SpeedBot]. Você acabou de vencer mais uma vez. O troféu brilha sob as luzes artificiais de (text-colour:green)[Neon-Sintra]
+
+Enquanto você ajusta seu robô, um vulto encostado em um pilar de sustentação pigarreia. É um jovem com roupas sujas de graxa e mãos calejadas, típicas de quem sobrevive no (text-colour:green)[Deserto de Ferro].
+
+Estranho: Bela corrida, Khalil. Magnética. Quase... programada demais, não acha?
+
+[[Questionar a presença dele->ConfrontoDireto]]
+
+[[Ignorar e continuar o ajuste->ProvocacaoSutil]]
+
+
+:: NegacionismoInicial {"position":"1000,700","size":"100,100"}
+Tom: Confortável, não é? Acreditar que o mundo foi construído sob medida para o seu talento. Se eu tivesse uma imaginação tão fértil, escreveria contos de fada em vez de pilotar.
+
+Sam: A perfeição incomoda quem vive no erro, Tom. Vou calar sua boca onde a telemetria não mente. Vamos correr no (text-colour:green)[Beco 13]. Agora.
+
+Tom: O "Menino de Ouro" nos (text-colour:green)[Distritos Baixos]? Lá o ar é pesado, especialmente quando você for humilhado por alguém que conhece cada parafuso da própria sucata.
+
+Sam: Eu vou te vencer, Tom. Assim como venci todos os outros que tentaram questionar meu lugar no topo.
+
+Tom: Veremos. Seus segredinhos técnicos não funcionam lá. O Beco 13 é a única pista fora do alcance da (text-colour:yellow)[Federação]. Apenas você e o medo de descobrir que é comum.
+
+Sam dá um sorriso tenso. Ele sabe que corre um risco desnecessário indo ao Beco 13, mas seu ego é a única coisa que ainda o mantém de pé após as palavras de Tom.
+
+
+:: NegacionismoInicial2 {"position":"1300,700","size":"100,100"}
+Estranho: Confortável, não é? Acreditar que o mundo foi construído sob medida para o seu talento. Se eu tivesse uma imaginação tão fértil, escreveria contos de fada em vez de pilotar.
+
+Sam: A perfeição incomoda quem vive no erro. Vou calar sua boca onde a telemetria não mente. Vamos correr no (text-colour:green)[Beco 13]. Agora.
+
+Estranho: O "Menino de Ouro" nos (text-colour:green)[Distritos Baixos]? Lá o ar é pesado, especialmente quando você for humilhado por alguém que conhece cada parafuso da própria sucata.
+
+Sam: Eu vou te vencer, mesmo sem saber quem você é. Assim como venci todos os outros que tentaram questionar meu lugar no topo.
+
+Estranho: Veremos. Seus segredinhos técnicos não funcionam lá. O Beco 13 é a única pista fora do alcance da (text-colour:yellow)[Federação]. Apenas você e o medo de descobrir que é comum.
+
+Estranho: Sou Tom, à propósito. (text-colour:red)[Tom Oneil], seu novo rival.
+
+Sam dá um sorriso tenso. Ele sabe que corre um risco desnecessário indo ao Beco 13, mas seu ego é a única coisa que ainda o mantém de pé após as palavras de Tom.
+
+
+:: ProvocacaoSutil {"position":"1200,500","size":"100,100"}
+Você continua mexendo nos sensores, tentando ignorar a presença do intruso.
+
+Estranho: O (text-colour:yellow)[Fluxo] puro é silencioso, né? Mas eu vi o seu painel de telemetria oscilar quando você cruzou a linha de chegada. Um soluço de 0.2 segundos. O sistema da Autrons tentou esconder, mas a máquina sabe quando está sendo amordaçada.
+
+Você para o que está fazendo. Aquele "soluço" no motor é algo que você nunca mencionou a ninguém.
+
+[[Encarar o estranho->ConfrontoDireto]]
+
+[[Dizer que ele está imaginando coisas->NegacionismoInicial2]]
+
+
+:: PuristaStart {"position":"1000,900","size":"100,100"}
+Tom: Aceito o desafio. Mas vamos correr no (text-colour:green)[Beco 13]
+
+Sam: Aquela sucataria não tem regulamentação da (text-colour:yellow)[Federação], Tom. Não vou arriscar a integridade de uma obra-prima da engenharia para provar um ponto a um moleque que se orgulha da própria miséria.
+
+Tom: Obra-prima? Eu acho que você tem medo de descobrir que, sem a gaiola de ouro da Autrons, você é apenas um piloto comum.
+
+Sam: Isso não define quem sou, idiota.
+
+Tom: Então prove. Seu SpeedBot será aposentado na próxima temporada com a (text-colour:blue)[mudança do regulamento] que seu pai está orquestrando. Esta é sua última chance de correr antes de virar uma peça de museu protegida.
+
+Sam aperta os punhos. O Beco 13 é o único lugar onde a influência de Sharkur não chega. Ele aceita o convite, não para calar Tom, mas para silenciar a dúvida que agora grita em sua própria mente: "Eu sou realmente comum?"
+
+
+:: SementedaDuvida {"position":"700,700","size":"100,100"}
+Tom: Eu não entendo de luxo, Sam, mas entendo de fatos. Conheço (text-colour:red)[Viktor], o motor dele não quebrou por falta de manutenção. Ele foi desligado remotamente no momento em que você iniciou a ultrapassagem.
+
+Sam: Isso é impossível. O (text-colour:yellow)[Sindicato dos Juízes] nunca permitiria.
+
+Tom: Os Juízes comem na mão do seu pai, Khalil. Se tiver coragem de olhar para o abismo, cheque o log de rádio da (text-colour:blue)[frequência 14.05]. E da próxima vez, espero te vencer quando o seu pai não estiver segurando as rédeas da pista.
+
+[[Desafiar Tom para uma corrida->PuristaStart]]
