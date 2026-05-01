@@ -20,7 +20,7 @@ MonoBehaviour:
   m_CellLayout: 0
   m_HexagonLayout: 0
   m_CellSize: {x: 1, y: 1, z: 1}
-  m_CellSizing: 100
+  m_CellSizing: 0
   m_TransparencySortMode: 0
   m_TransparencySortAxis: {x: 0, y: 0, z: 1}
   m_GeneratedSpritesList: []
