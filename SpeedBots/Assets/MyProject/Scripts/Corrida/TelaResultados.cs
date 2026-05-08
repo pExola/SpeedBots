@@ -2,6 +2,7 @@ using System.Collections; // Importa a biblioteca para usarmos Corrotinas
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class TelaResultados : MonoBehaviour
 {
@@ -14,6 +15,11 @@ public class TelaResultados : MonoBehaviour
     public TextMeshProUGUI textoXP;
     public GameObject botaoContinuar;
 
+    [Header("Cutscene de Derrota")]
+    public GameObject painelCutscene; // A Raw Image 
+    public VideoPlayer videoDerrota;  // O componente que toca o vídeo
+    public TextMeshProUGUI textoCutscene;
+
     [Header("Largada")]
     public TextMeshProUGUI textoLargada;
     // O "semáforo". Os robôs vão ler isso para saber se podem acelerar
@@ -21,9 +27,11 @@ public class TelaResultados : MonoBehaviour
 
     [Header("Transição")]
     public string nomeCenaOverworld = "Overworld";
+    public string nomeCenaPosDerrota = "Mundo_PosCorrida";
 
     private float tempoAtualDaCorrida = 0f;
     private bool cronometroRodando = false;
+    private bool venceuACorrida = false;
 
     void Awake()
     {
@@ -31,6 +39,7 @@ public class TelaResultados : MonoBehaviour
         else Destroy(gameObject);
 
         if (painelResultados != null) painelResultados.SetActive(false);
+        if (painelCutscene != null) painelCutscene.SetActive(false);
     }
 
     void Start()
@@ -51,18 +60,56 @@ public class TelaResultados : MonoBehaviour
         }
     }
 
+    private IEnumerator RodarCutsceneDerrota()
+    {
+        painelResultados.SetActive(false);
+        painelCutscene.SetActive(true);
+
+        // Garante que o texto comece escondido
+        if (textoCutscene != null) textoCutscene.gameObject.SetActive(false);
+
+        videoDerrota.Play();
+
+        // ESPERA O TEMPO DO GUIA: O texto deve surgir aos 4 segundos de vídeo
+        yield return new WaitForSeconds(3.0f);
+
+        if (textoCutscene != null)
+        {
+            StartCoroutine(EfeitoMaquinaDeEscrever("Eu... Perdi...?", 0.15f));
+        }
+
+        // Espera o restante do vídeo acabar (Duração total - 4 segundos já esperados)
+        float tempoRestante = (float)videoDerrota.length - 3.0f;
+        yield return new WaitForSeconds(Mathf.Max(0, tempoRestante));
+
+        SceneManager.LoadScene(nomeCenaPosDerrota);
+    }
+
+    private IEnumerator EfeitoMaquinaDeEscrever(string textoFinal, float tempoPorLetra)
+    {
+        textoCutscene.text = ""; // Garante que a caixa de texto comece completamente vazia
+        textoCutscene.gameObject.SetActive(true);
+
+        // O "foreach" pega a frase inteira, quebra em letras individuais e faz um loop
+        foreach (char letra in textoFinal.ToCharArray())
+        {
+            textoCutscene.text += letra; // Adiciona a próxima letra na tela
+            yield return new WaitForSeconds(tempoPorLetra); // Espera uns milissegundos antes da próxima
+        }
+    }
+
     public void MostrarResultados(bool vitoria, int xpGanho)
     {
-        cronometroRodando = false; // Trava o cronômetro
+        cronometroRodando = false;
+        venceuACorrida = vitoria;
 
-        // A MÁGICA DA CÂMERA: Estaciona a câmera desligando o script dela
         if (Camera.main != null)
         {
             var cameraScript = Camera.main.GetComponent("CameraDinamica") as MonoBehaviour;
             if (cameraScript != null) cameraScript.enabled = false;
         }
 
-        // Inicia a sequência de animação progressiva da UI
+        // A cascata de XP agora roda sempre, ANTES de qualquer decisão de cena
         StartCoroutine(SequenciaDeResultados(vitoria, xpGanho));
     }
 
@@ -93,16 +140,14 @@ public class TelaResultados : MonoBehaviour
 
     private IEnumerator SequenciaDeResultados(bool vitoria, int xpGanho)
     {
-        // Passo 1: Esconde tudo para a tela nascer limpa
         painelResultados.SetActive(true);
         textoTitulo.gameObject.SetActive(false);
         textoTempo.gameObject.SetActive(false);
         textoXP.gameObject.SetActive(false);
         if (botaoContinuar != null) botaoContinuar.SetActive(false);
 
-        yield return new WaitForSeconds(0.5f); // Respiro inicial
+        yield return new WaitForSeconds(0.5f);
 
-        // Passo 2: Revela o Título
         textoTitulo.gameObject.SetActive(true);
         if (vitoria)
         {
@@ -112,27 +157,38 @@ public class TelaResultados : MonoBehaviour
         else
         {
             textoTitulo.text = "SAM PERDEU...";
-            textoTitulo.color = new Color(0.7f, 0.7f, 0.7f);
+            
         }
 
-        yield return new WaitForSeconds(1.0f); // Pausa para ler o título
+        yield return new WaitForSeconds(1.0f);
 
-        // Passo 3: Revela o Tempo zerado e INICIA A CONTAGEM
         textoTempo.gameObject.SetActive(true);
-        // O "yield return StartCoroutine" obriga o código a esperar a contagem terminar antes de ir para a próxima linha!
-        // O número "1.0f" ali é a duração do efeito (vai levar 1 segundo contando do zero até o tempo real).
         yield return StartCoroutine(AnimarNumeroTempo(tempoAtualDaCorrida, 1.0f));
 
-        yield return new WaitForSeconds(0.5f); // Pequena pausa entre o tempo terminar e o XP começar
+        yield return new WaitForSeconds(0.5f);
 
-        // Passo 4: Revela o XP zerado e INICIA A CONTAGEM
         textoXP.gameObject.SetActive(true);
-        yield return StartCoroutine(AnimarNumeroXP(xpGanho, 1.0f)); // Conta o XP do 0 até o total durante 1 segundo
+        yield return StartCoroutine(AnimarNumeroXP(xpGanho, 1.0f));
 
-        yield return new WaitForSeconds(0.5f); // Pausa final
+        yield return new WaitForSeconds(0.5f);
 
-        // Passo 5: Acende o botão de continuar
+        // O botão aparece por último, respeitando a sua preferência
         if (botaoContinuar != null) botaoContinuar.SetActive(true);
+    }
+
+    // Esta função deve ser vinculada ao OnClick() do seu botão na Unity
+    public void BotaoContinuarClicado()
+    {
+        if (venceuACorrida)
+        {
+            // Se venceu, volta para o mapa principal (Overworld)
+            SceneManager.LoadScene(nomeCenaOverworld);
+        }
+        else
+        {
+            // Se perdeu, o clique no botão é o que dispara a cutscene
+            StartCoroutine(RodarCutsceneDerrota());
+        }
     }
 
     // --- AS NOVAS CORROTINAS DE GAME FEEL (CONTAGEM) ---
