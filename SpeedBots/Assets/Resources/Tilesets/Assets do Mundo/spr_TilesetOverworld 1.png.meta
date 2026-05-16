@@ -1,508 +1,535 @@
 fileFormatVersion: 2
-guid: 882db674a0d5f4447ae2e311fdb452a6
+guid: d5d818de5a3e3f1489a6f0b98e5e3697
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4539790882485951865
-    second: spr_TilesetOverworld_0
+      213: -9169252397512171745
+    second: spr_TilesetOverworld 1_0
   - first:
-      213: -904457562765541382
-    second: spr_TilesetOverworld_1
+      213: 7719661196653724087
+    second: spr_TilesetOverworld 1_1
   - first:
-      213: -2644058092093303026
-    second: spr_TilesetOverworld_2
+      213: -1563392715950266566
+    second: spr_TilesetOverworld 1_2
   - first:
-      213: -6326352291780890354
-    second: spr_TilesetOverworld_3
+      213: 1442778063820558405
+    second: spr_TilesetOverworld 1_3
   - first:
-      213: 7097845059828447121
-    second: spr_TilesetOverworld_4
+      213: 7861506700497950176
+    second: spr_TilesetOverworld 1_4
   - first:
-      213: -3181869190872885543
-    second: spr_TilesetOverworld_5
+      213: 2130722953182682848
+    second: spr_TilesetOverworld 1_5
   - first:
-      213: 6594239166020122643
-    second: spr_TilesetOverworld_6
+      213: 6282936966007816856
+    second: spr_TilesetOverworld 1_6
   - first:
-      213: -6490406154475223097
-    second: spr_TilesetOverworld_7
+      213: 339392078105733680
+    second: spr_TilesetOverworld 1_7
   - first:
-      213: -6438605063622243000
-    second: spr_TilesetOverworld_8
+      213: 7027522022168454512
+    second: spr_TilesetOverworld 1_8
   - first:
-      213: -3670401550543625931
-    second: spr_TilesetOverworld_9
+      213: 2299128779522970735
+    second: spr_TilesetOverworld 1_9
   - first:
-      213: -9041103983932766917
-    second: spr_TilesetOverworld_10
+      213: 5582515381732209738
+    second: spr_TilesetOverworld 1_10
   - first:
-      213: -8861373079787527462
-    second: spr_TilesetOverworld_11
+      213: -6827390086465146223
+    second: spr_TilesetOverworld 1_11
   - first:
-      213: 6354247283772188893
-    second: spr_TilesetOverworld_12
+      213: 3700216945465023710
+    second: spr_TilesetOverworld 1_12
   - first:
-      213: 546027694601625494
-    second: spr_TilesetOverworld_13
+      213: -5902897578594642029
+    second: spr_TilesetOverworld 1_13
   - first:
-      213: 9141949420177529957
-    second: spr_TilesetOverworld_14
+      213: 5264641888938733851
+    second: spr_TilesetOverworld 1_14
   - first:
-      213: -8701978126588693589
-    second: spr_TilesetOverworld_15
+      213: -3226186527614662770
+    second: spr_TilesetOverworld 1_15
   - first:
-      213: 8868848713698503811
-    second: spr_TilesetOverworld_16
+      213: -5289997471275003361
+    second: spr_TilesetOverworld 1_16
   - first:
-      213: -8413051303796340250
-    second: spr_TilesetOverworld_17
+      213: 5593325297860443726
+    second: spr_TilesetOverworld 1_17
   - first:
-      213: -342698317772825131
-    second: spr_TilesetOverworld_18
+      213: -3866861436709497870
+    second: spr_TilesetOverworld 1_18
   - first:
-      213: 8767022487754093897
-    second: spr_TilesetOverworld_19
+      213: -4563276516000341180
+    second: spr_TilesetOverworld 1_19
   - first:
-      213: 4122403621301996186
-    second: spr_TilesetOverworld_20
+      213: -6431369759129177765
+    second: spr_TilesetOverworld 1_20
   - first:
-      213: 2057661766287646751
-    second: spr_TilesetOverworld_21
+      213: 7347794860898989817
+    second: spr_TilesetOverworld 1_21
   - first:
-      213: -4317964075576503488
-    second: spr_TilesetOverworld_22
+      213: -1367823724103911782
+    second: spr_TilesetOverworld 1_22
   - first:
-      213: -1949133533445472845
-    second: spr_TilesetOverworld_23
+      213: 5116013619096217967
+    second: spr_TilesetOverworld 1_23
   - first:
-      213: -7262453302940562905
-    second: spr_TilesetOverworld_24
+      213: 7623125534069973259
+    second: spr_TilesetOverworld 1_24
   - first:
-      213: -6711236632342134738
-    second: spr_TilesetOverworld_25
+      213: 9186044080961768571
+    second: spr_TilesetOverworld 1_25
   - first:
-      213: 2256833969574209789
-    second: spr_TilesetOverworld_26
+      213: -808143405030677637
+    second: spr_TilesetOverworld 1_26
   - first:
-      213: -6473098432659591326
-    second: spr_TilesetOverworld_27
+      213: 5834404455719275543
+    second: spr_TilesetOverworld 1_27
   - first:
-      213: -8404983003374007101
-    second: spr_TilesetOverworld_28
+      213: 7330669761722096107
+    second: spr_TilesetOverworld 1_28
   - first:
-      213: 6867421134178421378
-    second: spr_TilesetOverworld_29
+      213: -2361506860514129456
+    second: spr_TilesetOverworld 1_29
   - first:
-      213: 1738371020363447995
-    second: spr_TilesetOverworld_30
+      213: 6408312593325618309
+    second: spr_TilesetOverworld 1_30
   - first:
-      213: -4218463151294887961
-    second: spr_TilesetOverworld_31
+      213: 109215706910002820
+    second: spr_TilesetOverworld 1_31
   - first:
-      213: -288732165712171133
-    second: spr_TilesetOverworld_32
+      213: -2788896228276934908
+    second: spr_TilesetOverworld 1_32
   - first:
-      213: 3013519892895732638
-    second: spr_TilesetOverworld_33
+      213: -3931408934182999791
+    second: spr_TilesetOverworld 1_33
   - first:
-      213: 8840880658340537163
-    second: spr_TilesetOverworld_34
+      213: 2255479621017572978
+    second: spr_TilesetOverworld 1_34
   - first:
-      213: 3306891470105365143
-    second: spr_TilesetOverworld_35
+      213: 1188744955841639828
+    second: spr_TilesetOverworld 1_35
   - first:
-      213: 4897205401703945624
-    second: spr_TilesetOverworld_36
+      213: -3007501597907579349
+    second: spr_TilesetOverworld 1_36
   - first:
-      213: -8201475756910778702
-    second: spr_TilesetOverworld_37
+      213: -5560206160365010771
+    second: spr_TilesetOverworld 1_37
   - first:
-      213: -7550413984601409870
-    second: spr_TilesetOverworld_38
+      213: 6995116186610706443
+    second: spr_TilesetOverworld 1_38
   - first:
-      213: -848941569078557222
-    second: spr_TilesetOverworld_39
+      213: -526029069931185237
+    second: spr_TilesetOverworld 1_39
   - first:
-      213: 8501702344141160791
-    second: spr_TilesetOverworld_40
+      213: 5114893663450061973
+    second: spr_TilesetOverworld 1_40
   - first:
-      213: -6651824076619452252
-    second: spr_TilesetOverworld_41
+      213: 2569332971419667162
+    second: spr_TilesetOverworld 1_41
   - first:
-      213: -1266977556277993952
-    second: spr_TilesetOverworld_42
+      213: -2870436327392013518
+    second: spr_TilesetOverworld 1_42
   - first:
-      213: -2920810278372794258
-    second: spr_TilesetOverworld_43
+      213: -9216386846143364498
+    second: spr_TilesetOverworld 1_43
   - first:
-      213: 48999627570033336
-    second: spr_TilesetOverworld_44
+      213: 2036402380515383415
+    second: spr_TilesetOverworld 1_44
   - first:
-      213: -3822339390094791588
-    second: spr_TilesetOverworld_45
+      213: 1857173111776045265
+    second: spr_TilesetOverworld 1_45
   - first:
-      213: -856987257791903398
-    second: spr_TilesetOverworld_46
+      213: -8293979122900614581
+    second: spr_TilesetOverworld 1_46
   - first:
-      213: 7784945541821979866
-    second: spr_TilesetOverworld_47
+      213: -5801272263955328352
+    second: spr_TilesetOverworld 1_47
   - first:
-      213: -701959492958837144
-    second: spr_TilesetOverworld_48
+      213: -2381429494484404542
+    second: spr_TilesetOverworld 1_48
   - first:
-      213: -2677254186210520312
-    second: spr_TilesetOverworld_49
+      213: 7589378203879683198
+    second: spr_TilesetOverworld 1_49
   - first:
-      213: -5602752804201484534
-    second: spr_TilesetOverworld_50
+      213: -3789363175431575888
+    second: spr_TilesetOverworld 1_50
   - first:
-      213: 8657820311384964626
-    second: spr_TilesetOverworld_51
+      213: -5325378889404086661
+    second: spr_TilesetOverworld 1_51
   - first:
-      213: 5884004715718422422
-    second: spr_TilesetOverworld_52
+      213: 7859308744760886031
+    second: spr_TilesetOverworld 1_52
   - first:
-      213: 8413843371501860351
-    second: spr_TilesetOverworld_53
+      213: -3864330601384413067
+    second: spr_TilesetOverworld 1_53
   - first:
-      213: -1879788583471090307
-    second: spr_TilesetOverworld_54
+      213: -7386846693612044509
+    second: spr_TilesetOverworld 1_54
   - first:
-      213: 2611176207641095293
-    second: spr_TilesetOverworld_55
+      213: 4050952080355772878
+    second: spr_TilesetOverworld 1_55
   - first:
-      213: -7816600205515300929
-    second: spr_TilesetOverworld_56
+      213: 2099760708152405608
+    second: spr_TilesetOverworld 1_56
   - first:
-      213: 4472409732256852988
-    second: spr_TilesetOverworld_57
+      213: 3204664263031388841
+    second: spr_TilesetOverworld 1_57
   - first:
-      213: 8680949358689007757
-    second: spr_TilesetOverworld_58
+      213: -4844408701704177421
+    second: spr_TilesetOverworld 1_58
   - first:
-      213: -3576895955776242782
-    second: spr_TilesetOverworld_59
+      213: -2300535169938921604
+    second: spr_TilesetOverworld 1_59
   - first:
-      213: -288072597671495753
-    second: spr_TilesetOverworld_60
+      213: 4813238886783783754
+    second: spr_TilesetOverworld 1_60
   - first:
-      213: 1807310614351385105
-    second: spr_TilesetOverworld_61
+      213: 3737323653890361734
+    second: spr_TilesetOverworld 1_61
   - first:
-      213: -8898878172629550566
-    second: spr_TilesetOverworld_62
+      213: 7779222139122463276
+    second: spr_TilesetOverworld 1_62
   - first:
-      213: -7921675896362365329
-    second: spr_TilesetOverworld_63
+      213: -2658717784261199329
+    second: spr_TilesetOverworld 1_63
   - first:
-      213: -4412293916460950058
-    second: spr_TilesetOverworld_64
+      213: 841535991739771005
+    second: spr_TilesetOverworld 1_64
   - first:
-      213: -7180916430401485723
-    second: spr_TilesetOverworld_65
+      213: -5002167150309052992
+    second: spr_TilesetOverworld 1_65
   - first:
-      213: 473640433971165866
-    second: spr_TilesetOverworld_66
+      213: 3519432795197069068
+    second: spr_TilesetOverworld 1_66
   - first:
-      213: -5140421654159344887
-    second: spr_TilesetOverworld_67
+      213: -5024462440821085468
+    second: spr_TilesetOverworld 1_67
   - first:
-      213: 9039694963859459669
-    second: spr_TilesetOverworld_68
+      213: 2712553091289004125
+    second: spr_TilesetOverworld 1_68
   - first:
-      213: 1518564100478188371
-    second: spr_TilesetOverworld_69
+      213: 3792441888232874551
+    second: spr_TilesetOverworld 1_69
   - first:
-      213: -6447488268771840090
-    second: spr_TilesetOverworld_70
+      213: 1854432236151318705
+    second: spr_TilesetOverworld 1_70
   - first:
-      213: 2092900232616562193
-    second: spr_TilesetOverworld_71
+      213: 3940249873509031501
+    second: spr_TilesetOverworld 1_71
   - first:
-      213: 7358178779794893166
-    second: spr_TilesetOverworld_72
+      213: -5673647405409096385
+    second: spr_TilesetOverworld 1_72
   - first:
-      213: 6780067017551861798
-    second: spr_TilesetOverworld_73
+      213: -2311639366651520179
+    second: spr_TilesetOverworld 1_73
   - first:
-      213: 903827166276980366
-    second: spr_TilesetOverworld_74
+      213: -4559594121596235840
+    second: spr_TilesetOverworld 1_74
   - first:
-      213: 1390934630119434822
-    second: spr_TilesetOverworld_75
+      213: 574096804783656664
+    second: spr_TilesetOverworld 1_75
   - first:
-      213: -5538188123587151630
-    second: spr_TilesetOverworld_76
+      213: -7488729363611894226
+    second: spr_TilesetOverworld 1_76
   - first:
-      213: 7928256930906027747
-    second: spr_TilesetOverworld_77
+      213: 1478142399534282978
+    second: spr_TilesetOverworld 1_77
   - first:
-      213: 8457446191810047983
-    second: spr_TilesetOverworld_78
+      213: 3261295563972474682
+    second: spr_TilesetOverworld 1_78
   - first:
-      213: -943029789461447603
-    second: spr_TilesetOverworld_79
+      213: -1294206628573326717
+    second: spr_TilesetOverworld 1_79
   - first:
-      213: -2237221828081769157
-    second: spr_TilesetOverworld_80
+      213: 6381966605225352113
+    second: spr_TilesetOverworld 1_80
   - first:
-      213: -6290098631883264634
-    second: spr_TilesetOverworld_81
+      213: -6185636474795587652
+    second: spr_TilesetOverworld 1_81
   - first:
-      213: -1111284851465826366
-    second: spr_TilesetOverworld_82
+      213: -8145580882451682223
+    second: spr_TilesetOverworld 1_82
   - first:
-      213: -826763994266470814
-    second: spr_TilesetOverworld_83
+      213: -8738588429251757057
+    second: spr_TilesetOverworld 1_83
   - first:
-      213: 8837224732853969674
-    second: spr_TilesetOverworld_84
+      213: 7995258209283829463
+    second: spr_TilesetOverworld 1_84
   - first:
-      213: -1854977847119986544
-    second: spr_TilesetOverworld_85
+      213: -5784732259751162664
+    second: spr_TilesetOverworld 1_85
   - first:
-      213: -8764719304756408582
-    second: spr_TilesetOverworld_86
+      213: 4328372898764911145
+    second: spr_TilesetOverworld 1_86
   - first:
-      213: 2020845511599796366
-    second: spr_TilesetOverworld_87
+      213: -4840788595462604635
+    second: spr_TilesetOverworld 1_87
   - first:
-      213: 5618153780721012313
-    second: spr_TilesetOverworld_88
+      213: -5979509504116725855
+    second: spr_TilesetOverworld 1_88
   - first:
-      213: 4237688746319083981
-    second: spr_TilesetOverworld_89
+      213: 4724448524943564386
+    second: spr_TilesetOverworld 1_89
   - first:
-      213: 2022636252533296190
-    second: spr_TilesetOverworld_90
+      213: 7581178703902125879
+    second: spr_TilesetOverworld 1_90
   - first:
-      213: 5287678330635571775
-    second: spr_TilesetOverworld_91
+      213: 7012395146284509650
+    second: spr_TilesetOverworld 1_91
   - first:
-      213: -5987392689722737164
-    second: spr_TilesetOverworld_92
+      213: 1921855125000940071
+    second: spr_TilesetOverworld 1_92
   - first:
-      213: 4205124447154268728
-    second: spr_TilesetOverworld_93
+      213: 255100266071571528
+    second: spr_TilesetOverworld 1_93
   - first:
-      213: 7184458098504974428
-    second: spr_TilesetOverworld_94
+      213: -2040362561275392251
+    second: spr_TilesetOverworld 1_94
   - first:
-      213: 6804025037448314425
-    second: spr_TilesetOverworld_95
+      213: 1062061498329605071
+    second: spr_TilesetOverworld 1_95
   - first:
-      213: -4431611612672921075
-    second: spr_TilesetOverworld_96
+      213: -5141836484717643192
+    second: spr_TilesetOverworld 1_96
   - first:
-      213: 1635312037783190685
-    second: spr_TilesetOverworld_97
+      213: -3164933911155485296
+    second: spr_TilesetOverworld 1_97
   - first:
-      213: 3720189664076724694
-    second: spr_TilesetOverworld_98
+      213: 1167822100772094119
+    second: spr_TilesetOverworld 1_98
   - first:
-      213: -2871199981091749634
-    second: spr_TilesetOverworld_99
+      213: 3997175962734401005
+    second: spr_TilesetOverworld 1_99
   - first:
-      213: 1722267276210849751
-    second: spr_TilesetOverworld_100
+      213: -6723723179490563902
+    second: spr_TilesetOverworld 1_100
   - first:
-      213: 6953670321541621615
-    second: spr_TilesetOverworld_101
+      213: 1140107089158573166
+    second: spr_TilesetOverworld 1_101
   - first:
-      213: 4271499704535153178
-    second: spr_TilesetOverworld_102
+      213: 2380510151323238692
+    second: spr_TilesetOverworld 1_102
   - first:
-      213: 4437746570266702196
-    second: spr_TilesetOverworld_103
+      213: 5029201381632935797
+    second: spr_TilesetOverworld 1_103
   - first:
-      213: -1242389957402968209
-    second: spr_TilesetOverworld_104
+      213: 1514480608317354791
+    second: spr_TilesetOverworld 1_104
   - first:
-      213: -2735849050257065097
-    second: spr_TilesetOverworld_105
+      213: 1699968235691875879
+    second: spr_TilesetOverworld 1_105
   - first:
-      213: -4728736422934469931
-    second: spr_TilesetOverworld_106
+      213: 2266686549690527329
+    second: spr_TilesetOverworld 1_106
   - first:
-      213: 1091258390653223115
-    second: spr_TilesetOverworld_107
+      213: 2197585531000006862
+    second: spr_TilesetOverworld 1_107
   - first:
-      213: -9201627285399302955
-    second: spr_TilesetOverworld_108
+      213: 5144277858321029808
+    second: spr_TilesetOverworld 1_108
   - first:
-      213: 6729803523305327023
-    second: spr_TilesetOverworld_109
+      213: -6142052921958919478
+    second: spr_TilesetOverworld 1_109
   - first:
-      213: 1677768690230698668
-    second: spr_TilesetOverworld_110
+      213: -4649747083474700692
+    second: spr_TilesetOverworld 1_110
   - first:
-      213: -4940885309489136867
-    second: spr_TilesetOverworld_111
+      213: -4104349731886673013
+    second: spr_TilesetOverworld 1_111
   - first:
-      213: 7097458724129552788
-    second: spr_TilesetOverworld_112
+      213: 3103268636624370216
+    second: spr_TilesetOverworld 1_112
   - first:
-      213: 3220672631519239857
-    second: spr_TilesetOverworld_113
+      213: -1494614816870189041
+    second: spr_TilesetOverworld 1_113
   - first:
-      213: 1814091188577472057
-    second: spr_TilesetOverworld_114
+      213: 1949680233431544963
+    second: spr_TilesetOverworld 1_114
   - first:
-      213: -5638383545004330431
-    second: spr_TilesetOverworld_115
+      213: -7468364894847604627
+    second: spr_TilesetOverworld 1_115
   - first:
-      213: 567646801164508578
-    second: spr_TilesetOverworld_116
+      213: 8989539865503069955
+    second: spr_TilesetOverworld 1_116
   - first:
-      213: -4128573582092870840
-    second: spr_TilesetOverworld_117
+      213: 1864832036213334049
+    second: spr_TilesetOverworld 1_117
   - first:
-      213: 2765984581580458463
-    second: spr_TilesetOverworld_118
+      213: -5297777310349898212
+    second: spr_TilesetOverworld 1_118
   - first:
-      213: -6020318380152745114
-    second: spr_TilesetOverworld_119
+      213: 8779295665325502193
+    second: spr_TilesetOverworld 1_119
   - first:
-      213: -6904128326880694651
-    second: spr_TilesetOverworld_120
+      213: 1728683415308286449
+    second: spr_TilesetOverworld 1_120
   - first:
-      213: 6748438708807814801
-    second: spr_TilesetOverworld_121
+      213: 8153356241028395060
+    second: spr_TilesetOverworld 1_121
   - first:
-      213: 2554886204662184744
-    second: spr_TilesetOverworld_122
+      213: -2091002479776492140
+    second: spr_TilesetOverworld 1_122
   - first:
-      213: 8391136096804777501
-    second: spr_TilesetOverworld_123
+      213: -1428173886752158471
+    second: spr_TilesetOverworld 1_123
   - first:
-      213: 4043479762721716504
-    second: spr_TilesetOverworld_124
+      213: -8795814014648460025
+    second: spr_TilesetOverworld 1_124
   - first:
-      213: -2751525881660689246
-    second: spr_TilesetOverworld_125
+      213: 6646583297665217569
+    second: spr_TilesetOverworld 1_125
   - first:
-      213: -4862452824651869227
-    second: spr_TilesetOverworld_126
+      213: 2582469916614750262
+    second: spr_TilesetOverworld 1_126
   - first:
-      213: 3474994222191610547
-    second: spr_TilesetOverworld_127
+      213: 8350495989529252667
+    second: spr_TilesetOverworld 1_127
   - first:
-      213: -8059721854392917847
-    second: spr_TilesetOverworld_128
+      213: 7710969445852722707
+    second: spr_TilesetOverworld 1_128
   - first:
-      213: 5981978015602086950
-    second: spr_TilesetOverworld_129
+      213: -5494994067995289767
+    second: spr_TilesetOverworld 1_129
   - first:
-      213: -7135838563624098253
-    second: spr_TilesetOverworld_130
+      213: 6587564660869332798
+    second: spr_TilesetOverworld 1_130
   - first:
-      213: -3897122128167599229
-    second: spr_TilesetOverworld_131
+      213: -8695915212096595823
+    second: spr_TilesetOverworld 1_131
   - first:
-      213: 7702105042926959119
-    second: spr_TilesetOverworld_132
+      213: 159984162760782653
+    second: spr_TilesetOverworld 1_132
   - first:
-      213: -6571672792407559269
-    second: spr_TilesetOverworld_133
+      213: -6469017175051356567
+    second: spr_TilesetOverworld 1_133
   - first:
-      213: -7122308775640005370
-    second: spr_TilesetOverworld_134
+      213: 1700718210913754438
+    second: spr_TilesetOverworld 1_134
   - first:
-      213: 1855191737191806224
-    second: spr_TilesetOverworld_135
+      213: 6329985640121024979
+    second: spr_TilesetOverworld 1_135
   - first:
-      213: -7598943470799132687
-    second: spr_TilesetOverworld_136
+      213: -4363243728640442374
+    second: spr_TilesetOverworld 1_136
   - first:
-      213: 4520423544317585688
-    second: spr_TilesetOverworld_137
+      213: -5621965830875187212
+    second: spr_TilesetOverworld 1_137
   - first:
-      213: 672729855648865797
-    second: spr_TilesetOverworld_138
+      213: -5509689578665654971
+    second: spr_TilesetOverworld 1_138
   - first:
-      213: -4820827709840991179
-    second: spr_TilesetOverworld_139
+      213: 954364233659695405
+    second: spr_TilesetOverworld 1_139
   - first:
-      213: -7625798148425431090
-    second: spr_TilesetOverworld_140
+      213: -3691616515175152602
+    second: spr_TilesetOverworld 1_140
   - first:
-      213: 9040349153723381476
-    second: spr_TilesetOverworld_141
+      213: -1427851156111184021
+    second: spr_TilesetOverworld 1_141
   - first:
-      213: 8749259813216233642
-    second: spr_TilesetOverworld_142
+      213: 5940191118670932445
+    second: spr_TilesetOverworld 1_142
   - first:
-      213: 2712959396529180239
-    second: spr_TilesetOverworld_143
+      213: 222994184960304345
+    second: spr_TilesetOverworld 1_143
   - first:
-      213: -8580836730798445846
-    second: spr_TilesetOverworld_144
+      213: -4424485844997855457
+    second: spr_TilesetOverworld 1_144
   - first:
-      213: -349155423337438275
-    second: spr_TilesetOverworld_145
+      213: 6660622729022764796
+    second: spr_TilesetOverworld 1_145
   - first:
-      213: -9147960845355252450
-    second: spr_TilesetOverworld_146
+      213: 3989113174250979707
+    second: spr_TilesetOverworld 1_146
   - first:
-      213: -1944048495295513406
-    second: spr_TilesetOverworld_147
+      213: -7302562031051106509
+    second: spr_TilesetOverworld 1_147
   - first:
-      213: 1338503109907716963
-    second: spr_TilesetOverworld_148
+      213: 4424901173047385443
+    second: spr_TilesetOverworld 1_148
   - first:
-      213: 8735291649426527154
-    second: spr_TilesetOverworld_149
+      213: -8211461855650392308
+    second: spr_TilesetOverworld 1_149
   - first:
-      213: 7331530968023731726
-    second: spr_TilesetOverworld_150
+      213: -13038873630661419
+    second: spr_TilesetOverworld 1_150
   - first:
-      213: -3375440853806458158
-    second: spr_TilesetOverworld_151
+      213: -181280194314764700
+    second: spr_TilesetOverworld 1_151
   - first:
-      213: -1833014408192150379
-    second: spr_TilesetOverworld_152
+      213: 8175125364752424486
+    second: spr_TilesetOverworld 1_152
   - first:
-      213: -159858180914197475
-    second: spr_TilesetOverworld_153
+      213: -5912580726929940949
+    second: spr_TilesetOverworld 1_153
   - first:
-      213: 8630162341105567269
-    second: spr_TilesetOverworld_154
+      213: 6400909547694699905
+    second: spr_TilesetOverworld 1_154
   - first:
-      213: 7056497555834375015
-    second: spr_TilesetOverworld_155
+      213: 2531721641112616219
+    second: spr_TilesetOverworld 1_155
   - first:
-      213: 8929955107962912653
-    second: spr_TilesetOverworld_156
+      213: 1467540986533893843
+    second: spr_TilesetOverworld 1_156
   - first:
-      213: 7871040017850915228
-    second: spr_TilesetOverworld_157
+      213: -4087354369945709504
+    second: spr_TilesetOverworld 1_157
   - first:
-      213: -7252223585682057896
-    second: spr_TilesetOverworld_158
+      213: 6776581258087203013
+    second: spr_TilesetOverworld 1_158
   - first:
-      213: 3250618728168333878
-    second: spr_TilesetOverworld_159
+      213: 8797713350476451267
+    second: spr_TilesetOverworld 1_159
   - first:
-      213: 1120608873931649361
-    second: spr_TilesetOverworld_160
+      213: 9141298622251877318
+    second: spr_TilesetOverworld 1_160
   - first:
-      213: 1265100838005192289
-    second: spr_TilesetOverworld_161
+      213: 6769211198574996719
+    second: spr_TilesetOverworld 1_161
   - first:
-      213: 1462475385481967611
-    second: spr_TilesetOverworld_162
+      213: -7666195367306535043
+    second: spr_TilesetOverworld 1_162
   - first:
-      213: -3409081939372936374
-    second: spr_TilesetOverworld_163
+      213: -2718416347636148610
+    second: spr_TilesetOverworld 1_163
   - first:
-      213: 6026885289224285396
-    second: spr_TilesetOverworld_164
+      213: -7391529780816492485
+    second: spr_TilesetOverworld 1_164
   - first:
-      213: -1055282336574283538
-    second: spr_TilesetOverworld_165
+      213: -6437784942598529044
+    second: spr_TilesetOverworld 1_165
   - first:
-      213: -1986894791099345713
-    second: spr_TilesetOverworld_166
+      213: 2496606951048222581
+    second: spr_TilesetOverworld 1_166
+  - first:
+      213: -7423778349727156011
+    second: spr_TilesetOverworld 1_167
+  - first:
+      213: -7213204766719610844
+    second: spr_TilesetOverworld 1_168
+  - first:
+      213: 8284448315123161419
+    second: spr_TilesetOverworld 1_169
+  - first:
+      213: 7757926512390266516
+    second: spr_TilesetOverworld 1_170
+  - first:
+      213: -7668772471229742764
+    second: spr_TilesetOverworld 1_171
+  - first:
+      213: -6561527781704437162
+    second: spr_TilesetOverworld 1_172
+  - first:
+      213: 2712987169507504577
+    second: spr_TilesetOverworld 1_173
+  - first:
+      213: -4755802198129372148
+    second: spr_TilesetOverworld 1_174
+  - first:
+      213: -7817127686568061106
+    second: spr_TilesetOverworld 1_175
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -545,7 +572,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -624,7 +651,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_TilesetOverworld_0
+      name: spr_TilesetOverworld 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -639,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97dd12931c3900f30800000000000000
-      internalID: 4539790882485951865
+      spriteID: f1f5366768540c080800000000000000
+      internalID: -9169252397512171745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_1
+      name: spr_TilesetOverworld 1_1
       rect:
         serializedVersion: 2
         x: 17
@@ -661,14 +688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: affb1f083a8b273f0800000000000000
-      internalID: -904457562765541382
+      spriteID: 7b189e435feb12b60800000000000000
+      internalID: 7719661196653724087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_2
+      name: spr_TilesetOverworld 1_2
       rect:
         serializedVersion: 2
         x: 34
@@ -683,14 +710,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e07184f8c2b6e4bd0800000000000000
-      internalID: -2644058092093303026
+      spriteID: a37e959ab96bd4ae0800000000000000
+      internalID: -1563392715950266566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_3
+      name: spr_TilesetOverworld 1_3
       rect:
         serializedVersion: 2
         x: 51
@@ -705,14 +732,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e01fb6ceb184438a0800000000000000
-      internalID: -6326352291780890354
+      spriteID: 54010cf3107c50410800000000000000
+      internalID: 1442778063820558405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_4
+      name: spr_TilesetOverworld 1_4
       rect:
         serializedVersion: 2
         x: 68
@@ -727,14 +754,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 197f5d5d97c908260800000000000000
-      internalID: 7097845059828447121
+      spriteID: 0e5988a21bea91d60800000000000000
+      internalID: 7861506700497950176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_5
+      name: spr_TilesetOverworld 1_5
       rect:
         serializedVersion: 2
         x: 85
@@ -749,14 +776,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d6134444dab7d3d0800000000000000
-      internalID: -3181869190872885543
+      spriteID: 0ee9933ac39d19d10800000000000000
+      internalID: 2130722953182682848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_6
+      name: spr_TilesetOverworld 1_6
       rect:
         serializedVersion: 2
         x: 102
@@ -771,14 +798,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 318f89e6591738b50800000000000000
-      internalID: 6594239166020122643
+      spriteID: 8920115d1e9713750800000000000000
+      internalID: 6282936966007816856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_7
+      name: spr_TilesetOverworld 1_7
       rect:
         serializedVersion: 2
         x: 119
@@ -793,14 +820,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c7ce7a7df17de5a0800000000000000
-      internalID: -6490406154475223097
+      spriteID: 03ae21ffb43c5b400800000000000000
+      internalID: 339392078105733680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_8
+      name: spr_TilesetOverworld 1_8
       rect:
         serializedVersion: 2
         x: 136
@@ -815,14 +842,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84dc3cdceca75a6a0800000000000000
-      internalID: -6438605063622243000
+      spriteID: 075e596bb06c68160800000000000000
+      internalID: 7027522022168454512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_9
+      name: spr_TilesetOverworld 1_9
       rect:
         serializedVersion: 2
         x: 153
@@ -837,14 +864,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 531edc48c3d101dc0800000000000000
-      internalID: -3670401550543625931
+      spriteID: f641854917528ef10800000000000000
+      internalID: 2299128779522970735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_10
+      name: spr_TilesetOverworld 1_10
       rect:
         serializedVersion: 2
         x: 170
@@ -859,14 +886,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b35815414db878280800000000000000
-      internalID: -9041103983932766917
+      spriteID: a447d498924197d40800000000000000
+      internalID: 5582515381732209738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_11
+      name: spr_TilesetOverworld 1_11
       rect:
         serializedVersion: 2
         x: 187
@@ -881,14 +908,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad22e0d2224160580800000000000000
-      internalID: -8861373079787527462
+      spriteID: 192b831b3ec3041a0800000000000000
+      internalID: -6827390086465146223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_12
+      name: spr_TilesetOverworld 1_12
       rect:
         serializedVersion: 2
         x: 204
@@ -903,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd86b340d32de2850800000000000000
-      internalID: 6354247283772188893
+      spriteID: edcd25215bfc95330800000000000000
+      internalID: 3700216945465023710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_13
+      name: spr_TilesetOverworld 1_13
       rect:
         serializedVersion: 2
         x: 221
@@ -925,14 +952,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69f51469b41e39700800000000000000
-      internalID: 546027694601625494
+      spriteID: 3975a5a5de1b41ea0800000000000000
+      internalID: -5902897578594642029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_14
+      name: spr_TilesetOverworld 1_14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 187
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11b5db97e3cf0940800000000000000
+      internalID: 5264641888938733851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_15
       rect:
         serializedVersion: 2
         x: 0
@@ -947,14 +996,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56c1540cf8abede70800000000000000
-      internalID: 9141949420177529957
+      spriteID: e87806a32784a33d0800000000000000
+      internalID: -3226186527614662770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_15
+      name: spr_TilesetOverworld 1_16
       rect:
         serializedVersion: 2
         x: 17
@@ -969,14 +1018,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba33679bffc5c3780800000000000000
-      internalID: -8701978126588693589
+      spriteID: f1250f5d3572696b0800000000000000
+      internalID: -5289997471275003361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_16
+      name: spr_TilesetOverworld 1_17
       rect:
         serializedVersion: 2
         x: 34
@@ -991,14 +1040,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38cedaa7aea741b70800000000000000
-      internalID: 8868848713698503811
+      spriteID: e4e7d2449bb7f9d40800000000000000
+      internalID: 5593325297860443726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_17
+      name: spr_TilesetOverworld 1_18
       rect:
         serializedVersion: 2
         x: 51
@@ -1013,14 +1062,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e90518d966de3b80800000000000000
-      internalID: -8413051303796340250
+      spriteID: 2f31645c206265ac0800000000000000
+      internalID: -3866861436709497870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_18
+      name: spr_TilesetOverworld 1_19
       rect:
         serializedVersion: 2
         x: 68
@@ -1035,14 +1084,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ddd60812bd7e3bf0800000000000000
-      internalID: -342698317772825131
+      spriteID: 443eaeb9f2cfba0c0800000000000000
+      internalID: -4563276516000341180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_19
+      name: spr_TilesetOverworld 1_20
       rect:
         serializedVersion: 2
         x: 85
@@ -1057,14 +1106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 945b170c088baa970800000000000000
-      internalID: 8767022487754093897
+      spriteID: b517ae7674f2fb6a0800000000000000
+      internalID: -6431369759129177765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_20
+      name: spr_TilesetOverworld 1_21
       rect:
         serializedVersion: 2
         x: 102
@@ -1079,14 +1128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9a4d7c8048b53930800000000000000
-      internalID: 4122403621301996186
+      spriteID: 9f63356ee7c98f560800000000000000
+      internalID: 7347794860898989817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_21
+      name: spr_TilesetOverworld 1_22
       rect:
         serializedVersion: 2
         x: 119
@@ -1101,14 +1150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f106a7779784e8c10800000000000000
-      internalID: 2057661766287646751
+      spriteID: a963f69e193840de0800000000000000
+      internalID: -1367823724103911782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_22
+      name: spr_TilesetOverworld 1_23
       rect:
         serializedVersion: 2
         x: 136
@@ -1123,14 +1172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0435d520d828314c0800000000000000
-      internalID: -4317964075576503488
+      spriteID: f696a40e74bbff640800000000000000
+      internalID: 5116013619096217967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_23
+      name: spr_TilesetOverworld 1_24
       rect:
         serializedVersion: 2
         x: 153
@@ -1145,14 +1194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bd3e27d06943f4e0800000000000000
-      internalID: -1949133533445472845
+      spriteID: b016370c848cac960800000000000000
+      internalID: 7623125534069973259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_24
+      name: spr_TilesetOverworld 1_25
       rect:
         serializedVersion: 2
         x: 170
@@ -1167,14 +1216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72a8d58f235963b90800000000000000
-      internalID: -7262453302940562905
+      spriteID: b7c4ec00c626b7f70800000000000000
+      internalID: 9186044080961768571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_25
+      name: spr_TilesetOverworld 1_26
       rect:
         serializedVersion: 2
         x: 187
@@ -1189,14 +1238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2088ad27d5ecd2a0800000000000000
-      internalID: -6711236632342134738
+      spriteID: b736297dad5e8c4f0800000000000000
+      internalID: -808143405030677637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_26
+      name: spr_TilesetOverworld 1_27
       rect:
         serializedVersion: 2
         x: 204
@@ -1211,14 +1260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df86181c982e15f10800000000000000
-      internalID: 2256833969574209789
+      spriteID: 71c8a13c0f7f7f050800000000000000
+      internalID: 5834404455719275543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_27
+      name: spr_TilesetOverworld 1_28
       rect:
         serializedVersion: 2
         x: 221
@@ -1233,14 +1282,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26fef2d754fea26a0800000000000000
-      internalID: -6473098432659591326
+      spriteID: be994290f45cbb560800000000000000
+      internalID: 7330669761722096107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_28
+      name: spr_TilesetOverworld 1_29
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 170
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9486ca50e3a3fd0800000000000000
+      internalID: -2361506860514129456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_30
       rect:
         serializedVersion: 2
         x: 0
@@ -1255,14 +1326,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cc42bc6d708b5b80800000000000000
-      internalID: -8404983003374007101
+      spriteID: 584f5d6d956eee850800000000000000
+      internalID: 6408312593325618309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_29
+      name: spr_TilesetOverworld 1_31
       rect:
         serializedVersion: 2
         x: 17
@@ -1277,14 +1348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28a07b9e22bfd4f50800000000000000
-      internalID: 6867421134178421378
+      spriteID: 48e83465b13048100800000000000000
+      internalID: 109215706910002820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_30
+      name: spr_TilesetOverworld 1_32
       rect:
         serializedVersion: 2
         x: 34
@@ -1299,14 +1370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbeb8949b3fef1810800000000000000
-      internalID: 1738371020363447995
+      spriteID: 407602618a9db49d0800000000000000
+      internalID: -2788896228276934908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_31
+      name: spr_TilesetOverworld 1_33
       rect:
         serializedVersion: 2
         x: 51
@@ -1321,14 +1392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e74ef04d120575c0800000000000000
-      internalID: -4218463151294887961
+      spriteID: 119a9336764d079c0800000000000000
+      internalID: -3931408934182999791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_32
+      name: spr_TilesetOverworld 1_34
       rect:
         serializedVersion: 2
         x: 68
@@ -1343,14 +1414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38f2f7300a73efbf0800000000000000
-      internalID: -288732165712171133
+      spriteID: 27692e8e3c21d4f10800000000000000
+      internalID: 2255479621017572978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_33
+      name: spr_TilesetOverworld 1_35
       rect:
         serializedVersion: 2
         x: 85
@@ -1365,14 +1436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e939f93506c22d920800000000000000
-      internalID: 3013519892895732638
+      spriteID: 4957a753d354f7010800000000000000
+      internalID: 1188744955841639828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_34
+      name: spr_TilesetOverworld 1_36
       rect:
         serializedVersion: 2
         x: 102
@@ -1387,14 +1458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4362062e1e11ba70800000000000000
-      internalID: 8840880658340537163
+      spriteID: b2e8c4b2b353346d0800000000000000
+      internalID: -3007501597907579349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_35
+      name: spr_TilesetOverworld 1_37
       rect:
         serializedVersion: 2
         x: 119
@@ -1409,14 +1480,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a466a754074ed20800000000000000
-      internalID: 3306891470105365143
+      spriteID: da04185d4fd26d2b0800000000000000
+      internalID: -5560206160365010771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_36
+      name: spr_TilesetOverworld 1_38
       rect:
         serializedVersion: 2
         x: 136
@@ -1431,14 +1502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89510b8cd5e56f340800000000000000
-      internalID: 4897205401703945624
+      spriteID: b0824892c15a31160800000000000000
+      internalID: 6995116186610706443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_37
+      name: spr_TilesetOverworld 1_39
       rect:
         serializedVersion: 2
         x: 153
@@ -1453,14 +1524,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b6ea5b90418e2e80800000000000000
-      internalID: -8201475756910778702
+      spriteID: babf831195b23b8f0800000000000000
+      internalID: -526029069931185237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_38
+      name: spr_TilesetOverworld 1_40
       rect:
         serializedVersion: 2
         x: 170
@@ -1475,14 +1546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b6f0bc1c7a873790800000000000000
-      internalID: -7550413984601409870
+      spriteID: 59c56d1efa0cbf640800000000000000
+      internalID: 5114893663450061973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_39
+      name: spr_TilesetOverworld 1_41
       rect:
         serializedVersion: 2
         x: 187
@@ -1497,14 +1568,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad5820c0424f734f0800000000000000
-      internalID: -848941569078557222
+      spriteID: ada0b2f79ba18a320800000000000000
+      internalID: 2569332971419667162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_40
+      name: spr_TilesetOverworld 1_42
       rect:
         serializedVersion: 2
         x: 204
@@ -1519,14 +1590,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 751c3a0fc3d1cf570800000000000000
-      internalID: 8501702344141160791
+      spriteID: 2331c635e592a28d0800000000000000
+      internalID: -2870436327392013518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_41
+      name: spr_TilesetOverworld 1_43
       rect:
         serializedVersion: 2
         x: 221
@@ -1541,14 +1612,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a0f4b4ce39ffa3a0800000000000000
-      internalID: -6651824076619452252
+      spriteID: e62ca037ef0d81080800000000000000
+      internalID: -9216386846143364498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_42
+      name: spr_TilesetOverworld 1_44
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778116efc21c24c10800000000000000
+      internalID: 2036402380515383415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_45
       rect:
         serializedVersion: 2
         x: 0
@@ -1563,14 +1656,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02e58a310aaca6ee0800000000000000
-      internalID: -1266977556277993952
+      spriteID: 1d861ddfa1106c910800000000000000
+      internalID: 1857173111776045265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_43
+      name: spr_TilesetOverworld 1_46
       rect:
         serializedVersion: 2
         x: 17
@@ -1585,14 +1678,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e60a745e6823777d0800000000000000
-      internalID: -2920810278372794258
+      spriteID: b42c00d5eedd5ec80800000000000000
+      internalID: -8293979122900614581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_44
+      name: spr_TilesetOverworld 1_47
       rect:
         serializedVersion: 2
         x: 34
@@ -1607,14 +1700,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b23073d6e41ea000800000000000000
-      internalID: 48999627570033336
+      spriteID: 0a2dd95cc9dbd7fa0800000000000000
+      internalID: -5801272263955328352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_45
+      name: spr_TilesetOverworld 1_48
       rect:
         serializedVersion: 2
         x: 51
@@ -1629,14 +1722,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5caa6a839254fac0800000000000000
-      internalID: -3822339390094791588
+      spriteID: 2c67e9bfd7673fed0800000000000000
+      internalID: -2381429494484404542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_46
+      name: spr_TilesetOverworld 1_49
       rect:
         serializedVersion: 2
         x: 68
@@ -1651,14 +1744,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a59074a21ae5b14f0800000000000000
-      internalID: -856987257791903398
+      spriteID: e7437542443e25960800000000000000
+      internalID: 7589378203879683198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_47
+      name: spr_TilesetOverworld 1_50
       rect:
         serializedVersion: 2
         x: 85
@@ -1673,14 +1766,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adc5f0059bea90c60800000000000000
-      internalID: 7784945541821979866
+      spriteID: 0b66473d44a796bc0800000000000000
+      internalID: -3789363175431575888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_48
+      name: spr_TilesetOverworld 1_51
       rect:
         serializedVersion: 2
         x: 102
@@ -1695,14 +1788,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 866a97f6f832246f0800000000000000
-      internalID: -701959492958837144
+      spriteID: b7684ba7d147816b0800000000000000
+      internalID: -5325378889404086661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_49
+      name: spr_TilesetOverworld 1_52
       rect:
         serializedVersion: 2
         x: 119
@@ -1717,14 +1810,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8039e79908b78dad0800000000000000
-      internalID: -2677254186210520312
+      spriteID: f030897b9afd11d60800000000000000
+      internalID: 7859308744760886031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_50
+      name: spr_TilesetOverworld 1_53
       rect:
         serializedVersion: 2
         x: 136
@@ -1739,14 +1832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0f2f3d52060f32b0800000000000000
-      internalID: -5602752804201484534
+      spriteID: 5787fc9cac32f5ac0800000000000000
+      internalID: -3864330601384413067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_51
+      name: spr_TilesetOverworld 1_54
       rect:
         serializedVersion: 2
         x: 153
@@ -1761,14 +1854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21e334db3b1c62870800000000000000
-      internalID: 8657820311384964626
+      spriteID: 32f3cf0c116ac7990800000000000000
+      internalID: -7386846693612044509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_52
+      name: spr_TilesetOverworld 1_55
       rect:
         serializedVersion: 2
         x: 170
@@ -1783,14 +1876,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69fae193d1f28a150800000000000000
-      internalID: 5884004715718422422
+      spriteID: ec94cb7447fd73830800000000000000
+      internalID: 4050952080355772878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_53
+      name: spr_TilesetOverworld 1_56
       rect:
         serializedVersion: 2
         x: 187
@@ -1805,14 +1898,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff5b42ac7f9f3c470800000000000000
-      internalID: 8413843371501860351
+      spriteID: 86e2fb23d39d32d10800000000000000
+      internalID: 2099760708152405608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_54
+      name: spr_TilesetOverworld 1_57
       rect:
         serializedVersion: 2
         x: 204
@@ -1827,14 +1920,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d75fe5d2e36a9e5e0800000000000000
-      internalID: -1879788583471090307
+      spriteID: 9aaff5e0b21497c20800000000000000
+      internalID: 3204664263031388841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_55
+      name: spr_TilesetOverworld 1_58
       rect:
         serializedVersion: 2
         x: 221
@@ -1849,14 +1942,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7c266e1de2cc3420800000000000000
-      internalID: 2611176207641095293
+      spriteID: 3f87c1cd3f335ccb0800000000000000
+      internalID: -4844408701704177421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_56
+      name: spr_TilesetOverworld 1_59
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 136
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c776f72a37bd210e0800000000000000
+      internalID: -2300535169938921604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_60
       rect:
         serializedVersion: 2
         x: 0
@@ -1871,14 +1986,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fbfd307f68bd58390800000000000000
-      internalID: -7816600205515300929
+      spriteID: a4318d1144f0cc240800000000000000
+      internalID: 4813238886783783754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_57
+      name: spr_TilesetOverworld 1_61
       rect:
         serializedVersion: 2
         x: 17
@@ -1893,14 +2008,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfb6b25a4f0311e30800000000000000
-      internalID: 4472409732256852988
+      spriteID: 689ccc0ef04add330800000000000000
+      internalID: 3737323653890361734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_58
+      name: spr_TilesetOverworld 1_62
       rect:
         serializedVersion: 2
         x: 34
@@ -1915,14 +2030,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8830d5b27de87870800000000000000
-      internalID: 8680949358689007757
+      spriteID: c22bf37c15955fb60800000000000000
+      internalID: 7779222139122463276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_59
+      name: spr_TilesetOverworld 1_63
       rect:
         serializedVersion: 2
         x: 51
@@ -1937,14 +2052,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2abfc6554105c5ec0800000000000000
-      internalID: -3576895955776242782
+      spriteID: f1af81ff2465a1bd0800000000000000
+      internalID: -2658717784261199329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_60
+      name: spr_TilesetOverworld 1_64
       rect:
         serializedVersion: 2
         x: 68
@@ -1959,14 +2074,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b7344aaf7f800cf0800000000000000
-      internalID: -288072597671495753
+      spriteID: d78ea5d968cbdab00800000000000000
+      internalID: 841535991739771005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_61
+      name: spr_TilesetOverworld 1_65
       rect:
         serializedVersion: 2
         x: 85
@@ -1981,14 +2096,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 112153f9d6bd41910800000000000000
-      internalID: 1807310614351385105
+      spriteID: 0cd63baba7bb49ab0800000000000000
+      internalID: -5002167150309052992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_62
+      name: spr_TilesetOverworld 1_66
       rect:
         serializedVersion: 2
         x: 102
@@ -2003,14 +2118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1a30f44375d08480800000000000000
-      internalID: -8898878172629550566
+      spriteID: c07d4900b7987d030800000000000000
+      internalID: 3519432795197069068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_63
+      name: spr_TilesetOverworld 1_67
       rect:
         serializedVersion: 2
         x: 119
@@ -2025,14 +2140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6e0c8b3ebd801290800000000000000
-      internalID: -7921675896362365329
+      spriteID: 4ea2193e706854ab0800000000000000
+      internalID: -5024462440821085468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_64
+      name: spr_TilesetOverworld 1_68
       rect:
         serializedVersion: 2
         x: 136
@@ -2047,14 +2162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6dd5ab07f0264c2c0800000000000000
-      internalID: -4412293916460950058
+      spriteID: d583ba03aace4a520800000000000000
+      internalID: 2712553091289004125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_65
+      name: spr_TilesetOverworld 1_69
       rect:
         serializedVersion: 2
         x: 153
@@ -2069,14 +2184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 564472c7d82485c90800000000000000
-      internalID: -7180916430401485723
+      spriteID: 732ae6bddc571a430800000000000000
+      internalID: 3792441888232874551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_66
+      name: spr_TilesetOverworld 1_70
       rect:
         serializedVersion: 2
         x: 170
@@ -2091,14 +2206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aaafc1a1775b29600800000000000000
-      internalID: 473640433971165866
+      spriteID: 1b825d72b444cb910800000000000000
+      internalID: 1854432236151318705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_67
+      name: spr_TilesetOverworld 1_71
       rect:
         serializedVersion: 2
         x: 187
@@ -2113,14 +2228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90b3b1c9dbd89a8b0800000000000000
-      internalID: -5140421654159344887
+      spriteID: d4e98c432649ea630800000000000000
+      internalID: 3940249873509031501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_68
+      name: spr_TilesetOverworld 1_72
       rect:
         serializedVersion: 2
         x: 204
@@ -2135,14 +2250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55e0bbedca2737d70800000000000000
-      internalID: 9039694963859459669
+      spriteID: f3d26cbbeb72341b0800000000000000
+      internalID: -5673647405409096385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_69
+      name: spr_TilesetOverworld 1_73
       rect:
         serializedVersion: 2
         x: 221
@@ -2157,14 +2272,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35bb9a1f006031510800000000000000
-      internalID: 1518564100478188371
+      spriteID: d4b5ded5e386befd0800000000000000
+      internalID: -2311639366651520179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_70
+      name: spr_TilesetOverworld 1_74
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 119
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf0c4edd4119b0c0800000000000000
+      internalID: -4559594121596235840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_75
       rect:
         serializedVersion: 2
         x: 0
@@ -2179,14 +2316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6af2b5e649be586a0800000000000000
-      internalID: -6447488268771840090
+      spriteID: 8de01d3900a97f700800000000000000
+      internalID: 574096804783656664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_71
+      name: spr_TilesetOverworld 1_76
       rect:
         serializedVersion: 2
         x: 17
@@ -2201,14 +2338,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11e41734ca97b0d10800000000000000
-      internalID: 2092900232616562193
+      spriteID: e2e30ee1250b21890800000000000000
+      internalID: -7488729363611894226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_72
+      name: spr_TilesetOverworld 1_77
       rect:
         serializedVersion: 2
         x: 34
@@ -2223,14 +2360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e69ed7b6d908d1660800000000000000
-      internalID: 7358178779794893166
+      spriteID: 2e83fab4eaa638410800000000000000
+      internalID: 1478142399534282978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_73
+      name: spr_TilesetOverworld 1_78
       rect:
         serializedVersion: 2
         x: 51
@@ -2245,14 +2382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6285586b703a71e50800000000000000
-      internalID: 6780067017551861798
+      spriteID: a37f22e4903724d20800000000000000
+      internalID: 3261295563972474682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_74
+      name: spr_TilesetOverworld 1_79
       rect:
         serializedVersion: 2
         x: 68
@@ -2267,14 +2404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8e8940e40a0b8c00800000000000000
-      internalID: 903827166276980366
+      spriteID: 3825ee5aded0a0ee0800000000000000
+      internalID: -1294206628573326717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_75
+      name: spr_TilesetOverworld 1_80
       rect:
         serializedVersion: 2
         x: 85
@@ -2289,14 +2426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64aee063da79d4310800000000000000
-      internalID: 1390934630119434822
+      spriteID: 1bbdcd870dc419850800000000000000
+      internalID: 6381966605225352113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_76
+      name: spr_TilesetOverworld 1_81
       rect:
         serializedVersion: 2
         x: 102
@@ -2311,14 +2448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f8fc428e376423b0800000000000000
-      internalID: -5538188123587151630
+      spriteID: cb70c1a2664382aa0800000000000000
+      internalID: -6185636474795587652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_77
+      name: spr_TilesetOverworld 1_82
       rect:
         serializedVersion: 2
         x: 119
@@ -2333,14 +2470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e6bea64ca3d60e60800000000000000
-      internalID: 7928256930906027747
+      spriteID: 15c2144385515fe80800000000000000
+      internalID: -8145580882451682223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_78
+      name: spr_TilesetOverworld 1_83
       rect:
         serializedVersion: 2
         x: 136
@@ -2355,14 +2492,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fef61d18082ee5570800000000000000
-      internalID: 8457446191810047983
+      spriteID: ffb3c146f1c4ab680800000000000000
+      internalID: -8738588429251757057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_79
+      name: spr_TilesetOverworld 1_84
       rect:
         serializedVersion: 2
         x: 153
@@ -2377,14 +2514,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4cf982276fa9e2f0800000000000000
-      internalID: -943029789461447603
+      spriteID: 7de63eb0bfcd4fe60800000000000000
+      internalID: 7995258209283829463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_80
+      name: spr_TilesetOverworld 1_85
       rect:
         serializedVersion: 2
         x: 170
@@ -2399,14 +2536,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b35af65c99ac3f0e0800000000000000
-      internalID: -2237221828081769157
+      spriteID: 8dc0ac898a088bfa0800000000000000
+      internalID: -5784732259751162664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_81
+      name: spr_TilesetOverworld 1_86
       rect:
         serializedVersion: 2
         x: 187
@@ -2421,14 +2558,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 68d6d64ee9415b8a0800000000000000
-      internalID: -6290098631883264634
+      spriteID: 9227f4ef738711c30800000000000000
+      internalID: 4328372898764911145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_82
+      name: spr_TilesetOverworld 1_87
       rect:
         serializedVersion: 2
         x: 204
@@ -2443,14 +2580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cf4b10c05ce390f0800000000000000
-      internalID: -1111284851465826366
+      spriteID: 5a870b68b6012dcb0800000000000000
+      internalID: -4840788595462604635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_83
+      name: spr_TilesetOverworld 1_88
       rect:
         serializedVersion: 2
         x: 221
@@ -2465,14 +2602,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 266f9a0178eb684f0800000000000000
-      internalID: -826763994266470814
+      spriteID: 1a7ec0c69c3840da0800000000000000
+      internalID: -5979509504116725855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_84
+      name: spr_TilesetOverworld 1_89
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e11e8f6ec909140800000000000000
+      internalID: 4724448524943564386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_90
       rect:
         serializedVersion: 2
         x: 0
@@ -2487,14 +2646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a03ae0aa21124aa70800000000000000
-      internalID: 8837224732853969674
+      spriteID: 73fa7d84dd1c53960800000000000000
+      internalID: 7581178703902125879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_85
+      name: spr_TilesetOverworld 1_91
       rect:
         serializedVersion: 2
         x: 17
@@ -2509,14 +2668,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 090c134e97bc146e0800000000000000
-      internalID: -1854977847119986544
+      spriteID: 2d926f67b38015160800000000000000
+      internalID: 7012395146284509650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_86
+      name: spr_TilesetOverworld 1_92
       rect:
         serializedVersion: 2
         x: 34
@@ -2531,14 +2690,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afe4cf3da367d5680800000000000000
-      internalID: -8764719304756408582
+      spriteID: 72ae173cd0dcbaa10800000000000000
+      internalID: 1921855125000940071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_87
+      name: spr_TilesetOverworld 1_93
       rect:
         serializedVersion: 2
         x: 51
@@ -2553,14 +2712,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8039d0394c7b0c10800000000000000
-      internalID: 2020845511599796366
+      spriteID: 84cbd45275c4a8300800000000000000
+      internalID: 255100266071571528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_88
+      name: spr_TilesetOverworld 1_94
       rect:
         serializedVersion: 2
         x: 68
@@ -2575,14 +2734,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95ec469e811b7fd40800000000000000
-      internalID: 5618153780721012313
+      spriteID: 50f8c229f0d2fa3e0800000000000000
+      internalID: -2040362561275392251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_89
+      name: spr_TilesetOverworld 1_95
       rect:
         serializedVersion: 2
         x: 85
@@ -2597,14 +2756,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc9f409667b4fca30800000000000000
-      internalID: 4237688746319083981
+      spriteID: fc32e814e433dbe00800000000000000
+      internalID: 1062061498329605071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_90
+      name: spr_TilesetOverworld 1_96
       rect:
         serializedVersion: 2
         x: 102
@@ -2619,14 +2778,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3c031e84f8d11c10800000000000000
-      internalID: 2022636252533296190
+      spriteID: 84af243b5f684a8b0800000000000000
+      internalID: -5141836484717643192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_91
+      name: spr_TilesetOverworld 1_97
       rect:
         serializedVersion: 2
         x: 119
@@ -2641,14 +2800,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3250182d6b916940800000000000000
-      internalID: 5287678330635571775
+      spriteID: 0955df75065e314d0800000000000000
+      internalID: -3164933911155485296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_92
+      name: spr_TilesetOverworld 1_98
       rect:
         serializedVersion: 2
         x: 136
@@ -2663,14 +2822,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fd3e4e321288eca0800000000000000
-      internalID: -5987392689722737164
+      spriteID: 7a00f556300f43010800000000000000
+      internalID: 1167822100772094119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_93
+      name: spr_TilesetOverworld 1_99
       rect:
         serializedVersion: 2
         x: 153
@@ -2685,14 +2844,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83ae0fca76a9b5a30800000000000000
-      internalID: 4205124447154268728
+      spriteID: de593833c52d87730800000000000000
+      internalID: 3997175962734401005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_94
+      name: spr_TilesetOverworld 1_100
       rect:
         serializedVersion: 2
         x: 170
@@ -2707,14 +2866,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c504111639254b360800000000000000
-      internalID: 7184458098504974428
+      spriteID: 2c8a76e546980b2a0800000000000000
+      internalID: -6723723179490563902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_95
+      name: spr_TilesetOverworld 1_101
       rect:
         serializedVersion: 2
         x: 187
@@ -2729,14 +2888,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93e78f7e8b0cc6e50800000000000000
-      internalID: 6804025037448314425
+      spriteID: e6c83376b5972df00800000000000000
+      internalID: 1140107089158573166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_96
+      name: spr_TilesetOverworld 1_102
       rect:
         serializedVersion: 2
         x: 204
@@ -2751,14 +2910,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d02722cc7b0cf72c0800000000000000
-      internalID: -4431611612672921075
+      spriteID: 42145d1ce55490120800000000000000
+      internalID: 2380510151323238692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_97
+      name: spr_TilesetOverworld 1_103
       rect:
         serializedVersion: 2
         x: 221
@@ -2773,14 +2932,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9cbcf452abc1b610800000000000000
-      internalID: 1635312037783190685
+      spriteID: 5778220c2005bc540800000000000000
+      internalID: 5029201381632935797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_98
+      name: spr_TilesetOverworld 1_104
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72339f5d614840510800000000000000
+      internalID: 1514480608317354791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_105
       rect:
         serializedVersion: 2
         x: 0
@@ -2795,14 +2976,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d97f500ac4c0a330800000000000000
-      internalID: 3720189664076724694
+      spriteID: 72e9cd18a10879710800000000000000
+      internalID: 1699968235691875879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_99
+      name: spr_TilesetOverworld 1_106
       rect:
         serializedVersion: 2
         x: 17
@@ -2817,14 +2998,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef00be754d27728d0800000000000000
-      internalID: -2871199981091749634
+      spriteID: 16ea5735863e47f10800000000000000
+      internalID: 2266686549690527329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_100
+      name: spr_TilesetOverworld 1_107
       rect:
         serializedVersion: 2
         x: 34
@@ -2839,14 +3020,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d7c3d676f8b6e710800000000000000
-      internalID: 1722267276210849751
+      spriteID: ec82bcaa5646f7e10800000000000000
+      internalID: 2197585531000006862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_101
+      name: spr_TilesetOverworld 1_108
       rect:
         serializedVersion: 2
         x: 51
@@ -2861,14 +3042,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f672aa8b056608060800000000000000
-      internalID: 6953670321541621615
+      spriteID: 0bad123e475246740800000000000000
+      internalID: 5144277858321029808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_102
+      name: spr_TilesetOverworld 1_109
       rect:
         serializedVersion: 2
         x: 68
@@ -2883,14 +3064,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1af003995a674b30800000000000000
-      internalID: 4271499704535153178
+      spriteID: ac21df2d86b03caa0800000000000000
+      internalID: -6142052921958919478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_103
+      name: spr_TilesetOverworld 1_110
       rect:
         serializedVersion: 2
         x: 85
@@ -2905,14 +3086,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47174f35efa069d30800000000000000
-      internalID: 4437746570266702196
+      spriteID: c66f41ab9a7c87fb0800000000000000
+      internalID: -4649747083474700692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_104
+      name: spr_TilesetOverworld 1_111
       rect:
         serializedVersion: 2
         x: 102
@@ -2927,14 +3108,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6fbb7c8ae422cee0800000000000000
-      internalID: -1242389957402968209
+      spriteID: b83dce42aab6a07c0800000000000000
+      internalID: -4104349731886673013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_105
+      name: spr_TilesetOverworld 1_112
       rect:
         serializedVersion: 2
         x: 119
@@ -2949,14 +3130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77b7650b8cf480ad0800000000000000
-      internalID: -2735849050257065097
+      spriteID: 82a3b981266011b20800000000000000
+      internalID: 3103268636624370216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_106
+      name: spr_TilesetOverworld 1_113
       rect:
         serializedVersion: 2
         x: 136
@@ -2971,14 +3152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d22a8af647206eb0800000000000000
-      internalID: -4728736422934469931
+      spriteID: f08ba6c2ebf024be0800000000000000
+      internalID: -1494614816870189041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_107
+      name: spr_TilesetOverworld 1_114
       rect:
         serializedVersion: 2
         x: 153
@@ -2993,14 +3174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc0cc0d79bde42f00800000000000000
-      internalID: 1091258390653223115
+      spriteID: 384b94ba7d7ae0b10800000000000000
+      internalID: 1949680233431544963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_108
+      name: spr_TilesetOverworld 1_115
       rect:
         serializedVersion: 2
         x: 170
@@ -3015,14 +3196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5dc8b3a7cb04d4080800000000000000
-      internalID: -9201627285399302955
+      spriteID: d686c9d72b90b5890800000000000000
+      internalID: -7468364894847604627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_109
+      name: spr_TilesetOverworld 1_116
       rect:
         serializedVersion: 2
         x: 187
@@ -3037,14 +3218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa949cef5a0156d50800000000000000
-      internalID: 6729803523305327023
+      spriteID: 307f58901e241cc70800000000000000
+      internalID: 8989539865503069955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_110
+      name: spr_TilesetOverworld 1_117
       rect:
         serializedVersion: 2
         x: 204
@@ -3059,14 +3240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca2297c0cb1a84710800000000000000
-      internalID: 1677768690230698668
+      spriteID: 120a34c4bd631e910800000000000000
+      internalID: 1864832036213334049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_111
+      name: spr_TilesetOverworld 1_118
       rect:
         serializedVersion: 2
         x: 221
@@ -3081,14 +3262,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1b34fb2df27e6bb0800000000000000
-      internalID: -4940885309489136867
+      spriteID: c1e4875ea938a76b0800000000000000
+      internalID: -5297777310349898212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_112
+      name: spr_TilesetOverworld 1_119
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe6ad594e256d970800000000000000
+      internalID: 8779295665325502193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_120
       rect:
         serializedVersion: 2
         x: 0
@@ -3103,14 +3306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4993dbb0b1d3f7260800000000000000
-      internalID: 7097458724129552788
+      spriteID: 1f93f8248648df710800000000000000
+      internalID: 1728683415308286449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_113
+      name: spr_TilesetOverworld 1_121
       rect:
         serializedVersion: 2
         x: 17
@@ -3125,14 +3328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bed68bc1b022bc20800000000000000
-      internalID: 3220672631519239857
+      spriteID: 43036b98d4a862170800000000000000
+      internalID: 8153356241028395060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_114
+      name: spr_TilesetOverworld 1_122
       rect:
         serializedVersion: 2
         x: 34
@@ -3147,14 +3350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93e83551352fc2910800000000000000
-      internalID: 1814091188577472057
+      spriteID: 4951670c2544bf2e0800000000000000
+      internalID: -2091002479776492140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_115
+      name: spr_TilesetOverworld 1_123
       rect:
         serializedVersion: 2
         x: 51
@@ -3169,14 +3372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 142fb9c0a0070c1b0800000000000000
-      internalID: -5638383545004330431
+      spriteID: 9fc06a2ba6b1e2ce0800000000000000
+      internalID: -1428173886752158471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_116
+      name: spr_TilesetOverworld 1_124
       rect:
         serializedVersion: 2
         x: 68
@@ -3191,14 +3394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ad1c4512cfa0e700800000000000000
-      internalID: 567646801164508578
+      spriteID: 70dd97281cdfee580800000000000000
+      internalID: -8795814014648460025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_117
+      name: spr_TilesetOverworld 1_125
       rect:
         serializedVersion: 2
         x: 85
@@ -3213,14 +3416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84bda42833c54b6c0800000000000000
-      internalID: -4128573582092870840
+      spriteID: 124316b4b486d3c50800000000000000
+      internalID: 6646583297665217569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_118
+      name: spr_TilesetOverworld 1_126
       rect:
         serializedVersion: 2
         x: 102
@@ -3235,14 +3438,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd98f477250c26620800000000000000
-      internalID: 2765984581580458463
+      spriteID: 63074f6e4b6c6d320800000000000000
+      internalID: 2582469916614750262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_119
+      name: spr_TilesetOverworld 1_127
       rect:
         serializedVersion: 2
         x: 119
@@ -3257,14 +3460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6639d3c8458837ca0800000000000000
-      internalID: -6020318380152745114
+      spriteID: b3317321cdbe2e370800000000000000
+      internalID: 8350495989529252667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_120
+      name: spr_TilesetOverworld 1_128
       rect:
         serializedVersion: 2
         x: 136
@@ -3279,14 +3482,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58e6098cddb9f20a0800000000000000
-      internalID: -6904128326880694651
+      spriteID: 31631f54bddd20b60800000000000000
+      internalID: 7710969445852722707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_121
+      name: spr_TilesetOverworld 1_129
       rect:
         serializedVersion: 2
         x: 153
@@ -3301,14 +3504,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19e4cfa304547ad50800000000000000
-      internalID: 6748438708807814801
+      spriteID: 9571346420cddb3b0800000000000000
+      internalID: -5494994067995289767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_122
+      name: spr_TilesetOverworld 1_130
       rect:
         serializedVersion: 2
         x: 170
@@ -3323,14 +3526,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 82b7f6e7777c47320800000000000000
-      internalID: 2554886204662184744
+      spriteID: e3f780a182bbb6b50800000000000000
+      internalID: 6587564660869332798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_123
+      name: spr_TilesetOverworld 1_131
       rect:
         serializedVersion: 2
         x: 187
@@ -3345,14 +3548,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1ea10862dd437470800000000000000
-      internalID: 8391136096804777501
+      spriteID: 19811120037e15780800000000000000
+      internalID: -8695915212096595823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_124
+      name: spr_TilesetOverworld 1_132
       rect:
         serializedVersion: 2
         x: 204
@@ -3367,14 +3570,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8193281cb635d1830800000000000000
-      internalID: 4043479762721716504
+      spriteID: d337b079fb0683200800000000000000
+      internalID: 159984162760782653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_125
+      name: spr_TilesetOverworld 1_133
       rect:
         serializedVersion: 2
         x: 221
@@ -3389,14 +3592,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a43251f9cd90d9d0800000000000000
-      internalID: -2751525881660689246
+      spriteID: 966b923572f6936a0800000000000000
+      internalID: -6469017175051356567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_126
+      name: spr_TilesetOverworld 1_134
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d5d88b33a2a9710800000000000000
+      internalID: 1700718210913754438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_TilesetOverworld 1_135
       rect:
         serializedVersion: 2
         x: 0
@@ -3411,14 +3636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d3d7891be8158cb0800000000000000
-      internalID: -4862452824651869227
+      spriteID: 3d1ccb8e660a8d750800000000000000
+      internalID: 6329985640121024979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_127
+      name: spr_TilesetOverworld 1_136
       rect:
         serializedVersion: 2
         x: 17
@@ -3433,14 +3658,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ba044275d8a93030800000000000000
-      internalID: 3474994222191610547
+      spriteID: aff7fed32f4a273c0800000000000000
+      internalID: -4363243728640442374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_128
+      name: spr_TilesetOverworld 1_137
       rect:
         serializedVersion: 2
         x: 34
@@ -3455,14 +3680,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a02578fcad162090800000000000000
-      internalID: -8059721854392917847
+      spriteID: 4f7fc4ffcd3caf1b0800000000000000
+      internalID: -5621965830875187212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_129
+      name: spr_TilesetOverworld 1_138
       rect:
         serializedVersion: 2
         x: 51
@@ -3477,14 +3702,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6249822bf41440350800000000000000
-      internalID: 5981978015602086950
+      spriteID: 54546f01586a983b0800000000000000
+      internalID: -5509689578665654971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_130
+      name: spr_TilesetOverworld 1_139
       rect:
         serializedVersion: 2
         x: 68
@@ -3499,14 +3724,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 336e6a832a868fc90800000000000000
-      internalID: -7135838563624098253
+      spriteID: d21cf9dc6359e3d00800000000000000
+      internalID: 954364233659695405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_131
+      name: spr_TilesetOverworld 1_140
       rect:
         serializedVersion: 2
         x: 85
@@ -3521,14 +3746,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38381408214aae9c0800000000000000
-      internalID: -3897122128167599229
+      spriteID: 6240506a65eb4ccc0800000000000000
+      internalID: -3691616515175152602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_132
+      name: spr_TilesetOverworld 1_141
       rect:
         serializedVersion: 2
         x: 102
@@ -3543,14 +3768,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0af762aabf53ea60800000000000000
-      internalID: 7702105042926959119
+      spriteID: b6facd740f04f2ce0800000000000000
+      internalID: -1427851156111184021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_133
+      name: spr_TilesetOverworld 1_142
       rect:
         serializedVersion: 2
         x: 119
@@ -3565,14 +3790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b93b27cd96abcc4a0800000000000000
-      internalID: -6571672792407559269
+      spriteID: dd9af46995ccf6250800000000000000
+      internalID: 5940191118670932445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_134
+      name: spr_TilesetOverworld 1_143
       rect:
         serializedVersion: 2
         x: 136
@@ -3587,14 +3812,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 605845777e9782d90800000000000000
-      internalID: -7122308775640005370
+      spriteID: 9d4698d970c381300800000000000000
+      internalID: 222994184960304345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_135
+      name: spr_TilesetOverworld 1_144
       rect:
         serializedVersion: 2
         x: 153
@@ -3609,14 +3834,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 015be854e07feb910800000000000000
-      internalID: 1855191737191806224
+      spriteID: f17a82fd0911992c0800000000000000
+      internalID: -4424485844997855457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_136
+      name: spr_TilesetOverworld 1_145
       rect:
         serializedVersion: 2
         x: 170
@@ -3631,14 +3856,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f76eba9c212b8690800000000000000
-      internalID: -7598943470799132687
+      spriteID: cf67b4225194f6c50800000000000000
+      internalID: 6660622729022764796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_137
+      name: spr_TilesetOverworld 1_146
       rect:
         serializedVersion: 2
         x: 187
@@ -3653,14 +3878,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 819ac596345cbbe30800000000000000
-      internalID: 4520423544317585688
+      spriteID: b718f08fb4d2c5730800000000000000
+      internalID: 3989113174250979707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_138
+      name: spr_TilesetOverworld 1_147
       rect:
         serializedVersion: 2
         x: 204
@@ -3675,14 +3900,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50e10cb4d34065900800000000000000
-      internalID: 672729855648865797
+      spriteID: 33791fcf58618aa90800000000000000
+      internalID: -7302562031051106509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_139
+      name: spr_TilesetOverworld 1_148
       rect:
         serializedVersion: 2
         x: 221
@@ -3697,14 +3922,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53c519f5dbaf81db0800000000000000
-      internalID: -4820827709840991179
+      spriteID: 36dd2b93c28686d30800000000000000
+      internalID: 4424901173047385443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_140
+      name: spr_TilesetOverworld 1_149
       rect:
         serializedVersion: 2
         x: 0
@@ -3719,14 +3944,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec7454abcf8bb2690800000000000000
-      internalID: -7625798148425431090
+      spriteID: c07d94fc2f60b0e80800000000000000
+      internalID: -8211461855650392308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_141
+      name: spr_TilesetOverworld 1_150
       rect:
         serializedVersion: 2
         x: 17
@@ -3741,14 +3966,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e67f2158a5c57d70800000000000000
-      internalID: 9040349153723381476
+      spriteID: 5d429f8a63da1dff0800000000000000
+      internalID: -13038873630661419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_142
+      name: spr_TilesetOverworld 1_151
       rect:
         serializedVersion: 2
         x: 34
@@ -3763,14 +3988,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa8aa5ec17d9b6970800000000000000
-      internalID: 8749259813216233642
+      spriteID: 46efd0daf96fb7df0800000000000000
+      internalID: -181280194314764700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_143
+      name: spr_TilesetOverworld 1_152
       rect:
         serializedVersion: 2
         x: 51
@@ -3785,14 +4010,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4e0e20823e56a520800000000000000
-      internalID: 2712959396529180239
+      spriteID: 62e9a50a431e37170800000000000000
+      internalID: 8175125364752424486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_144
+      name: spr_TilesetOverworld 1_153
       rect:
         serializedVersion: 2
         x: 68
@@ -3807,14 +4032,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aea6221e47ebae880800000000000000
-      internalID: -8580836730798445846
+      spriteID: b2e1581b72b42fda0800000000000000
+      internalID: -5912580726929940949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_145
+      name: spr_TilesetOverworld 1_154
       rect:
         serializedVersion: 2
         x: 85
@@ -3829,14 +4054,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db3229c0efc872bf0800000000000000
-      internalID: -349155423337438275
+      spriteID: 185bfb5f15994d850800000000000000
+      internalID: 6400909547694699905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_146
+      name: spr_TilesetOverworld 1_155
       rect:
         serializedVersion: 2
         x: 102
@@ -3851,14 +4076,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e150b61441aeb0180800000000000000
-      internalID: -9147960845355252450
+      spriteID: b1dbfa04b6b722320800000000000000
+      internalID: 2531721641112616219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_147
+      name: spr_TilesetOverworld 1_156
       rect:
         serializedVersion: 2
         x: 119
@@ -3873,14 +4098,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cc37cb813a5505e0800000000000000
-      internalID: -1944048495295513406
+      spriteID: 3d6ddab70c0cd5410800000000000000
+      internalID: 1467540986533893843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_148
+      name: spr_TilesetOverworld 1_157
       rect:
         serializedVersion: 2
         x: 136
@@ -3895,14 +4120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36b1ecc9c71539210800000000000000
-      internalID: 1338503109907716963
+      spriteID: 044de343bdcc647c0800000000000000
+      internalID: -4087354369945709504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_149
+      name: spr_TilesetOverworld 1_158
       rect:
         serializedVersion: 2
         x: 153
@@ -3917,14 +4142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b3118d397df93970800000000000000
-      internalID: 8735291649426527154
+      spriteID: 5c08bd710c04b0e50800000000000000
+      internalID: 6776581258087203013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_150
+      name: spr_TilesetOverworld 1_159
       rect:
         serializedVersion: 2
         x: 170
@@ -3939,14 +4164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0e84d04294deb560800000000000000
-      internalID: 7331530968023731726
+      spriteID: 3cd4cd21ea1c71a70800000000000000
+      internalID: 8797713350476451267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_151
+      name: spr_TilesetOverworld 1_160
       rect:
         serializedVersion: 2
         x: 187
@@ -3961,14 +4186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2da56846d660821d0800000000000000
-      internalID: -3375440853806458158
+      spriteID: 6c3471d0aaa6cde70800000000000000
+      internalID: 9141298622251877318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_152
+      name: spr_TilesetOverworld 1_161
       rect:
         serializedVersion: 2
         x: 221
@@ -3983,14 +4208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 594b8838b13df86e0800000000000000
-      internalID: -1833014408192150379
+      spriteID: feca8a468b111fd50800000000000000
+      internalID: 6769211198574996719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_153
+      name: spr_TilesetOverworld 1_162
       rect:
         serializedVersion: 2
         x: 0
@@ -4005,14 +4230,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1c4b28d4d118cdf0800000000000000
-      internalID: -159858180914197475
+      spriteID: d7fd2f04ee33c9590800000000000000
+      internalID: -7666195367306535043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_154
+      name: spr_TilesetOverworld 1_163
       rect:
         serializedVersion: 2
         x: 17
@@ -4027,14 +4252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5260d87bcee74c770800000000000000
-      internalID: 8630162341105567269
+      spriteID: e76588f0cbe364ad0800000000000000
+      internalID: -2718416347636148610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_155
+      name: spr_TilesetOverworld 1_164
       rect:
         serializedVersion: 2
         x: 34
@@ -4049,14 +4274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76b8bedd327bde160800000000000000
-      internalID: 7056497555834375015
+      spriteID: b3846bb83d20c6990800000000000000
+      internalID: -7391529780816492485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_156
+      name: spr_TilesetOverworld 1_165
       rect:
         serializedVersion: 2
         x: 51
@@ -4071,14 +4296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8f70569bd29deb70800000000000000
-      internalID: 8929955107962912653
+      spriteID: cef5e0c14b468a6a0800000000000000
+      internalID: -6437784942598529044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_157
+      name: spr_TilesetOverworld 1_166
       rect:
         serializedVersion: 2
         x: 68
@@ -4093,14 +4318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c9953e4913d8b3d60800000000000000
-      internalID: 7871040017850915228
+      spriteID: 577100d5bcab5a220800000000000000
+      internalID: 2496606951048222581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_158
+      name: spr_TilesetOverworld 1_167
       rect:
         serializedVersion: 2
         x: 85
@@ -4115,14 +4340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85516bf921dea5b90800000000000000
-      internalID: -7252223585682057896
+      spriteID: 5d8f64d7ce079f890800000000000000
+      internalID: -7423778349727156011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_159
+      name: spr_TilesetOverworld 1_168
       rect:
         serializedVersion: 2
         x: 102
@@ -4137,14 +4362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 632a4b0c2848c1d20800000000000000
-      internalID: 3250618728168333878
+      spriteID: 420f58b5b7c85eb90800000000000000
+      internalID: -7213204766719610844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_160
+      name: spr_TilesetOverworld 1_169
       rect:
         serializedVersion: 2
         x: 119
@@ -4159,14 +4384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 151b8d665d33d8f00800000000000000
-      internalID: 1120608873931649361
+      spriteID: b49dff689d548f270800000000000000
+      internalID: 8284448315123161419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_161
+      name: spr_TilesetOverworld 1_170
       rect:
         serializedVersion: 2
         x: 136
@@ -4181,14 +4406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1663956628a8e8110800000000000000
-      internalID: 1265100838005192289
+      spriteID: 49e5b9c4f01b9ab60800000000000000
+      internalID: 7757926512390266516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_162
+      name: spr_TilesetOverworld 1_171
       rect:
         serializedVersion: 2
         x: 153
@@ -4203,14 +4428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf7b7645d91cb4410800000000000000
-      internalID: 1462475385481967611
+      spriteID: 4518e0d711c039590800000000000000
+      internalID: -7668772471229742764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_163
+      name: spr_TilesetOverworld 1_172
       rect:
         serializedVersion: 2
         x: 170
@@ -4225,14 +4450,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a43f979c90280b0d0800000000000000
-      internalID: -3409081939372936374
+      spriteID: 65276ab3f35c0f4a0800000000000000
+      internalID: -6561527781704437162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_164
+      name: spr_TilesetOverworld 1_173
       rect:
         serializedVersion: 2
         x: 187
@@ -4247,14 +4472,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4dcad3e1d3cc3a350800000000000000
-      internalID: 6026885289224285396
+      spriteID: 1c1ffa6e47776a520800000000000000
+      internalID: 2712987169507504577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_165
+      name: spr_TilesetOverworld 1_174
       rect:
         serializedVersion: 2
         x: 204
@@ -4269,14 +4494,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee0eeb65e42ea51f0800000000000000
-      internalID: -1055282336574283538
+      spriteID: c041a7e191ffffdb0800000000000000
+      internalID: -4755802198129372148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_TilesetOverworld_166
+      name: spr_TilesetOverworld 1_175
       rect:
         serializedVersion: 2
         x: 221
@@ -4291,8 +4516,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc4137ae6b12d64e0800000000000000
-      internalID: -1986894791099345713
+      spriteID: e475d3639cbf38390800000000000000
+      internalID: -7817127686568061106
       vertices: []
       indices: 
       edges: []
@@ -4301,7 +4526,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 826d20b2b1c4cf248a7b6d1cbb127fe7
+    spriteID: 2f6635f325951d047a7dd9a2d6cf685e
     internalID: 0
     vertices: []
     indices: 
@@ -4313,173 +4538,182 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      spr_TilesetOverworld_0: 4539790882485951865
-      spr_TilesetOverworld_1: -904457562765541382
-      spr_TilesetOverworld_10: -9041103983932766917
-      spr_TilesetOverworld_100: 1722267276210849751
-      spr_TilesetOverworld_101: 6953670321541621615
-      spr_TilesetOverworld_102: 4271499704535153178
-      spr_TilesetOverworld_103: 4437746570266702196
-      spr_TilesetOverworld_104: -1242389957402968209
-      spr_TilesetOverworld_105: -2735849050257065097
-      spr_TilesetOverworld_106: -4728736422934469931
-      spr_TilesetOverworld_107: 1091258390653223115
-      spr_TilesetOverworld_108: -9201627285399302955
-      spr_TilesetOverworld_109: 6729803523305327023
-      spr_TilesetOverworld_11: -8861373079787527462
-      spr_TilesetOverworld_110: 1677768690230698668
-      spr_TilesetOverworld_111: -4940885309489136867
-      spr_TilesetOverworld_112: 7097458724129552788
-      spr_TilesetOverworld_113: 3220672631519239857
-      spr_TilesetOverworld_114: 1814091188577472057
-      spr_TilesetOverworld_115: -5638383545004330431
-      spr_TilesetOverworld_116: 567646801164508578
-      spr_TilesetOverworld_117: -4128573582092870840
-      spr_TilesetOverworld_118: 2765984581580458463
-      spr_TilesetOverworld_119: -6020318380152745114
-      spr_TilesetOverworld_12: 6354247283772188893
-      spr_TilesetOverworld_120: -6904128326880694651
-      spr_TilesetOverworld_121: 6748438708807814801
-      spr_TilesetOverworld_122: 2554886204662184744
-      spr_TilesetOverworld_123: 8391136096804777501
-      spr_TilesetOverworld_124: 4043479762721716504
-      spr_TilesetOverworld_125: -2751525881660689246
-      spr_TilesetOverworld_126: -4862452824651869227
-      spr_TilesetOverworld_127: 3474994222191610547
-      spr_TilesetOverworld_128: -8059721854392917847
-      spr_TilesetOverworld_129: 5981978015602086950
-      spr_TilesetOverworld_13: 546027694601625494
-      spr_TilesetOverworld_130: -7135838563624098253
-      spr_TilesetOverworld_131: -3897122128167599229
-      spr_TilesetOverworld_132: 7702105042926959119
-      spr_TilesetOverworld_133: -6571672792407559269
-      spr_TilesetOverworld_134: -7122308775640005370
-      spr_TilesetOverworld_135: 1855191737191806224
-      spr_TilesetOverworld_136: -7598943470799132687
-      spr_TilesetOverworld_137: 4520423544317585688
-      spr_TilesetOverworld_138: 672729855648865797
-      spr_TilesetOverworld_139: -4820827709840991179
-      spr_TilesetOverworld_14: 9141949420177529957
-      spr_TilesetOverworld_140: -7625798148425431090
-      spr_TilesetOverworld_141: 9040349153723381476
-      spr_TilesetOverworld_142: 8749259813216233642
-      spr_TilesetOverworld_143: 2712959396529180239
-      spr_TilesetOverworld_144: -8580836730798445846
-      spr_TilesetOverworld_145: -349155423337438275
-      spr_TilesetOverworld_146: -9147960845355252450
-      spr_TilesetOverworld_147: -1944048495295513406
-      spr_TilesetOverworld_148: 1338503109907716963
-      spr_TilesetOverworld_149: 8735291649426527154
-      spr_TilesetOverworld_15: -8701978126588693589
-      spr_TilesetOverworld_150: 7331530968023731726
-      spr_TilesetOverworld_151: -3375440853806458158
-      spr_TilesetOverworld_152: -1833014408192150379
-      spr_TilesetOverworld_153: -159858180914197475
-      spr_TilesetOverworld_154: 8630162341105567269
-      spr_TilesetOverworld_155: 7056497555834375015
-      spr_TilesetOverworld_156: 8929955107962912653
-      spr_TilesetOverworld_157: 7871040017850915228
-      spr_TilesetOverworld_158: -7252223585682057896
-      spr_TilesetOverworld_159: 3250618728168333878
-      spr_TilesetOverworld_16: 8868848713698503811
-      spr_TilesetOverworld_160: 1120608873931649361
-      spr_TilesetOverworld_161: 1265100838005192289
-      spr_TilesetOverworld_162: 1462475385481967611
-      spr_TilesetOverworld_163: -3409081939372936374
-      spr_TilesetOverworld_164: 6026885289224285396
-      spr_TilesetOverworld_165: -1055282336574283538
-      spr_TilesetOverworld_166: -1986894791099345713
-      spr_TilesetOverworld_17: -8413051303796340250
-      spr_TilesetOverworld_18: -342698317772825131
-      spr_TilesetOverworld_19: 8767022487754093897
-      spr_TilesetOverworld_2: -2644058092093303026
-      spr_TilesetOverworld_20: 4122403621301996186
-      spr_TilesetOverworld_21: 2057661766287646751
-      spr_TilesetOverworld_22: -4317964075576503488
-      spr_TilesetOverworld_23: -1949133533445472845
-      spr_TilesetOverworld_24: -7262453302940562905
-      spr_TilesetOverworld_25: -6711236632342134738
-      spr_TilesetOverworld_26: 2256833969574209789
-      spr_TilesetOverworld_27: -6473098432659591326
-      spr_TilesetOverworld_28: -8404983003374007101
-      spr_TilesetOverworld_29: 6867421134178421378
-      spr_TilesetOverworld_3: -6326352291780890354
-      spr_TilesetOverworld_30: 1738371020363447995
-      spr_TilesetOverworld_31: -4218463151294887961
-      spr_TilesetOverworld_32: -288732165712171133
-      spr_TilesetOverworld_33: 3013519892895732638
-      spr_TilesetOverworld_34: 8840880658340537163
-      spr_TilesetOverworld_35: 3306891470105365143
-      spr_TilesetOverworld_36: 4897205401703945624
-      spr_TilesetOverworld_37: -8201475756910778702
-      spr_TilesetOverworld_38: -7550413984601409870
-      spr_TilesetOverworld_39: -848941569078557222
-      spr_TilesetOverworld_4: 7097845059828447121
-      spr_TilesetOverworld_40: 8501702344141160791
-      spr_TilesetOverworld_41: -6651824076619452252
-      spr_TilesetOverworld_42: -1266977556277993952
-      spr_TilesetOverworld_43: -2920810278372794258
-      spr_TilesetOverworld_44: 48999627570033336
-      spr_TilesetOverworld_45: -3822339390094791588
-      spr_TilesetOverworld_46: -856987257791903398
-      spr_TilesetOverworld_47: 7784945541821979866
-      spr_TilesetOverworld_48: -701959492958837144
-      spr_TilesetOverworld_49: -2677254186210520312
-      spr_TilesetOverworld_5: -3181869190872885543
-      spr_TilesetOverworld_50: -5602752804201484534
-      spr_TilesetOverworld_51: 8657820311384964626
-      spr_TilesetOverworld_52: 5884004715718422422
-      spr_TilesetOverworld_53: 8413843371501860351
-      spr_TilesetOverworld_54: -1879788583471090307
-      spr_TilesetOverworld_55: 2611176207641095293
-      spr_TilesetOverworld_56: -7816600205515300929
-      spr_TilesetOverworld_57: 4472409732256852988
-      spr_TilesetOverworld_58: 8680949358689007757
-      spr_TilesetOverworld_59: -3576895955776242782
-      spr_TilesetOverworld_6: 6594239166020122643
-      spr_TilesetOverworld_60: -288072597671495753
-      spr_TilesetOverworld_61: 1807310614351385105
-      spr_TilesetOverworld_62: -8898878172629550566
-      spr_TilesetOverworld_63: -7921675896362365329
-      spr_TilesetOverworld_64: -4412293916460950058
-      spr_TilesetOverworld_65: -7180916430401485723
-      spr_TilesetOverworld_66: 473640433971165866
-      spr_TilesetOverworld_67: -5140421654159344887
-      spr_TilesetOverworld_68: 9039694963859459669
-      spr_TilesetOverworld_69: 1518564100478188371
-      spr_TilesetOverworld_7: -6490406154475223097
-      spr_TilesetOverworld_70: -6447488268771840090
-      spr_TilesetOverworld_71: 2092900232616562193
-      spr_TilesetOverworld_72: 7358178779794893166
-      spr_TilesetOverworld_73: 6780067017551861798
-      spr_TilesetOverworld_74: 903827166276980366
-      spr_TilesetOverworld_75: 1390934630119434822
-      spr_TilesetOverworld_76: -5538188123587151630
-      spr_TilesetOverworld_77: 7928256930906027747
-      spr_TilesetOverworld_78: 8457446191810047983
-      spr_TilesetOverworld_79: -943029789461447603
-      spr_TilesetOverworld_8: -6438605063622243000
-      spr_TilesetOverworld_80: -2237221828081769157
-      spr_TilesetOverworld_81: -6290098631883264634
-      spr_TilesetOverworld_82: -1111284851465826366
-      spr_TilesetOverworld_83: -826763994266470814
-      spr_TilesetOverworld_84: 8837224732853969674
-      spr_TilesetOverworld_85: -1854977847119986544
-      spr_TilesetOverworld_86: -8764719304756408582
-      spr_TilesetOverworld_87: 2020845511599796366
-      spr_TilesetOverworld_88: 5618153780721012313
-      spr_TilesetOverworld_89: 4237688746319083981
-      spr_TilesetOverworld_9: -3670401550543625931
-      spr_TilesetOverworld_90: 2022636252533296190
-      spr_TilesetOverworld_91: 5287678330635571775
-      spr_TilesetOverworld_92: -5987392689722737164
-      spr_TilesetOverworld_93: 4205124447154268728
-      spr_TilesetOverworld_94: 7184458098504974428
-      spr_TilesetOverworld_95: 6804025037448314425
-      spr_TilesetOverworld_96: -4431611612672921075
-      spr_TilesetOverworld_97: 1635312037783190685
-      spr_TilesetOverworld_98: 3720189664076724694
-      spr_TilesetOverworld_99: -2871199981091749634
+      spr_TilesetOverworld 1_0: -9169252397512171745
+      spr_TilesetOverworld 1_1: 7719661196653724087
+      spr_TilesetOverworld 1_10: 5582515381732209738
+      spr_TilesetOverworld 1_100: -6723723179490563902
+      spr_TilesetOverworld 1_101: 1140107089158573166
+      spr_TilesetOverworld 1_102: 2380510151323238692
+      spr_TilesetOverworld 1_103: 5029201381632935797
+      spr_TilesetOverworld 1_104: 1514480608317354791
+      spr_TilesetOverworld 1_105: 1699968235691875879
+      spr_TilesetOverworld 1_106: 2266686549690527329
+      spr_TilesetOverworld 1_107: 2197585531000006862
+      spr_TilesetOverworld 1_108: 5144277858321029808
+      spr_TilesetOverworld 1_109: -6142052921958919478
+      spr_TilesetOverworld 1_11: -6827390086465146223
+      spr_TilesetOverworld 1_110: -4649747083474700692
+      spr_TilesetOverworld 1_111: -4104349731886673013
+      spr_TilesetOverworld 1_112: 3103268636624370216
+      spr_TilesetOverworld 1_113: -1494614816870189041
+      spr_TilesetOverworld 1_114: 1949680233431544963
+      spr_TilesetOverworld 1_115: -7468364894847604627
+      spr_TilesetOverworld 1_116: 8989539865503069955
+      spr_TilesetOverworld 1_117: 1864832036213334049
+      spr_TilesetOverworld 1_118: -5297777310349898212
+      spr_TilesetOverworld 1_119: 8779295665325502193
+      spr_TilesetOverworld 1_12: 3700216945465023710
+      spr_TilesetOverworld 1_120: 1728683415308286449
+      spr_TilesetOverworld 1_121: 8153356241028395060
+      spr_TilesetOverworld 1_122: -2091002479776492140
+      spr_TilesetOverworld 1_123: -1428173886752158471
+      spr_TilesetOverworld 1_124: -8795814014648460025
+      spr_TilesetOverworld 1_125: 6646583297665217569
+      spr_TilesetOverworld 1_126: 2582469916614750262
+      spr_TilesetOverworld 1_127: 8350495989529252667
+      spr_TilesetOverworld 1_128: 7710969445852722707
+      spr_TilesetOverworld 1_129: -5494994067995289767
+      spr_TilesetOverworld 1_13: -5902897578594642029
+      spr_TilesetOverworld 1_130: 6587564660869332798
+      spr_TilesetOverworld 1_131: -8695915212096595823
+      spr_TilesetOverworld 1_132: 159984162760782653
+      spr_TilesetOverworld 1_133: -6469017175051356567
+      spr_TilesetOverworld 1_134: 1700718210913754438
+      spr_TilesetOverworld 1_135: 6329985640121024979
+      spr_TilesetOverworld 1_136: -4363243728640442374
+      spr_TilesetOverworld 1_137: -5621965830875187212
+      spr_TilesetOverworld 1_138: -5509689578665654971
+      spr_TilesetOverworld 1_139: 954364233659695405
+      spr_TilesetOverworld 1_14: 5264641888938733851
+      spr_TilesetOverworld 1_140: -3691616515175152602
+      spr_TilesetOverworld 1_141: -1427851156111184021
+      spr_TilesetOverworld 1_142: 5940191118670932445
+      spr_TilesetOverworld 1_143: 222994184960304345
+      spr_TilesetOverworld 1_144: -4424485844997855457
+      spr_TilesetOverworld 1_145: 6660622729022764796
+      spr_TilesetOverworld 1_146: 3989113174250979707
+      spr_TilesetOverworld 1_147: -7302562031051106509
+      spr_TilesetOverworld 1_148: 4424901173047385443
+      spr_TilesetOverworld 1_149: -8211461855650392308
+      spr_TilesetOverworld 1_15: -3226186527614662770
+      spr_TilesetOverworld 1_150: -13038873630661419
+      spr_TilesetOverworld 1_151: -181280194314764700
+      spr_TilesetOverworld 1_152: 8175125364752424486
+      spr_TilesetOverworld 1_153: -5912580726929940949
+      spr_TilesetOverworld 1_154: 6400909547694699905
+      spr_TilesetOverworld 1_155: 2531721641112616219
+      spr_TilesetOverworld 1_156: 1467540986533893843
+      spr_TilesetOverworld 1_157: -4087354369945709504
+      spr_TilesetOverworld 1_158: 6776581258087203013
+      spr_TilesetOverworld 1_159: 8797713350476451267
+      spr_TilesetOverworld 1_16: -5289997471275003361
+      spr_TilesetOverworld 1_160: 9141298622251877318
+      spr_TilesetOverworld 1_161: 6769211198574996719
+      spr_TilesetOverworld 1_162: -7666195367306535043
+      spr_TilesetOverworld 1_163: -2718416347636148610
+      spr_TilesetOverworld 1_164: -7391529780816492485
+      spr_TilesetOverworld 1_165: -6437784942598529044
+      spr_TilesetOverworld 1_166: 2496606951048222581
+      spr_TilesetOverworld 1_167: -7423778349727156011
+      spr_TilesetOverworld 1_168: -7213204766719610844
+      spr_TilesetOverworld 1_169: 8284448315123161419
+      spr_TilesetOverworld 1_17: 5593325297860443726
+      spr_TilesetOverworld 1_170: 7757926512390266516
+      spr_TilesetOverworld 1_171: -7668772471229742764
+      spr_TilesetOverworld 1_172: -6561527781704437162
+      spr_TilesetOverworld 1_173: 2712987169507504577
+      spr_TilesetOverworld 1_174: -4755802198129372148
+      spr_TilesetOverworld 1_175: -7817127686568061106
+      spr_TilesetOverworld 1_18: -3866861436709497870
+      spr_TilesetOverworld 1_19: -4563276516000341180
+      spr_TilesetOverworld 1_2: -1563392715950266566
+      spr_TilesetOverworld 1_20: -6431369759129177765
+      spr_TilesetOverworld 1_21: 7347794860898989817
+      spr_TilesetOverworld 1_22: -1367823724103911782
+      spr_TilesetOverworld 1_23: 5116013619096217967
+      spr_TilesetOverworld 1_24: 7623125534069973259
+      spr_TilesetOverworld 1_25: 9186044080961768571
+      spr_TilesetOverworld 1_26: -808143405030677637
+      spr_TilesetOverworld 1_27: 5834404455719275543
+      spr_TilesetOverworld 1_28: 7330669761722096107
+      spr_TilesetOverworld 1_29: -2361506860514129456
+      spr_TilesetOverworld 1_3: 1442778063820558405
+      spr_TilesetOverworld 1_30: 6408312593325618309
+      spr_TilesetOverworld 1_31: 109215706910002820
+      spr_TilesetOverworld 1_32: -2788896228276934908
+      spr_TilesetOverworld 1_33: -3931408934182999791
+      spr_TilesetOverworld 1_34: 2255479621017572978
+      spr_TilesetOverworld 1_35: 1188744955841639828
+      spr_TilesetOverworld 1_36: -3007501597907579349
+      spr_TilesetOverworld 1_37: -5560206160365010771
+      spr_TilesetOverworld 1_38: 6995116186610706443
+      spr_TilesetOverworld 1_39: -526029069931185237
+      spr_TilesetOverworld 1_4: 7861506700497950176
+      spr_TilesetOverworld 1_40: 5114893663450061973
+      spr_TilesetOverworld 1_41: 2569332971419667162
+      spr_TilesetOverworld 1_42: -2870436327392013518
+      spr_TilesetOverworld 1_43: -9216386846143364498
+      spr_TilesetOverworld 1_44: 2036402380515383415
+      spr_TilesetOverworld 1_45: 1857173111776045265
+      spr_TilesetOverworld 1_46: -8293979122900614581
+      spr_TilesetOverworld 1_47: -5801272263955328352
+      spr_TilesetOverworld 1_48: -2381429494484404542
+      spr_TilesetOverworld 1_49: 7589378203879683198
+      spr_TilesetOverworld 1_5: 2130722953182682848
+      spr_TilesetOverworld 1_50: -3789363175431575888
+      spr_TilesetOverworld 1_51: -5325378889404086661
+      spr_TilesetOverworld 1_52: 7859308744760886031
+      spr_TilesetOverworld 1_53: -3864330601384413067
+      spr_TilesetOverworld 1_54: -7386846693612044509
+      spr_TilesetOverworld 1_55: 4050952080355772878
+      spr_TilesetOverworld 1_56: 2099760708152405608
+      spr_TilesetOverworld 1_57: 3204664263031388841
+      spr_TilesetOverworld 1_58: -4844408701704177421
+      spr_TilesetOverworld 1_59: -2300535169938921604
+      spr_TilesetOverworld 1_6: 6282936966007816856
+      spr_TilesetOverworld 1_60: 4813238886783783754
+      spr_TilesetOverworld 1_61: 3737323653890361734
+      spr_TilesetOverworld 1_62: 7779222139122463276
+      spr_TilesetOverworld 1_63: -2658717784261199329
+      spr_TilesetOverworld 1_64: 841535991739771005
+      spr_TilesetOverworld 1_65: -5002167150309052992
+      spr_TilesetOverworld 1_66: 3519432795197069068
+      spr_TilesetOverworld 1_67: -5024462440821085468
+      spr_TilesetOverworld 1_68: 2712553091289004125
+      spr_TilesetOverworld 1_69: 3792441888232874551
+      spr_TilesetOverworld 1_7: 339392078105733680
+      spr_TilesetOverworld 1_70: 1854432236151318705
+      spr_TilesetOverworld 1_71: 3940249873509031501
+      spr_TilesetOverworld 1_72: -5673647405409096385
+      spr_TilesetOverworld 1_73: -2311639366651520179
+      spr_TilesetOverworld 1_74: -4559594121596235840
+      spr_TilesetOverworld 1_75: 574096804783656664
+      spr_TilesetOverworld 1_76: -7488729363611894226
+      spr_TilesetOverworld 1_77: 1478142399534282978
+      spr_TilesetOverworld 1_78: 3261295563972474682
+      spr_TilesetOverworld 1_79: -1294206628573326717
+      spr_TilesetOverworld 1_8: 7027522022168454512
+      spr_TilesetOverworld 1_80: 6381966605225352113
+      spr_TilesetOverworld 1_81: -6185636474795587652
+      spr_TilesetOverworld 1_82: -8145580882451682223
+      spr_TilesetOverworld 1_83: -8738588429251757057
+      spr_TilesetOverworld 1_84: 7995258209283829463
+      spr_TilesetOverworld 1_85: -5784732259751162664
+      spr_TilesetOverworld 1_86: 4328372898764911145
+      spr_TilesetOverworld 1_87: -4840788595462604635
+      spr_TilesetOverworld 1_88: -5979509504116725855
+      spr_TilesetOverworld 1_89: 4724448524943564386
+      spr_TilesetOverworld 1_9: 2299128779522970735
+      spr_TilesetOverworld 1_90: 7581178703902125879
+      spr_TilesetOverworld 1_91: 7012395146284509650
+      spr_TilesetOverworld 1_92: 1921855125000940071
+      spr_TilesetOverworld 1_93: 255100266071571528
+      spr_TilesetOverworld 1_94: -2040362561275392251
+      spr_TilesetOverworld 1_95: 1062061498329605071
+      spr_TilesetOverworld 1_96: -5141836484717643192
+      spr_TilesetOverworld 1_97: -3164933911155485296
+      spr_TilesetOverworld 1_98: 1167822100772094119
+      spr_TilesetOverworld 1_99: 3997175962734401005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
