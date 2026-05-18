@@ -1,49 +1,56 @@
-using UnityEngine; // Importa as ferramentas principais da engine da Unity.
+using System.Collections.Generic; // Necessário para usarmos Dictionary
+using UnityEngine;
 
-// Cria a classe que representa a caixa de loot no mapa.
-// Ao assinar o contrato IInteractable, ela garante que a "mão" do jogador conseguirá ativá-la.
 public class BauDePecas : MonoBehaviour, IInteractable
 {
-    [Header("O que tem dentro? (Pode colocar várias!)")] // Organiza visualmente o componente lá no Inspector.
-
-    // O segredo do Array: Os colchetes [] transformam uma única variável em uma lista/coleção.
-    // Isso permite que você arraste quantas peças diferentes você quiser para dentro deste baú no Inspector.
+    [Header("O que tem dentro? (Pode colocar várias!)")]
     public PecaSpeedBot[] pecasEscondidas;
 
-    // O "cadeado lógico". Começa como falso porque o baú nasce fechado e cheio de itens.
-    // Serve para impedir que o jogador pegue os mesmos itens infinitamente clicando sem parar.
     private bool jaAberto = false;
 
-    // Função engatilhada no exato momento em que o jogador encosta no baú e aperta o botão de interação.
     public void Interagir()
     {
-        // 1. A CHECAGEM DO CADEADO: O baú já foi saqueado antes?
         if (jaAberto)
         {
-            // Se for verdadeiro, avisa no console e aborta a missão!
             Debug.Log("[BAÚ] Este baú já está vazio.");
-            return; // O 'return' corta o código imediatamente aqui, impedindo que os itens sejam dados de novo.
+            return;
         }
 
-        int itensPegos = 0; // Cria um contador temporário para sabermos o total de itens coletados.
+        int itensPegos = 0;
 
-        // 2. A COLETA: Usa um laço de repetição (foreach) para passar por todas as peças do array.
+        // Dicionário para agrupar as peças antes de mandar para a tela
+        // Ele vai guardar o "Nome do Item" e a "Quantidade"
+        Dictionary<string, int> itensAgrupados = new Dictionary<string, int>();
+
         foreach (PecaSpeedBot peca in pecasEscondidas)
         {
-            // Checagem de segurança para não tentar dar um item que você esqueceu de preencher no Inspector (nulo).
             if (peca != null)
             {
-                // Joga a peça atual da lista diretamente para a mochila do jogador através do Singleton.
                 InventarioManager.Instance.AdicionarPeca(peca);
-                itensPegos++; // Soma +1 no contador de peças transferidas.
+                itensPegos++;
+
+                // Pega o nome do item. Se o seu PecaSpeedBot tiver uma variável específica (ex: peca.nomeDaPeca), mude aqui!
+                string nome = peca.name;
+
+                // Se o item já está no dicionário, soma +1. Se não, cria o registro valendo 1.
+                if (itensAgrupados.ContainsKey(nome))
+                    itensAgrupados[nome]++;
+                else
+                    itensAgrupados[nome] = 1;
             }
         }
 
-        // 3. A TRANCA: Assim que entregar tudo, ele muda o cadeado para 'true'.
-        // Agora, se o jogador tentar clicar de novo, o baú vai barrar a ação lá no 'if (jaAberto)' inicial.
-        jaAberto = true;
+        // Agora sim, enviamos a lista agrupada e limpa para a UI Lateral
+        foreach (var grupo in itensAgrupados)
+        {
+            if (NotificacaoLateral.Instance != null)
+            {
+                // grupo.Key é o Nome, grupo.Value é a Quantidade
+                NotificacaoLateral.Instance.MostrarLoot(grupo.Key, grupo.Value);
+            }
+        }
 
-        // Exibe uma mensagem de comemoração no console dizendo exatamente o tamanho do saque.
+        jaAberto = true;
         Debug.Log($"[BAÚ] Baú aberto! Você pegou {itensPegos} itens.");
     }
 }
