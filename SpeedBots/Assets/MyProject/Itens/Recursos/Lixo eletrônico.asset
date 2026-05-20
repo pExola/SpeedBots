@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a2e713878aaa7240956e629bc4ae301, type: 3}
-  m_Name: "\xD3leo"
+  m_Name: "Lixo eletr\xF4nico"
   m_EditorClassIdentifier: Assembly-CSharp::PecaSpeedBot
-  nomeDaPeca: "\xD3leo"
+  nomeDaPeca: "Lixo eletr\xF4nico"
   tipoPeca: 3
   icone: {fileID: 0}
-  descricao: "\xD3leo para engrenagens"
+  descricao: "Pe\xE7as quebras. Pode ser \xFAtil"
   classe: 0
   arrancadaBase: 0
   durabilidadeBase: 0
