@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,6 +122,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -164,7 +177,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0b3cf280fb771ca47847c6051805e20a
-      internalID: -266670923
+      internalID: 3487988140570978552
       vertices: []
       indices: 
       edges: []
@@ -186,7 +199,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a3040aadbe985654f83b9c5f0b165486
-      internalID: 1777013362
+      internalID: -2876502605990750679
       vertices: []
       indices: 
       edges: []
@@ -208,7 +221,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 78eab6cd8b8731c4384ae43b83af33d2
-      internalID: 481168780
+      internalID: 1002217836247617842
       vertices: []
       indices: 
       edges: []
@@ -230,7 +243,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 54a7804f2f045ae49b8399fcce822c10
-      internalID: 337229690
+      internalID: 8591949440712694142
       vertices: []
       indices: 
       edges: []
@@ -252,7 +265,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de4b60acd552cf44aa12ae538cd647e2
-      internalID: 732612702
+      internalID: 4683499172022770951
       vertices: []
       indices: 
       edges: []
@@ -274,7 +287,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 36661db6022957040a9101e3416bfdfe
-      internalID: 465860875
+      internalID: -5649213977388111904
       vertices: []
       indices: 
       edges: []
@@ -296,7 +309,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2e44b6c8ffa0c2c4f8b6942c5cd82ead
-      internalID: -245365325
+      internalID: -4754304022406448436
       vertices: []
       indices: 
       edges: []
@@ -318,7 +331,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e91056f6c3ea2be4ea4d4dc2b31c0529
-      internalID: 1720097431
+      internalID: 6431598017585691028
       vertices: []
       indices: 
       edges: []
@@ -340,7 +353,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0271c6af40f63534ba82a461f9e1f158
-      internalID: 434223852
+      internalID: -7909072151405040936
       vertices: []
       indices: 
       edges: []
@@ -362,7 +375,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 840e97dfb12a1814b960ebcd2b5f8f43
-      internalID: 98746158
+      internalID: 1342705267302707008
       vertices: []
       indices: 
       edges: []
@@ -371,7 +384,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b6dc55dc66ca0f744a5f8dae24729b3d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -382,16 +395,16 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       spr_SelecaoDeBotsSheet_0: 4434955352888989657
-      spr_SelecaoDeBotsSheet_1: -266670923
-      spr_SelecaoDeBotsSheet_10: 98746158
-      spr_SelecaoDeBotsSheet_2: 1777013362
-      spr_SelecaoDeBotsSheet_3: 481168780
-      spr_SelecaoDeBotsSheet_4: 337229690
-      spr_SelecaoDeBotsSheet_5: 732612702
-      spr_SelecaoDeBotsSheet_6: 465860875
-      spr_SelecaoDeBotsSheet_7: -245365325
-      spr_SelecaoDeBotsSheet_8: 1720097431
-      spr_SelecaoDeBotsSheet_9: 434223852
+      spr_SelecaoDeBotsSheet_1: 3487988140570978552
+      spr_SelecaoDeBotsSheet_10: 1342705267302707008
+      spr_SelecaoDeBotsSheet_2: -2876502605990750679
+      spr_SelecaoDeBotsSheet_3: 1002217836247617842
+      spr_SelecaoDeBotsSheet_4: 8591949440712694142
+      spr_SelecaoDeBotsSheet_5: 4683499172022770951
+      spr_SelecaoDeBotsSheet_6: -5649213977388111904
+      spr_SelecaoDeBotsSheet_7: -4754304022406448436
+      spr_SelecaoDeBotsSheet_8: 6431598017585691028
+      spr_SelecaoDeBotsSheet_9: -7909072151405040936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
