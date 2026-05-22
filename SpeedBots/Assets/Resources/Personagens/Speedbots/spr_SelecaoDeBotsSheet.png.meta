@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,12 +129,12 @@ TextureImporter:
       name: spr_SelecaoDeBotsSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 493
-        height: 273
+        x: 6
+        y: 188
+        width: 27
+        height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,11 +147,231 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 188
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3cf280fb771ca47847c6051805e20a
+      internalID: -266670923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 188
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3040aadbe985654f83b9c5f0b165486
+      internalID: 1777013362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 188
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eab6cd8b8731c4384ae43b83af33d2
+      internalID: 481168780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 188
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a7804f2f045ae49b8399fcce822c10
+      internalID: 337229690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 188
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4b60acd552cf44aa12ae538cd647e2
+      internalID: 732612702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 188
+        width: 29
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36661db6022957040a9101e3416bfdfe
+      internalID: 465860875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_7
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 188
+        width: 29
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e44b6c8ffa0c2c4f8b6942c5cd82ead
+      internalID: -245365325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_8
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 188
+        width: 29
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91056f6c3ea2be4ea4d4dc2b31c0529
+      internalID: 1720097431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_9
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 188
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0271c6af40f63534ba82a461f9e1f158
+      internalID: 434223852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_SelecaoDeBotsSheet_10
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 241
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840e97dfb12a1814b960ebcd2b5f8f43
+      internalID: 98746158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b6dc55dc66ca0f744a5f8dae24729b3d
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +382,16 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       spr_SelecaoDeBotsSheet_0: 4434955352888989657
+      spr_SelecaoDeBotsSheet_1: -266670923
+      spr_SelecaoDeBotsSheet_10: 98746158
+      spr_SelecaoDeBotsSheet_2: 1777013362
+      spr_SelecaoDeBotsSheet_3: 481168780
+      spr_SelecaoDeBotsSheet_4: 337229690
+      spr_SelecaoDeBotsSheet_5: 732612702
+      spr_SelecaoDeBotsSheet_6: 465860875
+      spr_SelecaoDeBotsSheet_7: -245365325
+      spr_SelecaoDeBotsSheet_8: 1720097431
+      spr_SelecaoDeBotsSheet_9: 434223852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
