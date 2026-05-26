@@ -19,6 +19,12 @@ public class NPC : MonoBehaviour, IInteractable
     // Método obrigatório do IInteractable. É acionado no exato momento em que o jogador aperta o botão na frente do NPC.
     public void Interagir()
     {
+        if (gameObject.CompareTag("Piastri"))
+        {
+            // Se for o Piastri, ele acessa a variável global dos robôs e dá o sinal verde!
+            SelecaoSpeedBot.falouComOscar = true;
+            Debug.Log("[NPC] Você falou com o Piastri! Seleção de SpeedBots liberada.");
+        }
         // Quando ativado, ele faz uma "tabelinha" de comandos, conectando a arte do jogo com o roteiro:
 
         // 1. Primeiro comando: Grita para o tradutor (LeitorTwine) ler o arquivo de texto que está na gaveta.

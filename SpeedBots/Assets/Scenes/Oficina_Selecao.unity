@@ -1442,7 +1442,7 @@ GameObject:
   - component: {fileID: 511365651}
   - component: {fileID: 511365650}
   - component: {fileID: 511365653}
-  - component: {fileID: 511365654}
+  - component: {fileID: 511365655}
   m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
@@ -1583,7 +1583,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &511365654
+--- !u!114 &511365655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1592,12 +1592,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 511365649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
+  m_Script: {fileID: 11500000, guid: 55df54896b9df7346b8abeaa491d0a25, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: 
-  noInicial: Inicio
-  cenaAoEncerrar: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
+  nomeDesteRobo: Slider
+  arquivoDoDialogo: dialogo_empresario
+  noBloqueado: BloqueioPiastri
+  noLiberado: EscolhaRobo
 --- !u!1 &608252454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,7 +2022,7 @@ GameObject:
   - component: {fileID: 738282461}
   - component: {fileID: 738282460}
   - component: {fileID: 738282463}
-  - component: {fileID: 738282464}
+  - component: {fileID: 738282465}
   m_Layer: 6
   m_Name: Crawler
   m_TagString: Untagged
@@ -2162,7 +2163,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &738282464
+--- !u!114 &738282465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2171,12 +2172,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 738282459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
+  m_Script: {fileID: 11500000, guid: 55df54896b9df7346b8abeaa491d0a25, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
+  nomeDesteRobo: Crawler
   arquivoDoDialogo: 
-  noInicial: Inicio
-  cenaAoEncerrar: 
+  noBloqueado: BloqueioPiastri
+  noLiberado: EscolhaRobo
 --- !u!1 &745230902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7261,7 +7263,7 @@ GameObject:
   - component: {fileID: 860141334}
   - component: {fileID: 860141333}
   - component: {fileID: 860141336}
-  - component: {fileID: 860141337}
+  - component: {fileID: 860141338}
   m_Layer: 6
   m_Name: Aerial
   m_TagString: Untagged
@@ -7402,7 +7404,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &860141337
+--- !u!114 &860141338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7411,12 +7413,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 860141332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
+  m_Script: {fileID: 11500000, guid: 55df54896b9df7346b8abeaa491d0a25, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
+  nomeDesteRobo: Aerial
   arquivoDoDialogo: 
-  noInicial: Inicio
-  cenaAoEncerrar: 
+  noBloqueado: BloqueioPiastri
+  noLiberado: EscolhaRobo
 --- !u!1 &864943778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8120,7 +8123,7 @@ GameObject:
   - component: {fileID: 1122745929}
   m_Layer: 6
   m_Name: Piastri
-  m_TagString: Untagged
+  m_TagString: Piastri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

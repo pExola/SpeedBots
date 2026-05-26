@@ -1,4 +1,4 @@
-:: NPC_Empresario {"position":"800,1200","size":"100,100"}
+:: BloqueioPiastri
 Empresário: Khalil! Meu piloto favorito. Olhar para o seu SpeedBot me dá a certeza de que a ordem e a estabilidade da (text-colour:yellow)[Autrons] valem cada centavo investido.
 
 Sam: Só faço o meu trabalho na pista, senhor.
@@ -18,3 +18,11 @@ Sam: Como assim "feito tão perfeito"? Eu treinei a minha vida toda para chegar 
 
 Empresário: (text-style:"condense")[*Ajusta o terno de luxo, sorrindo de canto*] Claro, claro! O esforço humano é adorável. Mas o mercado sabe que certas linhagens e códigos genéticos recebem um... empurrãozinho invisível da Autrons. Não quebre o encanto, Khalil. Continue vencendo e deixe os segredos de fabricação com quem entende de ações.
 
+:: EscolhaRobo
+Empresário: ESCOKHE AI
+
+Sam: Só faço o meu trabalho na pista, senhor.
+
+Empresário: Modéstia aristocrática, adoro! Falando em alto rendimento, se quiser lotes de **Fluxo Puro** de verdade, posso liberar seu acesso ao *Setor de Vidro Alfa*. Esqueça aquela imundície do Deserto de Ferro, aquelas sucatarias não têm a sua... *perfeição técnica*.
+
+Sam: O robô do Tom Oneil corre bem com o que eles encontram por lá.
