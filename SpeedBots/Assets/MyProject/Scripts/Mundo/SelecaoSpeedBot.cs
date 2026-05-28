@@ -1,44 +1,79 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class SelecaoSpeedBot : MonoBehaviour, IInteractable
 {
     [Header("Identificação do Robô")]
     public string nomeDesteRobo;
 
     [Header("Textos (Twine)")]
-    // Coloque aqui o nome do arquivo .twee que tem os textos desta cena
     public string arquivoDoDialogo;
-
-    // O nome do "Nó" no Twine que tem a frase: "Acho que devo falar com Oscar antes..."
     public string noBloqueado = "BloqueioPiastri";
-
-    // O nome do "Nó" no Twine que abre a escolha do robô
     public string noLiberado = "EscolhaRobo";
 
+    [Header("Animação e Efeitos")]
+    public string parametroLigado = "Ligado";
+
+    [Tooltip("Arraste o GameObject Acesa_ correspondente a este robô para cá")]
+    public GameObject luzDoRobo; // O objeto que será ativado/desativado
+
+    private Animator animador;
     public static bool falouComOscar = false;
 
     void Awake()
     {
-        // RESET DE SEGURANÇA:
-        // Toda vez que você dá o Play e a cena carrega, forçamos o bloqueio a voltar para 'false'.
-        // Isso evita que a Unity grave o resultado do teste anterior.
         falouComOscar = false;
+        animador = GetComponent<Animator>();
+
+        // Garante que a luz sempre comece desligada quando a cena carregar
+        if (luzDoRobo != null)
+        {
+            luzDoRobo.SetActive(false);
+        }
     }
 
     public void Interagir()
     {
-        // Carrega o arquivo de texto igualzinho ao script do NPC
         LeitorTwine.Instance.CarregarTwee(arquivoDoDialogo);
 
-        // 1. CHECAGEM DO BLOQUEIO
+        // 1. Trava do Piastri
         if (!falouComOscar)
         {
-            // Em vez de só imprimir no console, agora ele ABRE o diálogo de bloqueio na tela!
             DialogueManager.Instance.IniciarDialogo(noBloqueado, "");
             return;
         }
 
-        // 2. SELEÇÃO LIBERADA
+        // 2. Animação de ligar
+        if (animador != null)
+        {
+            animador.SetBool(parametroLigado, true);
+        }
+
+        // 3. LIGA O GAMEOBJECT ESPECÍFICO (Crawler, Slider ou Aerial)
+        if (luzDoRobo != null)
+        {
+            luzDoRobo.SetActive(true);
+        }
+
         DialogueManager.Instance.IniciarDialogo(noLiberado, "");
+    }
+
+    // A MÁGICA DE DESLIGAR
+    void OnCollisionExit2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.CompareTag("Player"))
+        {
+            // Apaga o olho do robô
+            if (animador != null)
+            {
+                animador.SetBool(parametroLigado, false);
+            }
+
+            // DESLIGA O GAMEOBJECT quando o Sam desencosta
+            if (luzDoRobo != null)
+            {
+                luzDoRobo.SetActive(false);
+            }
+        }
     }
 }

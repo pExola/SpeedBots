@@ -509,7 +509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &220157301
 Transform:
   m_ObjectHideFlags: 0
@@ -1599,6 +1599,8 @@ MonoBehaviour:
   arquivoDoDialogo: dialogo_empresario
   noBloqueado: BloqueioPiastri
   noLiberado: EscolhaRobo
+  parametroLigado: Ligado
+  luzDoRobo: {fileID: 0}
 --- !u!1 &608252454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2181,8 @@ MonoBehaviour:
   arquivoDoDialogo: 
   noBloqueado: BloqueioPiastri
   noLiberado: EscolhaRobo
+  parametroLigado: Ligado
+  luzDoRobo: {fileID: 0}
 --- !u!1 &745230902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7417,9 +7421,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
   nomeDesteRobo: Aerial
-  arquivoDoDialogo: 
+  arquivoDoDialogo: dialogo_empresario
   noBloqueado: BloqueioPiastri
   noLiberado: EscolhaRobo
+  parametroLigado: Ligado
+  luzDoRobo: {fileID: 1760013109}
 --- !u!1 &864943778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8162,8 +8168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: Dialogo_PosCorrida
+  arquivoDoDialogo: DialogoPiastri
   noInicial: Inicio
+  noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
 --- !u!70 &1122745931
 CapsuleCollider2D:
@@ -8292,7 +8299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1136990207
 Transform:
   m_ObjectHideFlags: 0
@@ -15345,7 +15352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1760013110
 Transform:
   m_ObjectHideFlags: 0
@@ -15355,7 +15362,7 @@ Transform:
   m_GameObject: {fileID: 1760013109}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.2609696, y: -0.2027998, z: 0}
+  m_LocalPosition: {x: 7.34, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16061,7 +16068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2138758192
 Transform:
   m_ObjectHideFlags: 0
@@ -16094,5 +16101,5 @@ SceneRoots:
   - {fileID: 511365652}
   - {fileID: 860141335}
   - {fileID: 738282462}
-  - {fileID: 2138758192}
   - {fileID: 1810524455}
+  - {fileID: 2138758192}

@@ -1,0 +1,129 @@
+:: StoryTitle
+DialogoPiastri
+
+
+:: StoryData
+{
+  "ifid": "514BB244-90FE-4A7C-976A-85E71EC1BC3F",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Inicio",
+  "zoom": 1
+}
+
+
+:: ComCraft {"position":"1100,900","size":"100,100"}
+Sam: Vou provar para você e o mundo que sou o melhor de todos!
+
+Sam: E que não dependo de você nem de ninguém da Autrons!
+
+Sam: Nesta temporada, eu serei campeão desenvolvendo meu próprio robô.
+
+Piastri: Ok, boa sorte então! Escolha seu protótipo e começe sua jornada.
+
+
+:: ConfrontoDireto {"position":"800,500","size":"100,100"}
+Sam: Não importa! Precisamos do melhor equipamento possível 
+
+Piastri: Parece que finalmente alguém te superou hein?
+
+Sam: Ninguém é melhor do que eu!
+
+Piastri: Bom, parece que existe um mecânico melhor do que eu então...
+
+Sam: Até eu sou um mecânico melhor do que você.
+
+Sam: Mas aquele robô... Eu vi faíscas verdes saírem dele.
+
+Piastri: Ah! Material do Deserto de ferro.
+
+Piastri: Seja lá quem for, deve ter muito talento para te superar com isso.
+
+[[Colocar Piastri em seu devido lugar->NegacionismoInicial]]
+
+[[Perguntar do novo regulamento->SementedaDuvida]]
+
+
+:: Inicio {"position":"1000,300","size":"100,100"}
+Sam entra na oficina bravo enquanto procura por respostas para o que acabou de lhe acontecer.
+
+Piastri: Ah! Olá Sam! O que houve?
+
+Sam: Precisamos falar sobre o novo regulamento Piastri.
+
+Sam: Acredito que estamos muito atrás.
+
+Piastri: Mas... Atrás de quem? Você é o atual campeão!
+
+[[Ir direto ao ponto->ConfrontoDireto]]
+
+[[Falar sobre Tom->ProvocacaoSutil]]
+
+
+:: NegacionismoInicial {"position":"1100,700","size":"100,100"}
+Sam: Você fala demais Piastri! Quer ser demitido?
+
+Piastri: Perdão patrão... Desenvolvi três protótipos para o novo regulamento
+
+Piastri: Como quer prosseguir?
+
+[[Decidir não montar seus Speedbots->SemCraft]]
+[[Decidir montar seus SpeedBots->ComCraft]]
+
+
+:: ProvocacaoSutil {"position":"1200,500","size":"100,100"}
+Sam: Acabei de ser derrotado por um tal de Tom Oneil.
+
+Sam: Precisamos do melhor equipamento possível!
+
+Piastri: Oneil huh? Dizem que ele é um prodígio.
+
+Sam: Ninguém é melhor do que eu!
+
+Piastri: Parece que agora alguém é...
+
+Piastri: Me pergunto quem seria seu mecânico.
+
+Sam: Ele é o próprio mecânico. Vi faíscas verdes saírem daquele robô.
+
+Piastri: Uau! Material do Deserto de Ferro! O garoto tem talento mesmo.
+
+[[Perguntar do novo regulamento->SementedaDuvida]]
+
+[[Colocar Piastri em seu devido lugar->NegacionismoInicial]]
+
+
+:: SemCraft {"position":"900,900","size":"100,100"}
+Sam: Você tem que ser útil para algo.
+
+Sam: Não vou construir nada!
+
+Piastri: Ok então, mas escolha um dos protótipos para que eu desenvolva para você.
+
+Piastri: Escolha com sabedoria!
+
+
+:: SementedaDuvida {"position":"900,700","size":"100,100"}
+Sam: Chega de enrolação cara!
+
+Sam: Mostre porque te pagamos e me apresente os protótipos logo!
+
+Piastri: Se acalme garoto, sou o melhor no que faço.
+
+Sam: Se fosse eu não perderia como hoje.
+
+Piastri: Ah é mesmo? Então prove!
+
+Piastri: Ali ao canto estão 3 protótipos que desenvolvi para a próxima temporada com o novo regulamento em vigor.
+
+Piastri: Escolha um e desenvolva sozinho.
+
+
+[[Decidir não montar seus Speedbots->SemCraft]]
+[[Decidir montar seus SpeedBots->ComCraft]]
+
+
+:: LembreteEscolha {"position":"900,700","size":"100,100"}
+Piastri: Tá esperando o que?
+
+Piastri: Pare de me olhar e vá escolher seu SpeedBot!

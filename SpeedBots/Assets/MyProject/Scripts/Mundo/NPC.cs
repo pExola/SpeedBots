@@ -1,37 +1,45 @@
-using UnityEngine; // Importa as ferramentas principais da engine da Unity.
+using UnityEngine;
 
-// É a "casca" física dos personagens no mundo. Transforma um boneco parado no mapa em um ator completo.
-// Ao assinar o contrato IInteractable, ele fica pronto para escutar o clique/interação do jogador.
 public class NPC : MonoBehaviour, IInteractable
 {
-    [Header("Configuração do Twine")] // Organiza visualmente as opções na tela do Inspector.
-
-    // "Gaveta" pública onde você digita o nome do roteiro de texto (arquivo .twee) exato daquele personagem.
+    [Header("Configuração do Twine")]
     public string arquivoDoDialogo;
-
-    // Define qual é o primeiro "Nó" (ou página) da história que deve ser lido quando a conversa começar.
     public string noInicial = "Inicio";
 
+    [Header("Configuração Especial (Piastri)")]
+    // Novo campo para definir qual nó do Twine diz para o jogador ir escolher o robô
+    public string noAposLiberarRobo = "LembreteEscolha";
+
     [Header("Transição de Cena")]
-    // Variável opcional: permite engatilhar um teletransporte/mudança de fase assim que o diálogo atual chegar ao fim.
     public string cenaAoEncerrar = "";
 
-    // Método obrigatório do IInteractable. É acionado no exato momento em que o jogador aperta o botão na frente do NPC.
     public void Interagir()
     {
+        // Criamos uma variável local para decidir qual nó vai rodar, 
+        // começando com o padrão definido no Inspector
+        string noParaDisparar = noInicial;
+
+        // 1. CHECAGEM EXCLUSIVA DO PIASTRI
         if (gameObject.CompareTag("Piastri"))
         {
-            // Se for o Piastri, ele acessa a variável global dos robôs e dá o sinal verde!
-            SelecaoSpeedBot.falouComOscar = true;
-            Debug.Log("[NPC] Você falou com o Piastri! Seleção de SpeedBots liberada.");
+            // Se a variável partilhada já for TRUE, significa que o jogador já conversou com ele antes
+            if (SelecaoSpeedBot.falouComOscar)
+            {
+                // Altera o nó de destino para a fala de cobrança/direcionamento
+                noParaDisparar = noAposLiberarRobo;
+                Debug.Log("[NPC] Piastri relembrando o jogador de escolher um SpeedBot.");
+            }
+            else
+            {
+                // Se for a PRIMEIRA vez que conversam, ativa a permissão dos robôs 
+                // para que as próximas tentativas entrem no bloco de cima
+                SelecaoSpeedBot.falouComOscar = true;
+                Debug.Log("[NPC] Você falou com o Piastri pela primeira vez! Seleção de SpeedBots liberada.");
+            }
         }
-        // Quando ativado, ele faz uma "tabelinha" de comandos, conectando a arte do jogo com o roteiro:
 
-        // 1. Primeiro comando: Grita para o tradutor (LeitorTwine) ler o arquivo de texto que está na gaveta.
+        // 2. Dispara o diálogo com o nó definido pela checagem acima
         LeitorTwine.Instance.CarregarTwee(arquivoDoDialogo);
-
-        // 2. Segundo comando: Manda o ator (DialogueManager) subir no palco e desenhar a caixa de texto na tela, 
-        // começando pela página inicial e já informando se haverá uma mudança de cena no final.
-        DialogueManager.Instance.IniciarDialogo(noInicial, cenaAoEncerrar);
+        DialogueManager.Instance.IniciarDialogo(noParaDisparar, cenaAoEncerrar);
     }
 }
