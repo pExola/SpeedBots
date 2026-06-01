@@ -15,6 +15,8 @@ MonoBehaviour:
   m_TextureSources:
   - m_Texture: {fileID: 2800000, guid: 75c3dba01776a0f448a25e4517073192, type: 3}
     m_TileTemplate: {fileID: 0}
+  - m_Texture: {fileID: 2800000, guid: 566cabf15e7c83a42965e69e4710cd49, type: 3}
+    m_TileTemplate: {fileID: 0}
   m_CreateAtlas: 1
   m_ScriptablePacker: {fileID: 0}
   m_CellLayout: 0
@@ -70,6 +72,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 75c3dba01776a0f448a25e4517073192, type: 3}
+    - {fileID: 2800000, guid: 566cabf15e7c83a42965e69e4710cd49, type: 3}
     bindAsDefault: 1
     isAtlasV2: 1
     cachedData: {fileID: 0}
