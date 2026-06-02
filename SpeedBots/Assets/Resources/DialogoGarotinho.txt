@@ -1,0 +1,32 @@
+:: GarotoInicio {"position":"400,100","size":"100,100"}
+
+Garoto: Caramba! Você é o Sam Khalil! O campeão de ouro!
+
+Sam: Sou eu mesmo. Ta aprontando o que pirralho?
+
+Garoto: Me dá um autógrafo? Eu assisti a quase todas as suas corridas!
+
+[[Assinar o autógrafo->GarotoAutografo]]
+[[Perguntar sobre o 'quase todas'->GarotoDuvida]]
+
+:: GarotoAutografo {"position":"400,250","size":"100,100"}
+Sam: Claro, pegue aqui. Continue torcendo para a Autrons.
+
+Garoto: Valeu! Mas sabe... O meu amigo Tom corre muito mais rápido que você.
+
+Sam: Isso é ridículo. Ninguém é mais rápido do que eu.
+
+Garoto: Nos becos escuros do Deserto de Ferro ele é! Tem rachas clandestinos lá toda noite.
+
+Garoto: Você deveria aparecer por lá!
+
+:: GarotoDuvida {"position":"550,250","size":"100,100"}
+Sam: Como assim 'quase todas'? Tem algo melhor pra assistir do que eu?
+
+Garoto: É que as vezes eu vou ver o Tom correr nos becos do Deserto de Ferro.
+
+Garoto: Ele faz umas curvas que até quebram as paredes! Você devia ver!
+
+Sam: Rachas clandestinos? Isso é coisa de marginal amador.
+
+Garoto: Pode ser, mas ele te venceria!

@@ -1,0 +1,30 @@
+:: SenhorInicio {"position":"100,400","size":"100,100"}
+
+Senhor: Estes olhos... Você tem a mesma centelha cega da sua mãe.
+
+Sam: Você conheceu a Clove? Quem é você?
+
+Senhor: Fui um operário. Trabalhei com Meyamato Spido nos primeiros robôs.
+
+Senhor: Naquela época, nós não brincávamos com o Fluxo. Nós o respeitávamos.
+
+[[Perguntar sobre 'O Um'->SenhorSpeedBots]]
+[[Perguntar sobre Clove->SenhorClove]]
+
+:: SenhorSpeedBots {"position":"100,550","size":"100,100"}
+
+Senhor: 'O Um' era sagrado, não um espetáculo.
+
+Senhor: Vocês profanam a máquina com apostas de sangue e fama corporativa.
+
+Senhor: Se quer entender de verdade, procure os laboratórios abandonados no Setor Silencioso.
+
+:: SenhorClove {"position":"250,550","size":"100,100"}
+
+Senhor: A Clove buscou a Sincronia Total, a conexão absoluta!
+
+Sam: Meu pai diz que ela enlouqueceu.
+
+Senhor: O Sharkur mente. Ela não se perdeu. Ela descobriu o que a Autrons queria esconder de nós.
+
+Senhor: As respostas que você procura ainda ecoam pelos corredores do Setor Silencioso. Vá até lá.

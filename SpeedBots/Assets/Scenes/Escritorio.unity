@@ -415,7 +415,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &206034436
@@ -2001,7 +2001,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 571
-      m_TileSpriteIndex: 558
+      m_TileSpriteIndex: 566
       m_TileMatrixIndex: 1
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2011,7 +2011,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 570
-      m_TileSpriteIndex: 557
+      m_TileSpriteIndex: 561
       m_TileMatrixIndex: 1
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -4872,16 +4872,16 @@ Tilemap:
     m_Data: {fileID: 8362425909527851161, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
   - m_RefCount: 25
     m_Data: {fileID: 5289439648167988857, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -72291731424569988, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -3319113456258805198, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 27
     m_Data: {fileID: 4279289346294394866, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
   - m_RefCount: 1
@@ -4890,8 +4890,8 @@ Tilemap:
     m_Data: {fileID: -2304599458702626117, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 8104527580411636993, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -3319113456258805198, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
   - m_RefCount: 22
     m_Data: {fileID: 1384749983792944294, guid: 0beae81d2e1fb8141982cf75bf5ac2de, type: 3}
   - m_RefCount: 1
@@ -5711,7 +5711,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5742,7 +5742,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -5778,7 +5778,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &864943781

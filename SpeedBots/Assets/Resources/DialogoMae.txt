@@ -1,0 +1,30 @@
+:: MaeInicio {"position":"700,100","size":"100,100"}
+
+Mãe: Shh... Calma filho. Eles já vão desligar os motores do Coliseu.
+
+Sam: Algum problema com o barulho, senhora?
+
+Mãe: Você é o queridinho do Sharkur, não é? Claro que não entende.
+
+Mãe: Redirecionaram todo o Fluxo pro estádio e cortaram a nossa luz de novo!
+
+[[Defender o Campeonato->MaeDefesa]]
+[[Oferecer ajuda->MaeAjuda]]
+
+:: MaeDefesa {"position":"700,250","size":"100,100"}
+Sam: O Campeonato traz esperança para Domina. É um sacrifício necessário.
+
+Mãe: Esperança não alimenta meu filho, garoto de ouro.
+
+Mãe: Vocês desperdiçam recursos vitais para brincar de deuses com essas máquinas!
+
+Mãe: Pelo menos a oficina subindo a rua tenta consertar nossos geradores de graça.
+
+:: MaeAjuda {"position":"850,250","size":"100,100"}
+Sam: Eu posso dar uma olhada no seu gerador, se quiser.
+
+Mãe: O herói da Autrons sujando as mãos de graxa? Essa é nova.
+
+Mãe: Não precisamos da sua caridade enlatada. 
+
+Mãe: Leve suas ferramentas para a oficina ali em cima, é o único lugar que ainda nos ajuda de verdade.

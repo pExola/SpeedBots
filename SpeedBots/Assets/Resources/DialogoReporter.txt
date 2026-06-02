@@ -1,0 +1,30 @@
+:: ReporterInicio {"position":"400,400","size":"100,100"}
+
+Repórter: Sam Khalil! Sorria para as câmeras de Neon-Sintra!
+
+Repórter: Mais uma vitória esmagadora do garoto de ouro da Autrons. Como se sente?
+
+Sam: Não quero falar no momento.
+
+Repórter: Ora vamos, Sam! Uma palavrinha para o povo, pode ser?
+
+[[Entrar no jogo da mídia corporativa->ReporterMidia]]
+[[Mencionar a ameaça de Tom->ReporterTom]]
+
+:: ReporterMidia {"position":"400,550","size":"100,100"}
+Sam: Com o suporte absoluto da Autrons e minha habilidade, a vitória é garantida.
+
+Repórter: É isso aí! O clima de festa contagia a cidade inteira, graças a você.
+
+Repórter: Não há escassez e nem revolta quando temos um herói tão brilhante nos guiando!
+
+Sam: Sempre em frente, seguimos.
+
+:: ReporterTom {"position":"550,550","size":"100,100"}
+Sam: Tive que lidar com um piloto novo hoje... Ele tinha um robô de sucata bem ágil.
+
+Repórter: Hahaha, você é cheio de piadas, Sam! Piloto de sucata? Que imaginação!
+
+Repórter: Vamos focar no que importa: a soberania e estabilidade da Autrons.
+
+Repórter: (Sussurrando) Corta essa parte da gravação. O herói não tem rivais, apenas figurantes.

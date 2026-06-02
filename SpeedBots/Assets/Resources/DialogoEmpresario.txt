@@ -1,0 +1,28 @@
+:: EmpresarioInicio {"position":"100","size":"100,100"}
+
+Empresário: Sam Khalil! Que visão espetacular, nosso campeão de ouro.
+
+Empresário: Suas corridas renderam dividendos astronômicos para a Autrons ontem.
+
+Sam: Eu corro para vencer, não pelos seus lucros.
+
+Empresário: Ah, mas a vitória é a nossa marca! A estabilidade da Autrons é o que nos mantém vivos.
+
+[[Perguntar sobre peças melhores->EmpresarioPecas]]
+[[Perguntar sobre o novo competidor->EmpresarioRival]]
+
+:: EmpresarioPecas {"position":"100,250","size":"100,100"}
+
+Empresário: Sei que os dutos do Setor de Filtração recebem Fluxo Puro cristalizado.
+
+Empresário: Passe seu cartão de Elite lá, está tudo à sua disposição.
+
+Empresário: Muito diferente daquela sucata tóxica do Deserto de Ferro, credo.
+
+:: EmpresarioRival {"position":"250,250","size":"100,100"}
+
+Empresário: Nada com o que se preocupar. Aquela escória só produz ferrugem e fumaça.
+
+Empresário: Não dê ouvidos a boatos. A Autrons tem o controle perfeito da situação.
+
+Empresário: Mantenha a estética, Sam. Para nós, a imagem é tudo!

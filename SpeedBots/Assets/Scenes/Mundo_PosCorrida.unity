@@ -325,8 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: Dialogo_PosCorrida
-  noInicial: Inicio
+  arquivoDoDialogo: DialogoSenhor
+  noInicial: SenhorInicio
   noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
 --- !u!70 &54888364
@@ -1270,8 +1270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: Dialogo_PosCorrida
-  noInicial: Inicio
+  arquivoDoDialogo: DialogoReporter
+  noInicial: ReporterInicio
   noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
 --- !u!70 &268154611
@@ -112406,7 +112406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50.000008, y: -50}
+  m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &864499178
@@ -113338,8 +113338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: Dialogo_PosCorrida
-  noInicial: Inicio
+  arquivoDoDialogo: DialogoGarotinho
+  noInicial: GarotoInicio
   noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
 --- !u!70 &1015240284
@@ -113908,8 +113908,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -113939,7 +113939,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -131800,8 +131800,16 @@ MonoBehaviour:
     foto: {fileID: 21300000, guid: 5c76be5055844394ab549b6c9fbd6ba2, type: 3}
   - nome: Estranho
     foto: {fileID: 7482667652216324306, guid: 7d9dac1042452d145871f68df41dc8b1, type: 3}
-  - nome: Tom
-    foto: {fileID: 21300000, guid: cf37f7bcbec511341a45724c990d681c, type: 3}
+  - nome: "M\xE3e"
+    foto: {fileID: 21300000, guid: d0d45f66d26c8b741a1440b4d9d78cd7, type: 3}
+  - nome: Senhor
+    foto: {fileID: 21300000, guid: 40602c78e5b795b4caffcd6623ed8b6a, type: 3}
+  - nome: Garoto
+    foto: {fileID: 7095722749741219653, guid: 76d0dbbf06d3d484ab05b03abc1e70f0, type: 3}
+  - nome: "Rep\xF3rter"
+    foto: {fileID: -661659713468262367, guid: 1a7ec7ffae354f1499f4116c8c677e4c, type: 3}
+  - nome: "Empres\xE1rio"
+    foto: {fileID: -3886338002484229578, guid: df7db67efee4f6f40b53f1a085ac7c25, type: 3}
 --- !u!1 &1815619654
 GameObject:
   m_ObjectHideFlags: 0
@@ -131819,7 +131827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1815619655
 RectTransform:
   m_ObjectHideFlags: 0
@@ -131935,8 +131943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: dialogo_empresario
-  noInicial: NPC_Empresario
+  arquivoDoDialogo: DialogoEmpresario
+  noInicial: EmpresarioInicio
   noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
 --- !u!70 &1829711346
@@ -185726,8 +185734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235ab1108f1d91646af3d2466ac1b029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  arquivoDoDialogo: Dialogo_PosCorrida
-  noInicial: Inicio
+  arquivoDoDialogo: DialogoMae
+  noInicial: MaeInicio
   noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
 --- !u!70 &2035807612
@@ -185862,7 +185870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -113.99999, y: 0}
+  m_AnchoredPosition: {x: -114, y: 0}
   m_SizeDelta: {x: -268, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2040529591
@@ -186194,8 +186202,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -186225,7 +186233,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
