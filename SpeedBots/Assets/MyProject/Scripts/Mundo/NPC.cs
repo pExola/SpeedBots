@@ -13,6 +13,12 @@ public class NPC : MonoBehaviour, IInteractable
     [Header("Transição de Cena")]
     public string cenaAoEncerrar = "";
 
+    public QuestHUDManager hudManager;
+
+    [Header("Configuração da Missão")]
+    public string tituloDaMissao = "Passado Oculto";
+    [TextArea] public string pistaDaMissao = "Vá até o Setor silencioso.";
+
     public void Interagir()
     {
         // Criamos uma variável local para decidir qual nó vai rodar, 
@@ -41,5 +47,8 @@ public class NPC : MonoBehaviour, IInteractable
         // 2. Dispara o diálogo com o nó definido pela checagem acima
         LeitorTwine.Instance.CarregarTwee(arquivoDoDialogo);
         DialogueManager.Instance.IniciarDialogo(noParaDisparar, cenaAoEncerrar);
+
+        // Envia o nome do gameObject (oculto), o título e a pista
+        hudManager.AddSecondaryQuest(gameObject.name, tituloDaMissao, pistaDaMissao);
     }
 }

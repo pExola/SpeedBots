@@ -680,7 +680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &324746332
 RectTransform:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ RectTransform:
   m_Children:
   - {fileID: 206034434}
   - {fileID: 864943779}
-  - {fileID: 1306466094}
+  - {fileID: 929174595}
   - {fileID: 784738475}
   m_Father: {fileID: 1244626066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7713,6 +7713,82 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &929174594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929174595}
+  - component: {fileID: 929174597}
+  - component: {fileID: 929174596}
+  m_Layer: 5
+  m_Name: FOTO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &929174595
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929174594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1306466094}
+  m_Father: {fileID: 324746332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -303.93, y: 9.0997}
+  m_SizeDelta: {x: 161.33, y: 194.73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &929174596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929174594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6098162369580040581, guid: 0ed69b4fdf272be4aa3588d296a8a426, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &929174597
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929174594}
+  m_CullTransparentMesh: 1
 --- !u!1 &1000862310
 GameObject:
   m_ObjectHideFlags: 0
@@ -13218,17 +13294,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306466093}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 324746332}
+  m_Father: {fileID: 929174595}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309.20996, y: 3.59}
-  m_SizeDelta: {x: 150.78, y: 193.29}
+  m_AnchoredPosition: {x: 1.5900269, y: -0.03969574}
+  m_SizeDelta: {x: 124.91, y: 142.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1306466095
 MonoBehaviour:
@@ -15500,13 +15576,13 @@ MonoBehaviour:
   prefabBotao: {fileID: 3776976530502553865, guid: 810b4ab0214bbb249980d769e5a45cd5, type: 3}
   perfis:
   - nome: Sam
-    foto: {fileID: 21300000, guid: 5c76be5055844394ab549b6c9fbd6ba2, type: 3}
+    foto: {fileID: 8078649946434188265, guid: db0d8c65966e7904d8526135db0e7756, type: 3}
   - nome: Estranho
     foto: {fileID: 7482667652216324306, guid: 7d9dac1042452d145871f68df41dc8b1, type: 3}
   - nome: Tom
     foto: {fileID: 21300000, guid: cf37f7bcbec511341a45724c990d681c, type: 3}
   - nome: Piastri
-    foto: {fileID: -4986700003348469586, guid: fd9c2a92f24177245baa66bf6782739c, type: 3}
+    foto: {fileID: -6125975724686282107, guid: 8ee3df461a7fdd4468f28a2ab051253c, type: 3}
 --- !u!114 &1819805132
 MonoBehaviour:
   m_ObjectHideFlags: 0
