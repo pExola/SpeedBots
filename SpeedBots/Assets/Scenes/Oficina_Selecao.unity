@@ -680,7 +680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &324746332
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1443,6 +1443,7 @@ GameObject:
   - component: {fileID: 511365650}
   - component: {fileID: 511365653}
   - component: {fileID: 511365655}
+  - component: {fileID: 511365656}
   m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
@@ -1596,11 +1597,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
   nomeDesteRobo: Slider
-  arquivoDoDialogo: dialogo_empresario
+  arquivoDoDialogo: dialogo_slider
   noBloqueado: BloqueioPiastri
   noLiberado: EscolhaRobo
+  roboEscolhido: roboEscolhido
   parametroLigado: Ligado
   luzDoRobo: {fileID: 1136990206}
+--- !u!114 &511365656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511365649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c2bbaa5b2e74d458fcfcd2b37bf55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonitorDeEscolha
+  noGatilho: Escolhido
 --- !u!1 &608252454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2040,7 @@ GameObject:
   - component: {fileID: 738282460}
   - component: {fileID: 738282463}
   - component: {fileID: 738282465}
+  - component: {fileID: 738282466}
   m_Layer: 6
   m_Name: Crawler
   m_TagString: Untagged
@@ -2178,11 +2194,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
   nomeDesteRobo: Crawler
-  arquivoDoDialogo: dialogo_empresario
+  arquivoDoDialogo: dialogo_crawler
   noBloqueado: BloqueioPiastri
   noLiberado: EscolhaRobo
+  roboEscolhido: roboEscolhido
   parametroLigado: Ligado
   luzDoRobo: {fileID: 220157300}
+--- !u!114 &738282466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738282459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c2bbaa5b2e74d458fcfcd2b37bf55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonitorDeEscolha
+  noGatilho: Escolhido
 --- !u!1 &745230902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,6 +7298,7 @@ GameObject:
   - component: {fileID: 860141333}
   - component: {fileID: 860141336}
   - component: {fileID: 860141338}
+  - component: {fileID: 860141339}
   m_Layer: 6
   m_Name: Aerial
   m_TagString: Untagged
@@ -7421,11 +7452,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelecaoSpeedBot
   nomeDesteRobo: Aerial
-  arquivoDoDialogo: dialogo_empresario
+  arquivoDoDialogo: dialogo_aerial
   noBloqueado: BloqueioPiastri
   noLiberado: EscolhaRobo
+  roboEscolhido: roboEscolhido
   parametroLigado: Ligado
   luzDoRobo: {fileID: 1760013109}
+--- !u!114 &860141339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860141332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c2bbaa5b2e74d458fcfcd2b37bf55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MonitorDeEscolha
+  noGatilho: Escolhido
 --- !u!1 &864943778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8248,6 +8293,9 @@ MonoBehaviour:
   noInicial: Inicio
   noAposLiberarRobo: LembreteEscolha
   cenaAoEncerrar: 
+  hudManager: {fileID: 0}
+  tituloDaMissao: Passado Oculto
+  pistaDaMissao: "V\xE1 at\xE9 o Setor silencioso."
 --- !u!70 &1122745931
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15583,6 +15631,7 @@ MonoBehaviour:
     foto: {fileID: 21300000, guid: cf37f7bcbec511341a45724c990d681c, type: 3}
   - nome: Piastri
     foto: {fileID: -6125975724686282107, guid: 8ee3df461a7fdd4468f28a2ab051253c, type: 3}
+  tituloDoNoAtual: 
 --- !u!114 &1819805132
 MonoBehaviour:
   m_ObjectHideFlags: 0

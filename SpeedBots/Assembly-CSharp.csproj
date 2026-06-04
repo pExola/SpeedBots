@@ -72,6 +72,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\MyProject\Scripts\Corrida\CaixaItem.cs" />
     <Compile Include="Assets\MyProject\Scripts\Mundo\Craft\ReceitaCraft.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Mundo\Dialogue\MonitorDeEscolha.cs" />
     <Compile Include="Assets\MyProject\Scripts\Corrida\HUDManager.cs" />
     <Compile Include="Assets\MyProject\Scripts\Corrida\SpeedBotProgression.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="Assets\MyProject\Scripts\Mundo\Camera\GerenciadorDeCamera.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Resources\dialogo_aerial.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Resources\Dialogo_PosCorrida.txt" />
     <None Include="Assets\MyProject\Resources\Dialogo_PosCorrida.txt" />
@@ -150,7 +152,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\Resources\DialogoSenhor.txt" />
     <None Include="Assets\Resources\DialogoReporter.txt" />
-    <None Include="Assets\Resources\dialogo_empresario.txt" />
+    <None Include="Assets\Resources\dialogo_slider.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -163,6 +165,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Resources\DialogoPiastri.txt" />
     <None Include="Assets\Resources\Dialogo_SpeedBot 1.txt" />
+    <None Include="Assets\Resources\dialogo_crawler.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

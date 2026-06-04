@@ -10,6 +10,7 @@ public class SelecaoSpeedBot : MonoBehaviour, IInteractable
     public string arquivoDoDialogo;
     public string noBloqueado = "BloqueioPiastri";
     public string noLiberado = "EscolhaRobo";
+    public string roboEscolhido = "roboEscolhido";
 
     [Header("Animação e Efeitos")]
     public string parametroLigado = "Ligado";
@@ -19,10 +20,12 @@ public class SelecaoSpeedBot : MonoBehaviour, IInteractable
 
     private Animator animador;
     public static bool falouComOscar = false;
+    public static bool escolheuRobo = false;
 
     void Awake()
     {
         falouComOscar = false;
+        escolheuRobo = false;
         animador = GetComponent<Animator>();
 
         // Garante que a luz sempre comece desligada quando a cena carregar
@@ -40,6 +43,13 @@ public class SelecaoSpeedBot : MonoBehaviour, IInteractable
         if (!falouComOscar)
         {
             DialogueManager.Instance.IniciarDialogo(noBloqueado, "");
+            return;
+        }
+
+        if (escolheuRobo)
+        {
+            // Toca o nó "roboEscolhido" para sempre e para o código aqui.
+            DialogueManager.Instance.IniciarDialogo(roboEscolhido, "");
             return;
         }
 

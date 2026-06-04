@@ -41,6 +41,8 @@ public class DialogueManager : MonoBehaviour // É o ator que sobe no palco para
     private int indiceDaFala = 0; // O marcador de linha que diz qual frase da página ele deve ler no momento.
     private string cenaAoEncerrarAtual = ""; // Guarda o nome da fase para qual o jogador deve ser mandado ao fim da conversa (se houver).
 
+    public string tituloDoNoAtual = "";
+
     void Awake() // Roda no exato momento em que o jogo inicia.
     {
         // Proteção do Singleton: se já existir outro DialogueManager carregado, este se destrói para não duplicar.
@@ -75,6 +77,8 @@ public class DialogueManager : MonoBehaviour // É o ator que sobe no palco para
         if (painelDialogo == null) return; // Trava de segurança.
 
         painelDialogo.SetActive(true); // Acende as luzes! Mostra a caixa de diálogo para o jogador.
+
+        tituloDoNoAtual = tituloDoNo;
 
         // Pergunta ao LeitorTwine se essa história/página realmente existe na memória.
         if (!LeitorTwine.Instance.historia.ContainsKey(tituloDoNo)) return;

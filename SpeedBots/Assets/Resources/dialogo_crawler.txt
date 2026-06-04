@@ -1,0 +1,39 @@
+:: BloqueioPiastri
+
+Sam: Melhor falar com o Piastri antes...
+
+:: EscolhaRobo
+
+Sam: Crawler seria uma ótima opção, não acha?
+
+[[Escolher Crawler->Escolhido]]
+[[Ver as outras opções->OutrasOpcoes]]
+
+:: Escolhido
+
+Piastri: Não imaginava que você fosse escolher este.
+
+Piastri: Ele é o mais lento, mas com certeza o mais dominante.
+
+Sam: Meus adversários não terão chance contra ele na pista!
+
+Piastri: Sim, sim... Agora vá até a Autrons para realizar os testes
+
+Sam: Eu já estava à caminho mesmo...
+
+Sam: Tenho assuntos pendentes com meu pai.
+
+Piastri: Certo. O protótipo fica aqui então. 
+
+Piastri: Volte depois que falar com Sharkur.
+
+:: OutrasOpcoes
+
+Piastri: Pense bem!
+
+:: roboEscolhido
+
+Sam: Já escolhi meu SpeedBot.
+
+Sam: Devo ir para a Autrons agora.
+
