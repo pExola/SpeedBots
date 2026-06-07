@@ -1,0 +1,30 @@
+:: FotografoInicio {"position":"400,400","size":"100,100"}
+
+Sam: Ei! Apague isso. Você não tem autorização para estar aqui.
+
+Fotógrafo: "O Campeão no habitat natural". Perfeito. A luz artificial daqui deixa sua pele ótima.
+
+Fotógrafo: Calma, garoto de ouro. Eu trabalho para as revistas da elite. 
+
+[[Vou chamar a segurança->FotografoSeguranca]]
+[[O que você quer aqui?->FotografoFarsa]]
+
+
+:: FotografoSeguranca {"position":"400,250","size":"100,100"}
+Sam: A segurança da Autrons vai confiscar essa câmera em dois minutos.
+
+Fotógrafo: Hahaha! Chame-os. Seu pai, Sharkur, compra minhas fotos antes mesmo de eu revelar.
+
+Fotógrafo: A Autrons não odeia os paparazzi, Sam. Eles apenas controlam o que nós publicamos.
+
+Fotógrafo: Continue sorrindo. O sistema precisa que você pareça invencível hoje.
+
+
+:: FotografoFarsa {"position":"550,250","size":"100,100"}
+Sam: Você não está aqui só para tirar fotos do meu rosto. O que está procurando?
+
+Fotógrafo: A fenda na armadura. A gota de suor real debaixo dessa pose fabricada.
+
+Fotógrafo: O público lá de baixo está cansado da perfeição. Eles querem drama.
+
+Fotógrafo: Se você tropeçar, Sam... meu flash será a primeira coisa que você vai ver.

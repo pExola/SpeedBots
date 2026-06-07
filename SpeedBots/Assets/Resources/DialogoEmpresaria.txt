@@ -1,0 +1,32 @@
+:: EmpresariaInicio {"position":"100","size":"100,100"}
+
+Empresária: Sam! Suas vitórias mantêm nossas ações da refinaria de Fluxo nas alturas.
+
+Empresária: É reconfortante ver a Autrons mantendo a ordem através do espetáculo.
+
+Sam: Eu sou um piloto, não um corretor da bolsa de valores.
+
+Empresária: Ah, querido. Em Domina, tudo é mercado. Até a sua genialidade.
+
+[[A corrida é sobre técnica->EmpresariaTecnica]]
+[[A Autrons controla tudo->EmpresariaControle]]
+
+
+:: EmpresariaTecnica {"position":"100,250","size":"100,100"}
+Sam: Nas pistas, o dinheiro não importa. O que importa é a sincronia com a máquina.
+
+Empresária: Uma visão muito romântica, vinda de quem pilota um chassi de um milhão de créditos.
+
+Empresária: Sem o nosso financiamento, sua "técnica" seria apenas poeira no Deserto de Ferro.
+
+Empresária: Mantenha o espetáculo bonito, Sam. Nós pagamos bem por ele.
+
+
+:: EmpresariaControle {"position":"250,250","size":"100,100"}
+Sam: É fácil falar de ordem quando se mora acima das nuvens artificiais.
+
+Empresária: Exatamente. Nós filtramos o ar e a economia para que a base não desmorone.
+
+Empresária: Se aqueles selvagens lá de baixo tivessem nosso Fluxo Puro, a cidade explodiria.
+
+Empresária: Você é a prova viva de que a nossa civilização, a verdadeira civilização, ainda respira.

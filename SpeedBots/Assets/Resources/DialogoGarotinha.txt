@@ -1,0 +1,30 @@
+:: GarotinhaInicio {"position":"400,100","size":"100,100"}
+
+Garotinha: Uau! Você é o Sam da TV! O moço que nunca perde!
+
+Sam: Sou eu. Cuidado perto do vidro, garota. É uma queda longa até o Setor de Baixa.
+
+Garotinha: Eu não tenho medo. Meus pais disseram que lá embaixo só tem monstros de graxa.
+
+[[Eles são apenas pessoas->GarotinhaPessoas]]
+[[Seu SpeedBot também tem graxa->GarotinhaRobo]]
+
+
+:: GarotinhaPessoas {"position":"700,250","size":"100,100"}
+Sam: Não existem monstros lá embaixo. Apenas construtores que não têm a nossa sorte.
+
+Garotinha: Mentira! O papai falou que eles cozinham lixo e quebram as máquinas.
+
+Garotinha: Eles não têm o Fluxo Puro que brilha azulzinho igual ao seu.
+
+Garotinha: É por isso que você sempre ganha, né? Porque você é limpo.
+
+
+:: GarotinhaRobo {"position":"850,250","size":"100,100"}
+Sam: Até os robôs mais perfeitos daqui de cima usam óleo e graxa por dentro.
+
+Garotinha: Eca! Não o seu! O seu robô é feito de luz pura e peças de diamante!
+
+Garotinha: O noticiário disse que você nem precisa encostar nas ferramentas.
+
+Garotinha: Me disseram que quem suja as mãos vai morar na chuva ácida para sempre.
